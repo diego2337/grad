@@ -1,0 +1,16 @@
+metadados1.dat
+insert 4, "Pastor Alemão", 97, 3, "marrom"
+insert 1, "São Bernardo", 129, 5, "branco"
+insert 5, "Boxer", 68, 2, "dourado"
+insert 6, "Bulldog", 83, 7, "preto"
+insert 2, "Pitbul", 55, 2, "marrom"
+insert 8, "Golden", 87, 7, "dourado"
+insert 3, "Vira Lata", 30, 4, "cinza"
+insert 7, "Pug", 28, 4, "branco"
+insert 9, "Chowchow", 77, 2, "amarelo"
+search 1
+search 5
+search 9
+search 7
+search 2
+exit

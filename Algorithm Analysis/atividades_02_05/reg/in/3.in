@@ -1,0 +1,13 @@
+metadados7.dat
+insert 4, "Marcus Fenix", 20, 324.54, 2.5
+insert 1, "Master Chief", 19, 324.54, 6.7
+insert 5, "Commander Shepard", 25, 673.23, 10
+insert 6, "Ada Wong", 23, 620.32, 9.1
+insert 7, "Lara Croft", 21, 588.50, 8.7
+insert 3, "Leon Kennedy", 23, 583.73, 3.6
+insert 2, "Arthur Dent", 20, 324.54, 0.2
+index
+search 7
+search 5
+search 6
+exit

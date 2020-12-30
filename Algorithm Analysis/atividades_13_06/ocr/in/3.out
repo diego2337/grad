@@ -1,0 +1,7 @@
+table ocr1(24 bytes)
+id int(4 bytes)
+nrows int(4 bytes)
+ncols int(4 bytes)
+bits byte[2](2 bytes)
+class char[2](2 bytes)
+dist double(8 bytes)

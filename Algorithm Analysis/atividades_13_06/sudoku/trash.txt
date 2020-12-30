@@ -1,0 +1,176 @@
+/*cell **allocMat(int c, int r)
+{
+	int i, j;
+	cell **b = NULL;
+	b = (cell**)calloc(r, sizeof(cell*));
+	for(i = 0; i < r; i++)
+	{
+		b[i] = (cell*)calloc(c, sizeof(cell));
+		for(j = 0; j < c; j++)
+		{
+			b[i][j].possibleMoves = (char*)calloc(2, sizeof(char));
+			strcpy(b[i][j].possibleMoves, "");
+		}
+	}
+	return b;
+}*/
+
+/*void readMat(sudoku **s)
+{
+	int i, j;
+	(*s)->c = 16;
+	(*s)->r = 16;
+	(*s)->board = allocMat((*s)->c, (*s)->r);
+	for(i = 0; i < (*s)->r; i++)
+	{
+		for(j = 0; j < (*s)->c; j++)
+		{
+			fscanf(stdin, "%c", &(*s)->board[i][j].c);
+			if((*s)->board[i][j].c == '.')
+			{
+				(*s)->emptyPositions = (*s)->emptyPositions + 1;
+			}
+		}
+		fscanf(stdin, "\n");
+	}
+}*/
+
+/*
+	Find which multiple a given number is
+	params:
+	   - number: number to be checked;
+	   - multiple: multiple to find
+	returns:
+	   - multiple
+*/
+int findMultiple(int number, int multiple)
+{
+	int mul = 0;
+	while(number != 0)
+	{
+		mul = mul + 1;
+		number = number/multiple;
+	}
+	return mul;
+}
+
+/*
+	Check all possible moves for a given sudoku line
+	params:
+	   - s: sudoku struct;
+	   - i: cell row wise position;
+	   - j: cell column wise position;
+	   - possibleMoves: char *vector with all possibilities
+*/
+void checkLine(sudoku *s, int i, int j, char **possibleMoves)
+{
+	int k, l;
+	/*char possibleMoves[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};*/
+	for(k = 0; k < s->c; k++)
+	{
+		if(j != k)
+		{
+			l = findInVector((*possibleMoves), 16, s->board[i][k].c);
+			if(l > 0)
+			{
+				(*possibleMoves)[l] = '-';
+			}
+		}
+	}
+	/*for(k = 0; k < 16; k++)
+	{
+		if((*possibleMoves)[k] != '-')
+		{
+			s->board[i][j].possibleMoves = (char*)realloc(s->board[i][j].possibleMoves, sizeof(char)*(s->board[i][j].possibleCount+1));
+			s->board[i][j].possibleMoves[s->board[i][j].possibleCount] = (*possibleMoves)[k];
+			s->board[i][j].possibleCount = s->board[i][j].possibleCount + 1;
+		}
+	}
+	s->board[i][j].possibleMoves = (char*)realloc(s->board[i][j].possibleMoves, sizeof(char)*(s->board[i][j].possibleCount+1));
+	s->board[i][j].possibleMoves[s->board[i][j].possibleCount] = '\0';
+	s->board[i][j].possibleCount = s->board[i][j].possibleCount + 1;*/
+}
+
+/*
+	Check all possible moves for a given sudoku column
+	params:
+	   - s: sudoku struct;
+	   - i: cell row wise position;
+	   - j: cell column wise position;
+	   - possibleMoves: char *vector with all possibilities
+*/
+void checkColumn(sudoku *s, int i, int j, char **possibleMoves)
+{
+	int k, l;
+	for(k = 0; k < s->r; k++)
+	{
+		if(i != k)
+		{
+			l = findInVector((*possibleMoves), 16, s->board[k][j].c);
+			if(l > 0)
+			{
+				(*possibleMoves)[l] = '-';
+			}
+		}
+	}
+	/*for(k = 0; k < 16; k++)
+	{
+		if((*possibleMoves)[k] != '-')
+		{
+			s->board[i][j].possibleMoves = (char*)realloc(s->board[i][j].possibleMoves, sizeof(char)*(s->board[i][j].possibleCount+1));
+			s->board[i][j].possibleMoves[s->board[i][j].possibleCount] = (*possibleMoves)[k];
+			s->board[i][j].possibleCount = s->board[i][j].possibleCount + 1;
+		}
+	}
+	s->board[i][j].possibleMoves = (char*)realloc(s->board[i][j].possibleMoves, sizeof(char)*(s->board[i][j].possibleCount+1));
+	s->board[i][j].possibleMoves[s->board[i][j].possibleCount] = '\0';
+	s->board[i][j].possibleCount = s->board[i][j].possibleCount + 1;*/
+}
+
+/*
+	Check all possible moves inside a block
+	params:
+	   - s: sudoku struct;
+	   - i: cell row wise position;
+	   - j: cell column wise position;
+	   - sudokuSize: size of sudoku - 9x9, 16x16...;
+	   - possibleMoves: char *vector with all possibilities
+*/
+void checkBlock(sudoku *s, int i, int j, int sudokuSize, char **possibleMoves)
+{
+	/* Find block */
+	int block = sqrt(sudokuSize), rowBlock, columnBlock, k, l, m;
+	rowBlock = (sudokuSize-1)-i;
+	columnBlock = (sudokuSize-1)-j;
+	/* Find block corner */
+	rowBlock = i - (i % block);
+	columnBlock = j - (j % block);
+	/* Find possible moves inside block */
+	for(k = rowBlock; k < (rowBlock+block); k++)
+	{
+		for(l = columnBlock; l < (columnBlock+block); l++)
+		{
+			if(i != k || j != l)
+			{
+				printf("k: %d\tl: %d\tboard[k][l].c: %c\n", k, l, s->board[k][l].c);
+				m = findInVector((*possibleMoves), 16, s->board[k][l].c);
+				if(m > 0)
+				{
+					(*possibleMoves)[m] = '-';
+				}
+			}
+		}
+	}
+	/*for(k = 0; k < 16; k++)
+	{
+		if((*possibleMoves)[k] != '-')
+		{
+			s->board[i][j].possibleMoves = (char*)realloc(s->board[i][j].possibleMoves, sizeof(char)*(s->board[i][j].possibleCount+1));
+			s->board[i][j].possibleMoves[s->board[i][j].possibleCount] = (*possibleMoves)[k];
+			s->board[i][j].possibleCount = s->board[i][j].possibleCount + 1;
+		}
+	}
+	s->board[i][j].possibleMoves = (char*)realloc(s->board[i][j].possibleMoves, sizeof(char)*(s->board[i][j].possibleCount+1));
+	s->board[i][j].possibleMoves[s->board[i][j].possibleCount] = '\0';
+	s->board[i][j].possibleCount = s->board[i][j].possibleCount + 1;*/
+}

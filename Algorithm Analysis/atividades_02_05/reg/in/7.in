@@ -1,0 +1,8 @@
+metadados5.dat
+insert 4, "Pastor Alemão", 97, 3, "marrom"
+insert 1, "São Bernardo", 129, 5, "branco"
+insert 5, "Boxer", 68, 2, "dourado"
+insert 6, "Bulldog", 83, 7, "preto"
+search 1
+search 5
+exit

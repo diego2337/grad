@@ -1,0 +1,41 @@
+298,308c298,299
+< 		/* Last attribute must be class; forcing char* */
+< 		if(!strstr(str, "char"))
+< 		{
+< 			types[i] = (char*)realloc(types[i], sizeof(char)*(9));
+< 			strcpy(types[i], "char[30]");
+< 		}
+< 		else
+< 		{
+< 			types[i] = (char*)realloc(types[i], sizeof(char)*(strlen(str)+1));
+< 			strcpy(types[i], str);
+< 		}
+---
+> 		types[i] = (char*)realloc(types[i], sizeof(char)*(strlen(str)+1));
+> 		strcpy(types[i], str);
+400a392,399
+> 		else if(strcmp(types[i], "char") == 0)
+> 		{
+> 			fwrite(line, sizeof(char), 1, file);
+> 			i = i + 1;
+> 			free(line);
+> 			line = NULL;
+> 			line = read(stdin, '\n');
+> 		}
+546a546,552
+> 				else if(strcmp(types[j-1], "char") == 0)
+> 				{
+> 					str = (char*)malloc(sizeof(char));
+> 					fread(str, sizeof(char), 1, file);
+> 					printf("%s = %c\n", names[j-1], (*str));
+> 					free(str);
+> 				}
+619a626,631
+> 		/*else if(strstr(types[i-1], "["))
+> 		{
+> 			(*class) = (char*)malloc(sizeof(char)*size);
+> 			fscanf(file, "%s", (*class));
+> 			// fread((*class), sizeof(char), size, file);
+> 		}*/
+725d736
+< 		// printf("i: %d\tdistance: %.2lf\tbinaryInt[i]: %d\tattrInt[i]: %d\n", i, distance, binaryInt[i], attrInt[i]);

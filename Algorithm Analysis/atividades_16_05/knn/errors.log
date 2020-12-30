@@ -1,0 +1,1350 @@
+2,5c2,5
+< sepal_length = 5.1
+< sepal_width = 3.7
+< petal_length = 1.5
+< petal_width = 0.4
+---
+> sepal_length = 5.10
+> sepal_width = 3.70
+> petal_length = 1.50
+> petal_width = 0.40
+9,12c9,12
+< sepal_length = 6.1
+< sepal_width = 2.6
+< petal_length = 5.6
+< petal_width = 1.4
+---
+> sepal_length = 6.10
+> sepal_width = 2.60
+> petal_length = 5.60
+> petal_width = 1.40
+16,19c16,19
+< sepal_length = 6.4
+< sepal_width = 2.7
+< petal_length = 5.3
+< petal_width = 1.9
+---
+> sepal_length = 6.40
+> sepal_width = 2.70
+> petal_length = 5.30
+> petal_width = 1.90
+23,26c23,26
+< sepal_length = 6.2
+< sepal_width = 2.2
+< petal_length = 4.5
+< petal_width = 1.5
+---
+> sepal_length = 6.20
+> sepal_width = 2.20
+> petal_length = 4.50
+> petal_width = 1.50
+30,33c30,33
+< sepal_length = 6.5
+< sepal_width = 3.2
+< petal_length = 5.1
+< petal_width = 2
+---
+> sepal_length = 6.50
+> sepal_width = 3.20
+> petal_length = 5.10
+> petal_width = 2.00
+37,40c37,40
+< sepal_length = 4.6
+< sepal_width = 3.4
+< petal_length = 1.4
+< petal_width = 0.3
+---
+> sepal_length = 4.60
+> sepal_width = 3.40
+> petal_length = 1.40
+> petal_width = 0.30
+44,47c44,47
+< sepal_length = 6.1
+< sepal_width = 2.8
+< petal_length = 4.7
+< petal_width = 1.2
+---
+> sepal_length = 6.10
+> sepal_width = 2.80
+> petal_length = 4.70
+> petal_width = 1.20
+51,54c51,54
+< sepal_length = 5.9
+< sepal_width = 3
+< petal_length = 4.2
+< petal_width = 1.5
+---
+> sepal_length = 5.90
+> sepal_width = 3.00
+> petal_length = 4.20
+> petal_width = 1.50
+58,61c58,61
+< sepal_length = 6
+< sepal_width = 2.7
+< petal_length = 5.1
+< petal_width = 1.6
+---
+> sepal_length = 6.00
+> sepal_width = 2.70
+> petal_length = 5.10
+> petal_width = 1.60
+65,68c65,68
+< sepal_length = 6.3
+< sepal_width = 3.3
+< petal_length = 4.7
+< petal_width = 1.6
+---
+> sepal_length = 6.30
+> sepal_width = 3.30
+> petal_length = 4.70
+> petal_width = 1.60
+72,75c72,75
+< sepal_length = 6.7
+< sepal_width = 3.1
+< petal_length = 4.7
+< petal_width = 1.5
+---
+> sepal_length = 6.70
+> sepal_width = 3.10
+> petal_length = 4.70
+> petal_width = 1.50
+79,82c79,82
+< sepal_length = 5.8
+< sepal_width = 2.7
+< petal_length = 4.1
+< petal_width = 1
+---
+> sepal_length = 5.80
+> sepal_width = 2.70
+> petal_length = 4.10
+> petal_width = 1.00
+86,89c86,89
+< sepal_length = 6.4
+< sepal_width = 2.9
+< petal_length = 4.3
+< petal_width = 1.3
+---
+> sepal_length = 6.40
+> sepal_width = 2.90
+> petal_length = 4.30
+> petal_width = 1.30
+93,96c93,96
+< sepal_length = 6.3
+< sepal_width = 2.5
+< petal_length = 5
+< petal_width = 1.9
+---
+> sepal_length = 6.30
+> sepal_width = 2.50
+> petal_length = 5.00
+> petal_width = 1.90
+100,103c100,103
+< sepal_length = 7.9
+< sepal_width = 3.8
+< petal_length = 6.4
+< petal_width = 2
+---
+> sepal_length = 7.90
+> sepal_width = 3.80
+> petal_length = 6.40
+> petal_width = 2.00
+107,110c107,110
+< sepal_length = 6.4
+< sepal_width = 3.2
+< petal_length = 4.5
+< petal_width = 1.5
+---
+> sepal_length = 6.40
+> sepal_width = 3.20
+> petal_length = 4.50
+> petal_width = 1.50
+114,117c114,117
+< sepal_length = 6
+< sepal_width = 2.2
+< petal_length = 5
+< petal_width = 1.5
+---
+> sepal_length = 6.00
+> sepal_width = 2.20
+> petal_length = 5.00
+> petal_width = 1.50
+121,124c121,124
+< sepal_length = 5.4
+< sepal_width = 3.4
+< petal_length = 1.7
+< petal_width = 0.2
+---
+> sepal_length = 5.40
+> sepal_width = 3.40
+> petal_length = 1.70
+> petal_width = 0.20
+128,131c128,131
+< sepal_length = 5.5
+< sepal_width = 2.3
+< petal_length = 4
+< petal_width = 1.3
+---
+> sepal_length = 5.50
+> sepal_width = 2.30
+> petal_length = 4.00
+> petal_width = 1.30
+135,138c135,138
+< sepal_length = 5.1
+< sepal_width = 3.3
+< petal_length = 1.7
+< petal_width = 0.5
+---
+> sepal_length = 5.10
+> sepal_width = 3.30
+> petal_length = 1.70
+> petal_width = 0.50
+142,145c142,145
+< sepal_length = 4.8
+< sepal_width = 3
+< petal_length = 1.4
+< petal_width = 0.3
+---
+> sepal_length = 4.80
+> sepal_width = 3.00
+> petal_length = 1.40
+> petal_width = 0.30
+149,152c149,152
+< sepal_length = 6.4
+< sepal_width = 2.8
+< petal_length = 5.6
+< petal_width = 2.2
+---
+> sepal_length = 6.40
+> sepal_width = 2.80
+> petal_length = 5.60
+> petal_width = 2.20
+156,159c156,159
+< sepal_length = 5.8
+< sepal_width = 4
+< petal_length = 1.2
+< petal_width = 0.2
+---
+> sepal_length = 5.80
+> sepal_width = 4.00
+> petal_length = 1.20
+> petal_width = 0.20
+163,166c163,166
+< sepal_length = 6
+< sepal_width = 3
+< petal_length = 4.8
+< petal_width = 1.8
+---
+> sepal_length = 6.00
+> sepal_width = 3.00
+> petal_length = 4.80
+> petal_width = 1.80
+170,173c170,173
+< sepal_length = 5.7
+< sepal_width = 2.5
+< petal_length = 5
+< petal_width = 2
+---
+> sepal_length = 5.70
+> sepal_width = 2.50
+> petal_length = 5.00
+> petal_width = 2.00
+177,180c177,180
+< sepal_length = 4.9
+< sepal_width = 2.5
+< petal_length = 4.5
+< petal_width = 1.7
+---
+> sepal_length = 4.90
+> sepal_width = 2.50
+> petal_length = 4.50
+> petal_width = 1.70
+184,187c184,187
+< sepal_length = 6.7
+< sepal_width = 3.1
+< petal_length = 4.4
+< petal_width = 1.4
+---
+> sepal_length = 6.70
+> sepal_width = 3.10
+> petal_length = 4.40
+> petal_width = 1.40
+191,194c191,194
+< sepal_length = 5
+< sepal_width = 3.6
+< petal_length = 1.4
+< petal_width = 0.2
+---
+> sepal_length = 5.00
+> sepal_width = 3.60
+> petal_length = 1.40
+> petal_width = 0.20
+198,201c198,201
+< sepal_length = 5.6
+< sepal_width = 2.5
+< petal_length = 3.9
+< petal_width = 1.1
+---
+> sepal_length = 5.60
+> sepal_width = 2.50
+> petal_length = 3.90
+> petal_width = 1.10
+205,208c205,208
+< sepal_length = 5.5
+< sepal_width = 2.4
+< petal_length = 3.7
+< petal_width = 1
+---
+> sepal_length = 5.50
+> sepal_width = 2.40
+> petal_length = 3.70
+> petal_width = 1.00
+212,215c212,215
+< sepal_length = 7.1
+< sepal_width = 3
+< petal_length = 5.9
+< petal_width = 2.1
+---
+> sepal_length = 7.10
+> sepal_width = 3.00
+> petal_length = 5.90
+> petal_width = 2.10
+219,222c219,222
+< sepal_length = 6.6
+< sepal_width = 2.9
+< petal_length = 4.6
+< petal_width = 1.3
+---
+> sepal_length = 6.60
+> sepal_width = 2.90
+> petal_length = 4.60
+> petal_width = 1.30
+226,229c226,229
+< sepal_length = 6.5
+< sepal_width = 3
+< petal_length = 5.2
+< petal_width = 2
+---
+> sepal_length = 6.50
+> sepal_width = 3.00
+> petal_length = 5.20
+> petal_width = 2.00
+233,236c233,236
+< sepal_length = 6.3
+< sepal_width = 3.3
+< petal_length = 6
+< petal_width = 2.5
+---
+> sepal_length = 6.30
+> sepal_width = 3.30
+> petal_length = 6.00
+> petal_width = 2.50
+240,243c240,243
+< sepal_length = 6.2
+< sepal_width = 2.8
+< petal_length = 4.8
+< petal_width = 1.8
+---
+> sepal_length = 6.20
+> sepal_width = 2.80
+> petal_length = 4.80
+> petal_width = 1.80
+247,250c247,250
+< sepal_length = 6.3
+< sepal_width = 3.4
+< petal_length = 5.6
+< petal_width = 2.4
+---
+> sepal_length = 6.30
+> sepal_width = 3.40
+> petal_length = 5.60
+> petal_width = 2.40
+254,257c254,257
+< sepal_length = 5.7
+< sepal_width = 2.8
+< petal_length = 4.5
+< petal_width = 1.3
+---
+> sepal_length = 5.70
+> sepal_width = 2.80
+> petal_length = 4.50
+> petal_width = 1.30
+261,264c261,264
+< sepal_length = 5
+< sepal_width = 3
+< petal_length = 1.6
+< petal_width = 0.2
+---
+> sepal_length = 5.00
+> sepal_width = 3.00
+> petal_length = 1.60
+> petal_width = 0.20
+268,271c268,271
+< sepal_length = 4.5
+< sepal_width = 2.3
+< petal_length = 1.3
+< petal_width = 0.3
+---
+> sepal_length = 4.50
+> sepal_width = 2.30
+> petal_length = 1.30
+> petal_width = 0.30
+275,278c275,278
+< sepal_length = 5.5
+< sepal_width = 3.5
+< petal_length = 1.3
+< petal_width = 0.2
+---
+> sepal_length = 5.50
+> sepal_width = 3.50
+> petal_length = 1.30
+> petal_width = 0.20
+282,285c282,285
+< sepal_length = 4.9
+< sepal_width = 3.1
+< petal_length = 1.5
+< petal_width = 0.1
+---
+> sepal_length = 4.90
+> sepal_width = 3.10
+> petal_length = 1.50
+> petal_width = 0.10
+289,292c289,292
+< sepal_length = 6.3
+< sepal_width = 2.5
+< petal_length = 4.9
+< petal_width = 1.5
+---
+> sepal_length = 6.30
+> sepal_width = 2.50
+> petal_length = 4.90
+> petal_width = 1.50
+296,299c296,299
+< sepal_length = 4.8
+< sepal_width = 3
+< petal_length = 1.4
+< petal_width = 0.1
+---
+> sepal_length = 4.80
+> sepal_width = 3.00
+> petal_length = 1.40
+> petal_width = 0.10
+303,306c303,306
+< sepal_length = 5.8
+< sepal_width = 2.7
+< petal_length = 5.1
+< petal_width = 1.9
+---
+> sepal_length = 5.80
+> sepal_width = 2.70
+> petal_length = 5.10
+> petal_width = 1.90
+310,313c310,313
+< sepal_length = 7.7
+< sepal_width = 3.8
+< petal_length = 6.7
+< petal_width = 2.2
+---
+> sepal_length = 7.70
+> sepal_width = 3.80
+> petal_length = 6.70
+> petal_width = 2.20
+317,320c317,320
+< sepal_length = 5.1
+< sepal_width = 3.8
+< petal_length = 1.6
+< petal_width = 0.2
+---
+> sepal_length = 5.10
+> sepal_width = 3.80
+> petal_length = 1.60
+> petal_width = 0.20
+324,327c324,327
+< sepal_length = 5.1
+< sepal_width = 3.4
+< petal_length = 1.5
+< petal_width = 0.2
+---
+> sepal_length = 5.10
+> sepal_width = 3.40
+> petal_length = 1.50
+> petal_width = 0.20
+331,334c331,334
+< sepal_length = 4.6
+< sepal_width = 3.6
+< petal_length = 1
+< petal_width = 0.2
+---
+> sepal_length = 4.60
+> sepal_width = 3.60
+> petal_length = 1.00
+> petal_width = 0.20
+338,341c338,341
+< sepal_length = 5
+< sepal_width = 2.3
+< petal_length = 3.3
+< petal_width = 1
+---
+> sepal_length = 5.00
+> sepal_width = 2.30
+> petal_length = 3.30
+> petal_width = 1.00
+345,348c345,348
+< sepal_length = 5.2
+< sepal_width = 4.1
+< petal_length = 1.5
+< petal_width = 0.1
+---
+> sepal_length = 5.20
+> sepal_width = 4.10
+> petal_length = 1.50
+> petal_width = 0.10
+352,355c352,355
+< sepal_length = 5.7
+< sepal_width = 2.9
+< petal_length = 4.2
+< petal_width = 1.3
+---
+> sepal_length = 5.70
+> sepal_width = 2.90
+> petal_length = 4.20
+> petal_width = 1.30
+359,362c359,362
+< sepal_length = 6.9
+< sepal_width = 3.1
+< petal_length = 4.9
+< petal_width = 1.5
+---
+> sepal_length = 6.90
+> sepal_width = 3.10
+> petal_length = 4.90
+> petal_width = 1.50
+366,369c366,369
+< sepal_length = 6.4
+< sepal_width = 3.2
+< petal_length = 5.3
+< petal_width = 2.3
+---
+> sepal_length = 6.40
+> sepal_width = 3.20
+> petal_length = 5.30
+> petal_width = 2.30
+373,376c373,376
+< sepal_length = 5
+< sepal_width = 2
+< petal_length = 3.5
+< petal_width = 1
+---
+> sepal_length = 5.00
+> sepal_width = 2.00
+> petal_length = 3.50
+> petal_width = 1.00
+380,383c380,383
+< sepal_length = 4.9
+< sepal_width = 2.4
+< petal_length = 3.3
+< petal_width = 1
+---
+> sepal_length = 4.90
+> sepal_width = 2.40
+> petal_length = 3.30
+> petal_width = 1.00
+387,390c387,390
+< sepal_length = 6.8
+< sepal_width = 3.2
+< petal_length = 5.9
+< petal_width = 2.3
+---
+> sepal_length = 6.80
+> sepal_width = 3.20
+> petal_length = 5.90
+> petal_width = 2.30
+394,397c394,397
+< sepal_length = 6
+< sepal_width = 2.2
+< petal_length = 4
+< petal_width = 1
+---
+> sepal_length = 6.00
+> sepal_width = 2.20
+> petal_length = 4.00
+> petal_width = 1.00
+401,404c401,404
+< sepal_length = 4.9
+< sepal_width = 3.6
+< petal_length = 1.4
+< petal_width = 0.1
+---
+> sepal_length = 4.90
+> sepal_width = 3.60
+> petal_length = 1.40
+> petal_width = 0.10
+408,411c408,411
+< sepal_length = 5.3
+< sepal_width = 3.7
+< petal_length = 1.5
+< petal_width = 0.2
+---
+> sepal_length = 5.30
+> sepal_width = 3.70
+> petal_length = 1.50
+> petal_width = 0.20
+415,418c415,418
+< sepal_length = 5
+< sepal_width = 3.5
+< petal_length = 1.6
+< petal_width = 0.6
+---
+> sepal_length = 5.00
+> sepal_width = 3.50
+> petal_length = 1.60
+> petal_width = 0.60
+422,425c422,425
+< sepal_length = 6.9
+< sepal_width = 3.1
+< petal_length = 5.4
+< petal_width = 2.1
+---
+> sepal_length = 6.90
+> sepal_width = 3.10
+> petal_length = 5.40
+> petal_width = 2.10
+429,432c429,432
+< sepal_length = 5.1
+< sepal_width = 3.8
+< petal_length = 1.9
+< petal_width = 0.4
+---
+> sepal_length = 5.10
+> sepal_width = 3.80
+> petal_length = 1.90
+> petal_width = 0.40
+436,439c436,439
+< sepal_length = 5
+< sepal_width = 3.5
+< petal_length = 1.3
+< petal_width = 0.3
+---
+> sepal_length = 5.00
+> sepal_width = 3.50
+> petal_length = 1.30
+> petal_width = 0.30
+443,446c443,446
+< sepal_length = 5.5
+< sepal_width = 2.5
+< petal_length = 4
+< petal_width = 1.3
+---
+> sepal_length = 5.50
+> sepal_width = 2.50
+> petal_length = 4.00
+> petal_width = 1.30
+450,453c450,453
+< sepal_length = 4.7
+< sepal_width = 3.2
+< petal_length = 1.3
+< petal_width = 0.2
+---
+> sepal_length = 4.70
+> sepal_width = 3.20
+> petal_length = 1.30
+> petal_width = 0.20
+457,460c457,460
+< sepal_length = 6
+< sepal_width = 2.9
+< petal_length = 4.5
+< petal_width = 1.5
+---
+> sepal_length = 6.00
+> sepal_width = 2.90
+> petal_length = 4.50
+> petal_width = 1.50
+464,467c464,467
+< sepal_length = 6.5
+< sepal_width = 3
+< petal_length = 5.5
+< petal_width = 1.8
+---
+> sepal_length = 6.50
+> sepal_width = 3.00
+> petal_length = 5.50
+> petal_width = 1.80
+471,474c471,474
+< sepal_length = 5.5
+< sepal_width = 2.6
+< petal_length = 4.4
+< petal_width = 1.2
+---
+> sepal_length = 5.50
+> sepal_width = 2.60
+> petal_length = 4.40
+> petal_width = 1.20
+478,481c478,481
+< sepal_length = 5.7
+< sepal_width = 2.8
+< petal_length = 4.1
+< petal_width = 1.3
+---
+> sepal_length = 5.70
+> sepal_width = 2.80
+> petal_length = 4.10
+> petal_width = 1.30
+485,488c485,488
+< sepal_length = 5.5
+< sepal_width = 4.2
+< petal_length = 1.4
+< petal_width = 0.2
+---
+> sepal_length = 5.50
+> sepal_width = 4.20
+> petal_length = 1.40
+> petal_width = 0.20
+492,495c492,495
+< sepal_length = 6.4
+< sepal_width = 3.1
+< petal_length = 5.5
+< petal_width = 1.8
+---
+> sepal_length = 6.40
+> sepal_width = 3.10
+> petal_length = 5.50
+> petal_width = 1.80
+499,502c499,502
+< sepal_length = 6.4
+< sepal_width = 2.8
+< petal_length = 5.6
+< petal_width = 2.1
+---
+> sepal_length = 6.40
+> sepal_width = 2.80
+> petal_length = 5.60
+> petal_width = 2.10
+506,509c506,509
+< sepal_length = 5.6
+< sepal_width = 2.7
+< petal_length = 4.2
+< petal_width = 1.3
+---
+> sepal_length = 5.60
+> sepal_width = 2.70
+> petal_length = 4.20
+> petal_width = 1.30
+513,516c513,516
+< sepal_length = 4.4
+< sepal_width = 3.2
+< petal_length = 1.3
+< petal_width = 0.2
+---
+> sepal_length = 4.40
+> sepal_width = 3.20
+> petal_length = 1.30
+> petal_width = 0.20
+520,523c520,523
+< sepal_length = 7.7
+< sepal_width = 2.8
+< petal_length = 6.7
+< petal_width = 2
+---
+> sepal_length = 7.70
+> sepal_width = 2.80
+> petal_length = 6.70
+> petal_width = 2.00
+527,530c527,530
+< sepal_length = 6.7
+< sepal_width = 2.5
+< petal_length = 5.8
+< petal_width = 1.8
+---
+> sepal_length = 6.70
+> sepal_width = 2.50
+> petal_length = 5.80
+> petal_width = 1.80
+534,537c534,537
+< sepal_length = 4.7
+< sepal_width = 3.2
+< petal_length = 1.6
+< petal_width = 0.2
+---
+> sepal_length = 4.70
+> sepal_width = 3.20
+> petal_length = 1.60
+> petal_width = 0.20
+541,544c541,544
+< sepal_length = 5.2
+< sepal_width = 3.4
+< petal_length = 1.4
+< petal_width = 0.2
+---
+> sepal_length = 5.20
+> sepal_width = 3.40
+> petal_length = 1.40
+> petal_width = 0.20
+548,551c548,551
+< sepal_length = 7.2
+< sepal_width = 3.2
+< petal_length = 6
+< petal_width = 1.8
+---
+> sepal_length = 7.20
+> sepal_width = 3.20
+> petal_length = 6.00
+> petal_width = 1.80
+555,558c555,558
+< sepal_length = 7.6
+< sepal_width = 3
+< petal_length = 6.6
+< petal_width = 2.1
+---
+> sepal_length = 7.60
+> sepal_width = 3.00
+> petal_length = 6.60
+> petal_width = 2.10
+562,565c562,565
+< sepal_length = 5.8
+< sepal_width = 2.6
+< petal_length = 4
+< petal_width = 1.2
+---
+> sepal_length = 5.80
+> sepal_width = 2.60
+> petal_length = 4.00
+> petal_width = 1.20
+569,572c569,572
+< sepal_length = 6.1
+< sepal_width = 2.9
+< petal_length = 4.7
+< petal_width = 1.4
+---
+> sepal_length = 6.10
+> sepal_width = 2.90
+> petal_length = 4.70
+> petal_width = 1.40
+576,579c576,579
+< sepal_length = 6.1
+< sepal_width = 3
+< petal_length = 4.6
+< petal_width = 1.4
+---
+> sepal_length = 6.10
+> sepal_width = 3.00
+> petal_length = 4.60
+> petal_width = 1.40
+583,586c583,586
+< sepal_length = 6.2
+< sepal_width = 3.4
+< petal_length = 5.4
+< petal_width = 2.3
+---
+> sepal_length = 6.20
+> sepal_width = 3.40
+> petal_length = 5.40
+> petal_width = 2.30
+590,593c590,593
+< sepal_length = 5
+< sepal_width = 3.3
+< petal_length = 1.4
+< petal_width = 0.2
+---
+> sepal_length = 5.00
+> sepal_width = 3.30
+> petal_length = 1.40
+> petal_width = 0.20
+597,600c597,600
+< sepal_length = 7.7
+< sepal_width = 2.6
+< petal_length = 6.9
+< petal_width = 2.3
+---
+> sepal_length = 7.70
+> sepal_width = 2.60
+> petal_length = 6.90
+> petal_width = 2.30
+604,607c604,607
+< sepal_length = 5.4
+< sepal_width = 3
+< petal_length = 4.5
+< petal_width = 1.5
+---
+> sepal_length = 5.40
+> sepal_width = 3.00
+> petal_length = 4.50
+> petal_width = 1.50
+611,614c611,614
+< sepal_length = 4.4
+< sepal_width = 2.9
+< petal_length = 1.4
+< petal_width = 0.2
+---
+> sepal_length = 4.40
+> sepal_width = 2.90
+> petal_length = 1.40
+> petal_width = 0.20
+618,621c618,621
+< sepal_length = 5
+< sepal_width = 3.2
+< petal_length = 1.2
+< petal_width = 0.2
+---
+> sepal_length = 5.00
+> sepal_width = 3.20
+> petal_length = 1.20
+> petal_width = 0.20
+625,628c625,628
+< sepal_length = 5.7
+< sepal_width = 3.8
+< petal_length = 1.7
+< petal_width = 0.3
+---
+> sepal_length = 5.70
+> sepal_width = 3.80
+> petal_length = 1.70
+> petal_width = 0.30
+632,635c632,635
+< sepal_length = 4.6
+< sepal_width = 3.1
+< petal_length = 1.5
+< petal_width = 0.2
+---
+> sepal_length = 4.60
+> sepal_width = 3.10
+> petal_length = 1.50
+> petal_width = 0.20
+639,642c639,642
+< sepal_length = 5.1
+< sepal_width = 3.8
+< petal_length = 1.5
+< petal_width = 0.3
+---
+> sepal_length = 5.10
+> sepal_width = 3.80
+> petal_length = 1.50
+> petal_width = 0.30
+646,649c646,649
+< sepal_length = 4.8
+< sepal_width = 3.4
+< petal_length = 1.6
+< petal_width = 0.2
+---
+> sepal_length = 4.80
+> sepal_width = 3.40
+> petal_length = 1.60
+> petal_width = 0.20
+653,656c653,656
+< sepal_length = 5.6
+< sepal_width = 3
+< petal_length = 4.1
+< petal_width = 1.3
+---
+> sepal_length = 5.60
+> sepal_width = 3.00
+> petal_length = 4.10
+> petal_width = 1.30
+660,663c660,663
+< sepal_length = 6.1
+< sepal_width = 2.8
+< petal_length = 4
+< petal_width = 1.3
+---
+> sepal_length = 6.10
+> sepal_width = 2.80
+> petal_length = 4.00
+> petal_width = 1.30
+667,670c667,670
+< sepal_length = 6.7
+< sepal_width = 3
+< petal_length = 5
+< petal_width = 1.7
+---
+> sepal_length = 6.70
+> sepal_width = 3.00
+> petal_length = 5.00
+> petal_width = 1.70
+674,677c674,677
+< sepal_length = 4.9
+< sepal_width = 3
+< petal_length = 1.4
+< petal_width = 0.2
+---
+> sepal_length = 4.90
+> sepal_width = 3.00
+> petal_length = 1.40
+> petal_width = 0.20
+681,684c681,684
+< sepal_length = 6.8
+< sepal_width = 2.8
+< petal_length = 4.8
+< petal_width = 1.4
+---
+> sepal_length = 6.80
+> sepal_width = 2.80
+> petal_length = 4.80
+> petal_width = 1.40
+688,691c688,691
+< sepal_length = 6.5
+< sepal_width = 2.8
+< petal_length = 4.6
+< petal_width = 1.5
+---
+> sepal_length = 6.50
+> sepal_width = 2.80
+> petal_length = 4.60
+> petal_width = 1.50
+695,698c695,698
+< sepal_length = 5.8
+< sepal_width = 2.8
+< petal_length = 5.1
+< petal_width = 2.4
+---
+> sepal_length = 5.80
+> sepal_width = 2.80
+> petal_length = 5.10
+> petal_width = 2.40
+702,705c702,705
+< sepal_length = 7
+< sepal_width = 3.2
+< petal_length = 4.7
+< petal_width = 1.4
+---
+> sepal_length = 7.00
+> sepal_width = 3.20
+> petal_length = 4.70
+> petal_width = 1.40
+709,712c709,712
+< sepal_length = 6
+< sepal_width = 3.4
+< petal_length = 4.5
+< petal_width = 1.6
+---
+> sepal_length = 6.00
+> sepal_width = 3.40
+> petal_length = 4.50
+> petal_width = 1.60
+716,719c716,719
+< sepal_length = 4.8
+< sepal_width = 3.1
+< petal_length = 1.6
+< petal_width = 0.2
+---
+> sepal_length = 4.80
+> sepal_width = 3.10
+> petal_length = 1.60
+> petal_width = 0.20
+723,726c723,726
+< sepal_length = 6.3
+< sepal_width = 2.8
+< petal_length = 5.1
+< petal_width = 1.5
+---
+> sepal_length = 6.30
+> sepal_width = 2.80
+> petal_length = 5.10
+> petal_width = 1.50
+730,733c730,733
+< sepal_length = 6.7
+< sepal_width = 3.1
+< petal_length = 5.6
+< petal_width = 2.4
+---
+> sepal_length = 6.70
+> sepal_width = 3.10
+> petal_length = 5.60
+> petal_width = 2.40
+737,740c737,740
+< sepal_length = 6.5
+< sepal_width = 3
+< petal_length = 5.8
+< petal_width = 2.2
+---
+> sepal_length = 6.50
+> sepal_width = 3.00
+> petal_length = 5.80
+> petal_width = 2.20
+744,747c744,747
+< sepal_length = 7.7
+< sepal_width = 3
+< petal_length = 6.1
+< petal_width = 2.3
+---
+> sepal_length = 7.70
+> sepal_width = 3.00
+> petal_length = 6.10
+> petal_width = 2.30
+751,754c751,754
+< sepal_length = 5.6
+< sepal_width = 3
+< petal_length = 4.5
+< petal_width = 1.5
+---
+> sepal_length = 5.60
+> sepal_width = 3.00
+> petal_length = 4.50
+> petal_width = 1.50
+758,761c758,761
+< sepal_length = 4.9
+< sepal_width = 3.1
+< petal_length = 1.5
+< petal_width = 0.2
+---
+> sepal_length = 4.90
+> sepal_width = 3.10
+> petal_length = 1.50
+> petal_width = 0.20
+765,768c765,768
+< sepal_length = 5.6
+< sepal_width = 2.9
+< petal_length = 3.6
+< petal_width = 1.3
+---
+> sepal_length = 5.60
+> sepal_width = 2.90
+> petal_length = 3.60
+> petal_width = 1.30
+772,775c772,775
+< sepal_length = 5.7
+< sepal_width = 4.4
+< petal_length = 1.5
+< petal_width = 0.4
+---
+> sepal_length = 5.70
+> sepal_width = 4.40
+> petal_length = 1.50
+> petal_width = 0.40
+779,782c779,782
+< sepal_length = 5.4
+< sepal_width = 3.4
+< petal_length = 1.5
+< petal_width = 0.4
+---
+> sepal_length = 5.40
+> sepal_width = 3.40
+> petal_length = 1.50
+> petal_width = 0.40
+786,789c786,789
+< sepal_length = 6.3
+< sepal_width = 2.3
+< petal_length = 4.4
+< petal_width = 1.3
+---
+> sepal_length = 6.30
+> sepal_width = 2.30
+> petal_length = 4.40
+> petal_width = 1.30
+793,796c793,796
+< sepal_length = 5.4
+< sepal_width = 3.7
+< petal_length = 1.5
+< petal_width = 0.2
+---
+> sepal_length = 5.40
+> sepal_width = 3.70
+> petal_length = 1.50
+> petal_width = 0.20
+800,803c800,803
+< sepal_length = 6.9
+< sepal_width = 3.2
+< petal_length = 5.7
+< petal_width = 2.3
+---
+> sepal_length = 6.90
+> sepal_width = 3.20
+> petal_length = 5.70
+> petal_width = 2.30
+807,810c807,810
+< sepal_length = 4.4
+< sepal_width = 3
+< petal_length = 1.3
+< petal_width = 0.2
+---
+> sepal_length = 4.40
+> sepal_width = 3.00
+> petal_length = 1.30
+> petal_width = 0.20
+814,817c814,817
+< sepal_length = 5
+< sepal_width = 3.4
+< petal_length = 1.5
+< petal_width = 0.2
+---
+> sepal_length = 5.00
+> sepal_width = 3.40
+> petal_length = 1.50
+> petal_width = 0.20
+821,824c821,824
+< sepal_length = 6.8
+< sepal_width = 3
+< petal_length = 5.5
+< petal_width = 2.1
+---
+> sepal_length = 6.80
+> sepal_width = 3.00
+> petal_length = 5.50
+> petal_width = 2.10
+828,831c828,831
+< sepal_length = 5.7
+< sepal_width = 3
+< petal_length = 4.2
+< petal_width = 1.2
+---
+> sepal_length = 5.70
+> sepal_width = 3.00
+> petal_length = 4.20
+> petal_width = 1.20
+835,838c835,838
+< sepal_length = 5.1
+< sepal_width = 2.5
+< petal_length = 3
+< petal_width = 1.1
+---
+> sepal_length = 5.10
+> sepal_width = 2.50
+> petal_length = 3.00
+> petal_width = 1.10
+842,845c842,845
+< sepal_length = 5.9
+< sepal_width = 3
+< petal_length = 5.1
+< petal_width = 1.8
+---
+> sepal_length = 5.90
+> sepal_width = 3.00
+> petal_length = 5.10
+> petal_width = 1.80
+849,852c849,852
+< sepal_length = 5.8
+< sepal_width = 2.7
+< petal_length = 3.9
+< petal_width = 1.2
+---
+> sepal_length = 5.80
+> sepal_width = 2.70
+> petal_length = 3.90
+> petal_width = 1.20
+856,859c856,859
+< sepal_length = 5.8
+< sepal_width = 2.7
+< petal_length = 5.1
+< petal_width = 1.9
+---
+> sepal_length = 5.80
+> sepal_width = 2.70
+> petal_length = 5.10
+> petal_width = 1.90
+863,866c863,866
+< sepal_length = 7.2
+< sepal_width = 3
+< petal_length = 5.8
+< petal_width = 1.6
+---
+> sepal_length = 7.20
+> sepal_width = 3.00
+> petal_length = 5.80
+> petal_width = 1.60
+870,873c870,873
+< sepal_length = 5.9
+< sepal_width = 3.2
+< petal_length = 4.8
+< petal_width = 1.8
+---
+> sepal_length = 5.90
+> sepal_width = 3.20
+> petal_length = 4.80
+> petal_width = 1.80
+877,880c877,880
+< sepal_length = 6.1
+< sepal_width = 3
+< petal_length = 4.9
+< petal_width = 1.8
+---
+> sepal_length = 6.10
+> sepal_width = 3.00
+> petal_length = 4.90
+> petal_width = 1.80
+884,887c884,887
+< sepal_length = 6.7
+< sepal_width = 3
+< petal_length = 5.2
+< petal_width = 2.3
+---
+> sepal_length = 6.70
+> sepal_width = 3.00
+> petal_length = 5.20
+> petal_width = 2.30
+891,894c891,894
+< sepal_length = 6.2
+< sepal_width = 2.9
+< petal_length = 4.3
+< petal_width = 1.3
+---
+> sepal_length = 6.20
+> sepal_width = 2.90
+> petal_length = 4.30
+> petal_width = 1.30
+898,901c898,901
+< sepal_length = 7.3
+< sepal_width = 2.9
+< petal_length = 6.3
+< petal_width = 1.8
+---
+> sepal_length = 7.30
+> sepal_width = 2.90
+> petal_length = 6.30
+> petal_width = 1.80
+905,908c905,908
+< sepal_length = 5.6
+< sepal_width = 2.8
+< petal_length = 4.9
+< petal_width = 2
+---
+> sepal_length = 5.60
+> sepal_width = 2.80
+> petal_length = 4.90
+> petal_width = 2.00
+912,915c912,915
+< sepal_length = 5.4
+< sepal_width = 3.9
+< petal_length = 1.7
+< petal_width = 0.4
+---
+> sepal_length = 5.40
+> sepal_width = 3.90
+> petal_length = 1.70
+> petal_width = 0.40
+919,922c919,922
+< sepal_length = 5.2
+< sepal_width = 2.7
+< petal_length = 3.9
+< petal_width = 1.4
+---
+> sepal_length = 5.20
+> sepal_width = 2.70
+> petal_length = 3.90
+> petal_width = 1.40
+926,929c926,929
+< sepal_length = 4.6
+< sepal_width = 3.2
+< petal_length = 1.4
+< petal_width = 0.2
+---
+> sepal_length = 4.60
+> sepal_width = 3.20
+> petal_length = 1.40
+> petal_width = 0.20
+933,936c933,936
+< sepal_length = 5.2
+< sepal_width = 3.5
+< petal_length = 1.5
+< petal_width = 0.2
+---
+> sepal_length = 5.20
+> sepal_width = 3.50
+> petal_length = 1.50
+> petal_width = 0.20
+940,943c940,943
+< sepal_length = 6.3
+< sepal_width = 2.9
+< petal_length = 5.6
+< petal_width = 1.8
+---
+> sepal_length = 6.30
+> sepal_width = 2.90
+> petal_length = 5.60
+> petal_width = 1.80

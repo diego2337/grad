@@ -1,0 +1,15 @@
+table wine
+Alcohol double
+MalicAcid double
+Ash double
+AlcalinityOfAsh double
+Magnesium int
+TotalPhenols double
+Flavanoids double
+NonflavanoidPhenols double
+Proanthocyanins double
+ColorIntensity double
+Hue double
+OD280_OD315 double
+Proline int
+class int

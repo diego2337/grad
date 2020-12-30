@@ -1,0 +1,9 @@
+metadados9.dat
+insert 7, "Master Chief", "soldado", 18, 12790.53
+insert 9, "Commander Shepard", "comandante", 12, 105987.98
+insert 5, "Ada Wong", "espiã", 10, 225896.27
+insert 4, "Lara Croft", "historiadora", 8, 3074.87
+index
+search 9
+search 7
+exit

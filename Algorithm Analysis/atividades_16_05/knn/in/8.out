@@ -1,0 +1,8 @@
+table iris(74 bytes)
+id int(4 bytes)
+sepal_length double(8 bytes)
+sepal_width double(8 bytes)
+petal_length double(8 bytes)
+petal_width double(8 bytes)
+species char[30](30 bytes)
+dist double(8 bytes)

@@ -1,0 +1,13 @@
+filename: registros8.reg
+keyname: codigo
+keytype: int
+fieldname: nome
+fieldtype: char[80]
+fieldname: sobrenome
+fieldtype: char[80]
+fieldname: idade
+fieldtype: int
+fieldname: peso
+fieldtype: int
+fieldname: altura
+fieldtype: double

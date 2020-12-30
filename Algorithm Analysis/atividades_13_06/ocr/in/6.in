@@ -1,0 +1,17 @@
+ocr1.schema
+1
+3 3
+010111010
+c
+2
+3 3
+000000000
+z
+3
+3 3
+111111111
+o
+-1
+dump_schema
+dump_data
+exit

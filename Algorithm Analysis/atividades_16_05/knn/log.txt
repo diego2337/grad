@@ -1,0 +1,6993 @@
+==13203== Memcheck, a memory error detector
+==13203== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==13203== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==13203== Command: ./knn a.out
+==13203== 
+==13203== Syscall param write(buf) points to uninitialised byte(s)
+==13203==    at 0x52396E0: __write_nocancel (syscall-template.S:84)
+==13203==    by 0x51BBBFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==13203==    by 0x51BD408: new_do_write (fileops.c:518)
+==13203==    by 0x51BD408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==13203==    by 0x51BC28C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==13203==    by 0x51B17BA: fwrite (iofwrite.c:39)
+==13203==    by 0x401AE9: readTrainingTest (knnNEW.c:425)
+==13203==    by 0x40349F: main (knnNEW.c:1050)
+==13203==  Address 0x5519552 is 98 bytes inside a block of size 4,096 alloc'd
+==13203==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x51B01D4: _IO_file_doallocate (filedoalloc.c:127)
+==13203==    by 0x51BE593: _IO_doallocbuf (genops.c:398)
+==13203==    by 0x51BD8F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==13203==    by 0x51BC28C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==13203==    by 0x51B17BA: fwrite (iofwrite.c:39)
+==13203==    by 0x40188A: readTrainingTest (knnNEW.c:384)
+==13203==    by 0x40349F: main (knnNEW.c:1050)
+==13203== 
+==13203== Syscall param write(buf) points to uninitialised byte(s)
+==13203==    at 0x52396E0: __write_nocancel (syscall-template.S:84)
+==13203==    by 0x51BBBFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==13203==    by 0x51BD408: new_do_write (fileops.c:518)
+==13203==    by 0x51BD408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==13203==    by 0x51BC47C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==13203==    by 0x51B17BA: fwrite (iofwrite.c:39)
+==13203==    by 0x401AE9: readTrainingTest (knnNEW.c:425)
+==13203==    by 0x40349F: main (knnNEW.c:1050)
+==13203==  Address 0x5519506 is 22 bytes inside a block of size 4,096 alloc'd
+==13203==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x51B01D4: _IO_file_doallocate (filedoalloc.c:127)
+==13203==    by 0x51BE593: _IO_doallocbuf (genops.c:398)
+==13203==    by 0x51BD8F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==13203==    by 0x51BC28C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==13203==    by 0x51B17BA: fwrite (iofwrite.c:39)
+==13203==    by 0x40188A: readTrainingTest (knnNEW.c:384)
+==13203==    by 0x40349F: main (knnNEW.c:1050)
+==13203== 
+==13203== Syscall param write(buf) points to uninitialised byte(s)
+==13203==    at 0x52396E0: __write_nocancel (syscall-template.S:84)
+==13203==    by 0x51BBBFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==13203==    by 0x51BD408: new_do_write (fileops.c:518)
+==13203==    by 0x51BD408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==13203==    by 0x51BC9AF: _IO_file_close_it@@GLIBC_2.2.5 (fileops.c:165)
+==13203==    by 0x51B03EE: fclose@@GLIBC_2.2.5 (iofclose.c:58)
+==13203==    by 0x4034C3: main (knnNEW.c:1056)
+==13203==  Address 0x55194f0 is 0 bytes inside a block of size 4,096 alloc'd
+==13203==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x51B01D4: _IO_file_doallocate (filedoalloc.c:127)
+==13203==    by 0x51BE593: _IO_doallocbuf (genops.c:398)
+==13203==    by 0x51BD8F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==13203==    by 0x51BC28C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==13203==    by 0x51B17BA: fwrite (iofwrite.c:39)
+==13203==    by 0x40188A: readTrainingTest (knnNEW.c:384)
+==13203==    by 0x40349F: main (knnNEW.c:1050)
+==13203== 
+id = 88
+Alcohol = 11.65
+MalicAcid = 1.67
+Ash = 2.62
+AlcalinityOfAsh = 26
+Magnesium = 88
+TotalPhenols = 1.92
+Flavanoids = 1.61
+NonflavanoidPhenols = 0.40
+Proanthocyanins = 1.34
+ColorIntensity = 2.60
+Hue = 1.36
+OD280_OD315 = 3.21
+Proline = 562
+class = 2
+dist = 0.00
+id = 135
+Alcohol = 12.51
+MalicAcid = 1.24
+Ash = 2.25
+AlcalinityOfAsh = 1685
+Magnesium = 85
+TotalPhenols = 2.00
+Flavanoids = 0.58
+NonflavanoidPhenols = 0.60
+Proanthocyanins = 1.25
+ColorIntensity = 5.45
+Hue = 0.75
+OD280_OD315 = 1.51
+Proline = 650
+class = 3
+dist = 0.00
+id = 98
+Alcohol = 12.29
+MalicAcid = 1.41
+Ash = 1.98
+AlcalinityOfAsh = 16
+Magnesium = 85
+TotalPhenols = 2.55
+Flavanoids = 2.50
+NonflavanoidPhenols = 0.29
+Proanthocyanins = 1.77
+ColorIntensity = 2.90
+Hue = 1.23
+OD280_OD315 = 2.74
+Proline = 428
+class = 2
+dist = 0.00
+id = 138
+Alcohol = 12.53
+MalicAcid = 5.51
+Ash = 2.64
+AlcalinityOfAsh = 25
+Magnesium = 96
+TotalPhenols = 1.79
+Flavanoids = 0.60
+NonflavanoidPhenols = 0.63
+Proanthocyanins = 1.10
+ColorIntensity = 5.00
+Hue = 0.82
+OD280_OD315 = 1.69
+Proline = 515
+class = 3
+dist = 0.00
+id = 153
+Alcohol = 13.11
+MalicAcid = 1.90
+Ash = 2.75
+AlcalinityOfAsh = 2485
+Magnesium = 116
+TotalPhenols = 2.20
+Flavanoids = 1.28
+NonflavanoidPhenols = 0.26
+Proanthocyanins = 1.56
+ColorIntensity = 7.10
+Hue = 0.61
+OD280_OD315 = 1.33
+Proline = 425
+class = 3
+dist = 0.00
+id = 49
+Alcohol = 14.10
+MalicAcid = 2.02
+Ash = 2.40
+AlcalinityOfAsh = 1788
+Magnesium = 103
+TotalPhenols = 2.75
+Flavanoids = 2.92
+NonflavanoidPhenols = 0.32
+Proanthocyanins = 2.38
+ColorIntensity = 6.20
+Hue = 1.07
+OD280_OD315 = 2.75
+Proline = 1060
+class = 1
+dist = 0.00
+id = 108
+Alcohol = 12.72
+MalicAcid = 1.75
+Ash = 2.28
+AlcalinityOfAsh = 2185
+Magnesium = 84
+TotalPhenols = 1.38
+Flavanoids = 1.76
+NonflavanoidPhenols = 0.48
+Proanthocyanins = 1.63
+ColorIntensity = 3.30
+Hue = 0.88
+OD280_OD315 = 2.42
+Proline = 488
+class = 2
+dist = 0.00
+id = 164
+Alcohol = 12.96
+MalicAcid = 3.45
+Ash = 2.35
+AlcalinityOfAsh = 1785
+Magnesium = 106
+TotalPhenols = 1.39
+Flavanoids = 0.70
+NonflavanoidPhenols = 0.40
+Proanthocyanins = 0.94
+ColorIntensity = 5.28
+Hue = 0.68
+OD280_OD315 = 1.75
+Proline = 675
+class = 3
+dist = 0.00
+id = 71
+Alcohol = 12.29
+MalicAcid = 1.61
+Ash = 2.21
+AlcalinityOfAsh = 1984
+Magnesium = 103
+TotalPhenols = 1.10
+Flavanoids = 1.02
+NonflavanoidPhenols = 0.37
+Proanthocyanins = 1.46
+ColorIntensity = 3.05
+Hue = 0.91
+OD280_OD315 = 1.82
+Proline = 870
+class = 2
+dist = 0.00
+id = 163
+Alcohol = 12.85
+MalicAcid = 3.27
+Ash = 2.58
+AlcalinityOfAsh = 22
+Magnesium = 106
+TotalPhenols = 1.65
+Flavanoids = 0.60
+NonflavanoidPhenols = 0.60
+Proanthocyanins = 0.96
+ColorIntensity = 5.58
+Hue = 0.87
+OD280_OD315 = 2.11
+Proline = 570
+class = 3
+dist = 0.00
+id = 112
+Alcohol = 12.52
+MalicAcid = 2.43
+Ash = 2.17
+AlcalinityOfAsh = 21
+Magnesium = 88
+TotalPhenols = 2.55
+Flavanoids = 2.27
+NonflavanoidPhenols = 0.26
+Proanthocyanins = 1.22
+ColorIntensity = 2.00
+Hue = 0.90
+OD280_OD315 = 2.78
+Proline = 325
+class = 2
+dist = 0.00
+id = 102
+Alcohol = 12.60
+MalicAcid = 1.34
+Ash = 1.90
+AlcalinityOfAsh = 1785
+Magnesium = 88
+TotalPhenols = 1.45
+Flavanoids = 1.36
+NonflavanoidPhenols = 0.29
+Proanthocyanins = 1.35
+ColorIntensity = 2.45
+Hue = 1.04
+OD280_OD315 = 2.77
+Proline = 562
+class = 2
+dist = 0.00
+id = 137
+Alcohol = 12.25
+MalicAcid = 4.72
+Ash = 2.54
+AlcalinityOfAsh = 21
+Magnesium = 89
+TotalPhenols = 1.38
+Flavanoids = 0.47
+NonflavanoidPhenols = 0.53
+Proanthocyanins = 0.80
+ColorIntensity = 3.85
+Hue = 0.75
+OD280_OD315 = 1.27
+Proline = 720
+class = 3
+dist = 0.00
+id = 133
+Alcohol = 12.81
+MalicAcid = 2.31
+Ash = 2.40
+AlcalinityOfAsh = 24
+Magnesium = 98
+TotalPhenols = 1.15
+Flavanoids = 1.09
+NonflavanoidPhenols = 0.27
+Proanthocyanins = 0.83
+ColorIntensity = 5.70
+Hue = 0.66
+OD280_OD315 = 1.36
+Proline = 560
+class = 3
+dist = 0.00
+id = 63
+Alcohol = 13.67
+MalicAcid = 1.25
+Ash = 1.92
+AlcalinityOfAsh = 18
+Magnesium = 94
+TotalPhenols = 2.10
+Flavanoids = 1.79
+NonflavanoidPhenols = 0.32
+Proanthocyanins = 0.73
+ColorIntensity = 3.80
+Hue = 1.23
+OD280_OD315 = 2.46
+Proline = 630
+class = 2
+dist = 0.00
+id = 128
+Alcohol = 11.79
+MalicAcid = 2.13
+Ash = 2.78
+AlcalinityOfAsh = 2785
+Magnesium = 92
+TotalPhenols = 2.13
+Flavanoids = 2.24
+NonflavanoidPhenols = 0.58
+Proanthocyanins = 1.76
+ColorIntensity = 3.00
+Hue = 0.97
+OD280_OD315 = 2.44
+Proline = 466
+class = 2
+dist = 0.00
+id = 156
+Alcohol = 13.17
+MalicAcid = 5.19
+Ash = 2.32
+AlcalinityOfAsh = 22
+Magnesium = 93
+TotalPhenols = 1.74
+Flavanoids = 0.63
+NonflavanoidPhenols = 0.61
+Proanthocyanins = 1.55
+ColorIntensity = 7.90
+Hue = 0.60
+OD280_OD315 = 1.48
+Proline = 725
+class = 3
+dist = 0.00
+id = 38
+Alcohol = 13.05
+MalicAcid = 1.65
+Ash = 2.55
+AlcalinityOfAsh = 18
+Magnesium = 98
+TotalPhenols = 2.45
+Flavanoids = 2.43
+NonflavanoidPhenols = 0.29
+Proanthocyanins = 1.44
+ColorIntensity = 4.25
+Hue = 1.12
+OD280_OD315 = 2.51
+Proline = 1105
+class = 1
+dist = 0.00
+id = 159
+Alcohol = 14.34
+MalicAcid = 1.68
+Ash = 2.70
+AlcalinityOfAsh = 25
+Magnesium = 98
+TotalPhenols = 2.80
+Flavanoids = 1.31
+NonflavanoidPhenols = 0.53
+Proanthocyanins = 2.70
+ColorIntensity = 13.00
+Hue = 0.57
+OD280_OD315 = 1.96
+Proline = 660
+class = 3
+dist = 0.00
+id = 147
+Alcohol = 13.88
+MalicAcid = 5.04
+Ash = 2.23
+AlcalinityOfAsh = 20
+Magnesium = 80
+TotalPhenols = 0.98
+Flavanoids = 0.34
+NonflavanoidPhenols = 0.40
+Proanthocyanins = 0.68
+ColorIntensity = 4.90
+Hue = 0.58
+OD280_OD315 = 1.33
+Proline = 415
+class = 3
+dist = 0.00
+id = 58
+Alcohol = 13.29
+MalicAcid = 1.97
+Ash = 2.68
+AlcalinityOfAsh = 1588
+Magnesium = 102
+TotalPhenols = 3.00
+Flavanoids = 3.23
+NonflavanoidPhenols = 0.31
+Proanthocyanins = 1.66
+ColorIntensity = 6.00
+Hue = 1.07
+OD280_OD315 = 2.84
+Proline = 1270
+class = 1
+dist = 0.00
+id = 154
+Alcohol = 13.23
+MalicAcid = 3.30
+Ash = 2.28
+AlcalinityOfAsh = 1785
+Magnesium = 98
+TotalPhenols = 1.80
+Flavanoids = 0.83
+NonflavanoidPhenols = 0.61
+Proanthocyanins = 1.87
+ColorIntensity = 10.52
+Hue = 0.56
+OD280_OD315 = 1.51
+Proline = 675
+class = 3
+dist = 0.00
+id = 136
+Alcohol = 12.60
+MalicAcid = 2.46
+Ash = 2.20
+AlcalinityOfAsh = 1785
+Magnesium = 94
+TotalPhenols = 1.62
+Flavanoids = 0.66
+NonflavanoidPhenols = 0.63
+Proanthocyanins = 0.94
+ColorIntensity = 7.10
+Hue = 0.73
+OD280_OD315 = 1.58
+Proline = 695
+class = 3
+dist = 0.00
+id = 178
+Alcohol = 14.13
+MalicAcid = 4.10
+Ash = 2.74
+AlcalinityOfAsh = 2385
+Magnesium = 96
+TotalPhenols = 2.05
+Flavanoids = 0.76
+NonflavanoidPhenols = 0.56
+Proanthocyanins = 1.35
+ColorIntensity = 9.20
+Hue = 0.61
+OD280_OD315 = 1.60
+Proline = 560
+class = 3
+dist = 0.00
+id = 31
+Alcohol = 13.73
+MalicAcid = 1.50
+Ash = 2.70
+AlcalinityOfAsh = 2185
+Magnesium = 101
+TotalPhenols = 3.00
+Flavanoids = 3.25
+NonflavanoidPhenols = 0.29
+Proanthocyanins = 2.38
+ColorIntensity = 5.70
+Hue = 1.19
+OD280_OD315 = 2.71
+Proline = 1285
+class = 1
+dist = 0.00
+id = 80
+Alcohol = 12.70
+MalicAcid = 3.87
+Ash = 2.40
+AlcalinityOfAsh = 23
+Magnesium = 101
+TotalPhenols = 2.83
+Flavanoids = 2.55
+NonflavanoidPhenols = 0.43
+Proanthocyanins = 1.95
+ColorIntensity = 2.57
+Hue = 1.19
+OD280_OD315 = 3.13
+Proline = 463
+class = 2
+dist = 0.00
+id = 32
+Alcohol = 13.58
+MalicAcid = 1.66
+Ash = 2.36
+AlcalinityOfAsh = 1881
+Magnesium = 106
+TotalPhenols = 2.86
+Flavanoids = 3.19
+NonflavanoidPhenols = 0.22
+Proanthocyanins = 1.95
+ColorIntensity = 6.90
+Hue = 1.09
+OD280_OD315 = 2.88
+Proline = 1515
+class = 1
+dist = 0.00
+id = 97
+Alcohol = 11.81
+MalicAcid = 2.12
+Ash = 2.74
+AlcalinityOfAsh = 2085
+Magnesium = 134
+TotalPhenols = 1.60
+Flavanoids = 0.99
+NonflavanoidPhenols = 0.14
+Proanthocyanins = 1.56
+ColorIntensity = 2.50
+Hue = 0.95
+OD280_OD315 = 2.26
+Proline = 625
+class = 2
+dist = 0.00
+id = 6
+Alcohol = 14.20
+MalicAcid = 1.76
+Ash = 2.45
+AlcalinityOfAsh = 1482
+Magnesium = 112
+TotalPhenols = 3.27
+Flavanoids = 3.39
+NonflavanoidPhenols = 0.34
+Proanthocyanins = 1.97
+ColorIntensity = 6.75
+Hue = 1.05
+OD280_OD315 = 2.85
+Proline = 1450
+class = 1
+dist = 0.00
+id = 143
+Alcohol = 13.52
+MalicAcid = 3.17
+Ash = 2.72
+AlcalinityOfAsh = 2285
+Magnesium = 97
+TotalPhenols = 1.55
+Flavanoids = 0.52
+NonflavanoidPhenols = 0.50
+Proanthocyanins = 0.55
+ColorIntensity = 4.35
+Hue = 0.89
+OD280_OD315 = 2.06
+Proline = 520
+class = 3
+dist = 0.00
+id = 44
+Alcohol = 13.24
+MalicAcid = 3.98
+Ash = 2.29
+AlcalinityOfAsh = 1685
+Magnesium = 103
+TotalPhenols = 2.64
+Flavanoids = 2.63
+NonflavanoidPhenols = 0.32
+Proanthocyanins = 1.66
+ColorIntensity = 4.36
+Hue = 0.82
+OD280_OD315 = 3.00
+Proline = 680
+class = 1
+dist = 0.00
+id = 155
+Alcohol = 12.58
+MalicAcid = 1.29
+Ash = 2.10
+AlcalinityOfAsh = 20
+Magnesium = 103
+TotalPhenols = 1.48
+Flavanoids = 0.58
+NonflavanoidPhenols = 0.53
+Proanthocyanins = 1.40
+ColorIntensity = 7.60
+Hue = 0.58
+OD280_OD315 = 1.55
+Proline = 640
+class = 3
+dist = 0.00
+id = 105
+Alcohol = 12.51
+MalicAcid = 1.73
+Ash = 1.98
+AlcalinityOfAsh = 1985
+Magnesium = 85
+TotalPhenols = 2.20
+Flavanoids = 1.92
+NonflavanoidPhenols = 0.32
+Proanthocyanins = 1.48
+ColorIntensity = 2.94
+Hue = 1.04
+OD280_OD315 = 3.57
+Proline = 672
+class = 2
+dist = 0.00
+id = 78
+Alcohol = 11.84
+MalicAcid = 2.89
+Ash = 2.23
+AlcalinityOfAsh = 18
+Magnesium = 112
+TotalPhenols = 1.72
+Flavanoids = 1.32
+NonflavanoidPhenols = 0.43
+Proanthocyanins = 0.95
+ColorIntensity = 2.65
+Hue = 0.96
+OD280_OD315 = 2.52
+Proline = 500
+class = 2
+dist = 0.00
+id = 125
+Alcohol = 11.87
+MalicAcid = 4.31
+Ash = 2.39
+AlcalinityOfAsh = 21
+Magnesium = 82
+TotalPhenols = 2.86
+Flavanoids = 3.03
+NonflavanoidPhenols = 0.21
+Proanthocyanins = 2.91
+ColorIntensity = 2.80
+Hue = 0.75
+OD280_OD315 = 3.64
+Proline = 380
+class = 2
+dist = 0.00
+id = 39
+Alcohol = 13.07
+MalicAcid = 1.50
+Ash = 2.10
+AlcalinityOfAsh = 1485
+Magnesium = 98
+TotalPhenols = 2.40
+Flavanoids = 2.64
+NonflavanoidPhenols = 0.28
+Proanthocyanins = 1.37
+ColorIntensity = 3.70
+Hue = 1.18
+OD280_OD315 = 2.69
+Proline = 1020
+class = 1
+dist = 0.00
+id = 84
+Alcohol = 13.05
+MalicAcid = 3.86
+Ash = 2.32
+AlcalinityOfAsh = 2185
+Magnesium = 85
+TotalPhenols = 1.65
+Flavanoids = 1.59
+NonflavanoidPhenols = 0.61
+Proanthocyanins = 1.62
+ColorIntensity = 4.80
+Hue = 0.84
+OD280_OD315 = 2.01
+Proline = 515
+class = 2
+dist = 0.00
+id = 33
+Alcohol = 13.68
+MalicAcid = 1.83
+Ash = 2.36
+AlcalinityOfAsh = 1682
+Magnesium = 104
+TotalPhenols = 2.42
+Flavanoids = 2.69
+NonflavanoidPhenols = 0.42
+Proanthocyanins = 1.97
+ColorIntensity = 3.84
+Hue = 1.23
+OD280_OD315 = 2.87
+Proline = 990
+class = 1
+dist = 0.00
+id = 109
+Alcohol = 12.22
+MalicAcid = 1.29
+Ash = 1.94
+AlcalinityOfAsh = 19
+Magnesium = 92
+TotalPhenols = 2.36
+Flavanoids = 2.04
+NonflavanoidPhenols = 0.39
+Proanthocyanins = 2.08
+ColorIntensity = 2.70
+Hue = 0.86
+OD280_OD315 = 3.02
+Proline = 312
+class = 2
+dist = 0.00
+id = 21
+Alcohol = 14.06
+MalicAcid = 1.63
+Ash = 2.28
+AlcalinityOfAsh = 16
+Magnesium = 126
+TotalPhenols = 3.00
+Flavanoids = 3.17
+NonflavanoidPhenols = 0.24
+Proanthocyanins = 2.10
+ColorIntensity = 5.65
+Hue = 1.09
+OD280_OD315 = 3.71
+Proline = 780
+class = 1
+dist = 0.00
+id = 70
+Alcohol = 12.21
+MalicAcid = 1.19
+Ash = 1.75
+AlcalinityOfAsh = 1588
+Magnesium = 151
+TotalPhenols = 1.85
+Flavanoids = 1.28
+NonflavanoidPhenols = 0.14
+Proanthocyanins = 2.50
+ColorIntensity = 2.85
+Hue = 1.28
+OD280_OD315 = 3.07
+Proline = 718
+class = 2
+dist = 0.00
+id = 60
+Alcohol = 12.37
+MalicAcid = 0.94
+Ash = 1.36
+AlcalinityOfAsh = 986
+Magnesium = 88
+TotalPhenols = 1.98
+Flavanoids = 0.57
+NonflavanoidPhenols = 0.28
+Proanthocyanins = 0.42
+ColorIntensity = 1.95
+Hue = 1.05
+OD280_OD315 = 1.82
+Proline = 520
+class = 2
+dist = 0.00
+id = 13
+Alcohol = 13.75
+MalicAcid = 1.73
+Ash = 2.41
+AlcalinityOfAsh = 16
+Magnesium = 89
+TotalPhenols = 2.60
+Flavanoids = 2.76
+NonflavanoidPhenols = 0.29
+Proanthocyanins = 1.81
+ColorIntensity = 5.60
+Hue = 1.15
+OD280_OD315 = 2.90
+Proline = 1320
+class = 1
+dist = 0.00
+id = 170
+Alcohol = 13.40
+MalicAcid = 4.60
+Ash = 2.86
+AlcalinityOfAsh = 25
+Magnesium = 112
+TotalPhenols = 1.98
+Flavanoids = 0.96
+NonflavanoidPhenols = 0.27
+Proanthocyanins = 1.11
+ColorIntensity = 8.50
+Hue = 0.67
+OD280_OD315 = 1.92
+Proline = 630
+class = 3
+dist = 0.00
+id = 67
+Alcohol = 13.11
+MalicAcid = 1.01
+Ash = 1.70
+AlcalinityOfAsh = 15
+Magnesium = 78
+TotalPhenols = 2.98
+Flavanoids = 3.18
+NonflavanoidPhenols = 0.26
+Proanthocyanins = 2.28
+ColorIntensity = 5.30
+Hue = 1.12
+OD280_OD315 = 3.18
+Proline = 502
+class = 2
+dist = 0.00
+id = 101
+Alcohol = 12.08
+MalicAcid = 2.08
+Ash = 1.70
+AlcalinityOfAsh = 1685
+Magnesium = 97
+TotalPhenols = 2.23
+Flavanoids = 2.17
+NonflavanoidPhenols = 0.26
+Proanthocyanins = 1.40
+ColorIntensity = 3.30
+Hue = 1.27
+OD280_OD315 = 2.96
+Proline = 710
+class = 2
+dist = 0.00
+id = 119
+Alcohol = 12.77
+MalicAcid = 3.43
+Ash = 1.98
+AlcalinityOfAsh = 16
+Magnesium = 80
+TotalPhenols = 1.63
+Flavanoids = 1.25
+NonflavanoidPhenols = 0.43
+Proanthocyanins = 0.83
+ColorIntensity = 3.40
+Hue = 0.70
+OD280_OD315 = 2.12
+Proline = 372
+class = 2
+dist = 0.00
+id = 36
+Alcohol = 13.48
+MalicAcid = 1.81
+Ash = 2.41
+AlcalinityOfAsh = 1985
+Magnesium = 100
+TotalPhenols = 2.70
+Flavanoids = 2.98
+NonflavanoidPhenols = 0.26
+Proanthocyanins = 1.86
+ColorIntensity = 5.10
+Hue = 1.04
+OD280_OD315 = 3.47
+Proline = 920
+class = 1
+dist = 0.00
+id = 146
+Alcohol = 13.16
+MalicAcid = 3.57
+Ash = 2.15
+AlcalinityOfAsh = 21
+Magnesium = 102
+TotalPhenols = 1.50
+Flavanoids = 0.55
+NonflavanoidPhenols = 0.43
+Proanthocyanins = 1.30
+ColorIntensity = 4.00
+Hue = 0.60
+OD280_OD315 = 1.68
+Proline = 830
+class = 3
+dist = 0.00
+id = 174
+Alcohol = 13.71
+MalicAcid = 5.65
+Ash = 2.45
+AlcalinityOfAsh = 1985
+Magnesium = 95
+TotalPhenols = 1.68
+Flavanoids = 0.61
+NonflavanoidPhenols = 0.52
+Proanthocyanins = 1.06
+ColorIntensity = 7.70
+Hue = 0.64
+OD280_OD315 = 1.74
+Proline = 740
+class = 3
+dist = 0.00
+id = 139
+Alcohol = 13.49
+MalicAcid = 3.59
+Ash = 2.19
+AlcalinityOfAsh = 1885
+Magnesium = 88
+TotalPhenols = 1.62
+Flavanoids = 0.48
+NonflavanoidPhenols = 0.58
+Proanthocyanins = 0.88
+ColorIntensity = 5.70
+Hue = 0.81
+OD280_OD315 = 1.82
+Proline = 580
+class = 3
+dist = 0.00
+id = 175
+Alcohol = 13.40
+MalicAcid = 3.91
+Ash = 2.48
+AlcalinityOfAsh = 23
+Magnesium = 102
+TotalPhenols = 1.80
+Flavanoids = 0.75
+NonflavanoidPhenols = 0.43
+Proanthocyanins = 1.41
+ColorIntensity = 7.30
+Hue = 0.70
+OD280_OD315 = 1.56
+Proline = 750
+class = 3
+dist = 0.00
+id = 161
+Alcohol = 12.36
+MalicAcid = 3.83
+Ash = 2.38
+AlcalinityOfAsh = 21
+Magnesium = 88
+TotalPhenols = 2.30
+Flavanoids = 0.92
+NonflavanoidPhenols = 0.50
+Proanthocyanins = 1.04
+ColorIntensity = 7.65
+Hue = 0.56
+OD280_OD315 = 1.58
+Proline = 520
+class = 3
+dist = 0.00
+id = 168
+Alcohol = 12.82
+MalicAcid = 3.37
+Ash = 2.30
+AlcalinityOfAsh = 1885
+Magnesium = 88
+TotalPhenols = 1.48
+Flavanoids = 0.66
+NonflavanoidPhenols = 0.40
+Proanthocyanins = 0.97
+ColorIntensity = 10.26
+Hue = 0.72
+OD280_OD315 = 1.75
+Proline = 685
+class = 3
+dist = 0.00
+id = 50
+Alcohol = 13.94
+MalicAcid = 1.73
+Ash = 2.27
+AlcalinityOfAsh = 1684
+Magnesium = 108
+TotalPhenols = 2.88
+Flavanoids = 3.54
+NonflavanoidPhenols = 0.32
+Proanthocyanins = 2.08
+ColorIntensity = 8.90
+Hue = 1.12
+OD280_OD315 = 3.10
+Proline = 1260
+class = 1
+dist = 0.00
+id = 55
+Alcohol = 13.74
+MalicAcid = 1.67
+Ash = 2.25
+AlcalinityOfAsh = 1584
+Magnesium = 118
+TotalPhenols = 2.60
+Flavanoids = 2.90
+NonflavanoidPhenols = 0.21
+Proanthocyanins = 1.62
+ColorIntensity = 5.85
+Hue = 0.92
+OD280_OD315 = 3.20
+Proline = 1060
+class = 1
+dist = 0.00
+id = 65
+Alcohol = 12.17
+MalicAcid = 1.45
+Ash = 2.53
+AlcalinityOfAsh = 19
+Magnesium = 104
+TotalPhenols = 1.89
+Flavanoids = 1.75
+NonflavanoidPhenols = 0.45
+Proanthocyanins = 1.03
+ColorIntensity = 2.95
+Hue = 1.45
+OD280_OD315 = 2.23
+Proline = 355
+class = 2
+dist = 0.00
+id = 107
+Alcohol = 12.25
+MalicAcid = 1.73
+Ash = 2.12
+AlcalinityOfAsh = 19
+Magnesium = 80
+TotalPhenols = 1.65
+Flavanoids = 2.03
+NonflavanoidPhenols = 0.37
+Proanthocyanins = 1.63
+ColorIntensity = 3.40
+Hue = 1.00
+OD280_OD315 = 3.17
+Proline = 510
+class = 2
+dist = 0.00
+id = 18
+Alcohol = 13.83
+MalicAcid = 1.57
+Ash = 2.62
+AlcalinityOfAsh = 20
+Magnesium = 115
+TotalPhenols = 2.95
+Flavanoids = 3.40
+NonflavanoidPhenols = 0.40
+Proanthocyanins = 1.72
+ColorIntensity = 6.60
+Hue = 1.13
+OD280_OD315 = 2.57
+Proline = 1130
+class = 1
+dist = 0.00
+id = 86
+Alcohol = 12.67
+MalicAcid = 0.98
+Ash = 2.24
+AlcalinityOfAsh = 18
+Magnesium = 99
+TotalPhenols = 2.20
+Flavanoids = 1.94
+NonflavanoidPhenols = 0.30
+Proanthocyanins = 1.46
+ColorIntensity = 2.62
+Hue = 1.23
+OD280_OD315 = 3.16
+Proline = 450
+class = 2
+dist = 0.00
+id = 165
+Alcohol = 13.78
+MalicAcid = 2.76
+Ash = 2.30
+AlcalinityOfAsh = 22
+Magnesium = 90
+TotalPhenols = 1.35
+Flavanoids = 0.68
+NonflavanoidPhenols = 0.41
+Proanthocyanins = 1.03
+ColorIntensity = 9.58
+Hue = 0.70
+OD280_OD315 = 1.68
+Proline = 615
+class = 3
+dist = 0.00
+id = 47
+Alcohol = 14.38
+MalicAcid = 3.59
+Ash = 2.28
+AlcalinityOfAsh = 16
+Magnesium = 102
+TotalPhenols = 3.25
+Flavanoids = 3.17
+NonflavanoidPhenols = 0.27
+Proanthocyanins = 2.19
+ColorIntensity = 4.90
+Hue = 1.04
+OD280_OD315 = 3.44
+Proline = 1065
+class = 1
+dist = 0.00
+id = 94
+Alcohol = 12.29
+MalicAcid = 2.83
+Ash = 2.22
+AlcalinityOfAsh = 18
+Magnesium = 88
+TotalPhenols = 2.45
+Flavanoids = 2.25
+NonflavanoidPhenols = 0.25
+Proanthocyanins = 1.99
+ColorIntensity = 2.15
+Hue = 1.15
+OD280_OD315 = 3.30
+Proline = 290
+class = 2
+dist = 0.00
+id = 172
+Alcohol = 12.77
+MalicAcid = 2.39
+Ash = 2.28
+AlcalinityOfAsh = 1885
+Magnesium = 86
+TotalPhenols = 1.39
+Flavanoids = 0.51
+NonflavanoidPhenols = 0.48
+Proanthocyanins = 0.64
+ColorIntensity = 9.90
+Hue = 0.57
+OD280_OD315 = 1.63
+Proline = 470
+class = 3
+dist = 0.00
+id = 118
+Alcohol = 12.42
+MalicAcid = 1.61
+Ash = 2.19
+AlcalinityOfAsh = 2185
+Magnesium = 108
+TotalPhenols = 2.00
+Flavanoids = 2.09
+NonflavanoidPhenols = 0.34
+Proanthocyanins = 1.61
+ColorIntensity = 2.06
+Hue = 1.06
+OD280_OD315 = 2.96
+Proline = 345
+class = 2
+dist = 0.00
+id = 141
+Alcohol = 12.93
+MalicAcid = 2.81
+Ash = 2.70
+AlcalinityOfAsh = 21
+Magnesium = 96
+TotalPhenols = 1.54
+Flavanoids = 0.50
+NonflavanoidPhenols = 0.53
+Proanthocyanins = 0.75
+ColorIntensity = 4.60
+Hue = 0.77
+OD280_OD315 = 2.31
+Proline = 600
+class = 3
+dist = 0.00
+id = 149
+Alcohol = 13.32
+MalicAcid = 3.24
+Ash = 2.38
+AlcalinityOfAsh = 2085
+Magnesium = 92
+TotalPhenols = 1.93
+Flavanoids = 0.76
+NonflavanoidPhenols = 0.45
+Proanthocyanins = 1.25
+ColorIntensity = 8.42
+Hue = 0.55
+OD280_OD315 = 1.62
+Proline = 650
+class = 3
+dist = 0.00
+id = 51
+Alcohol = 13.05
+MalicAcid = 1.73
+Ash = 2.04
+AlcalinityOfAsh = 1184
+Magnesium = 92
+TotalPhenols = 2.72
+Flavanoids = 3.27
+NonflavanoidPhenols = 0.17
+Proanthocyanins = 2.91
+ColorIntensity = 7.20
+Hue = 1.12
+OD280_OD315 = 2.91
+Proline = 1150
+class = 1
+dist = 0.00
+id = 113
+Alcohol = 11.76
+MalicAcid = 2.68
+Ash = 2.92
+AlcalinityOfAsh = 20
+Magnesium = 103
+TotalPhenols = 1.75
+Flavanoids = 2.03
+NonflavanoidPhenols = 0.60
+Proanthocyanins = 1.05
+ColorIntensity = 3.80
+Hue = 1.23
+OD280_OD315 = 2.50
+Proline = 607
+class = 2
+dist = 0.00
+id = 106
+Alcohol = 12.42
+MalicAcid = 2.55
+Ash = 2.27
+AlcalinityOfAsh = 22
+Magnesium = 90
+TotalPhenols = 1.68
+Flavanoids = 1.84
+NonflavanoidPhenols = 0.66
+Proanthocyanins = 1.42
+ColorIntensity = 2.70
+Hue = 0.86
+OD280_OD315 = 3.30
+Proline = 315
+class = 2
+dist = 0.00
+id = 124
+Alcohol = 13.05
+MalicAcid = 5.80
+Ash = 2.13
+AlcalinityOfAsh = 2085
+Magnesium = 86
+TotalPhenols = 2.62
+Flavanoids = 2.65
+NonflavanoidPhenols = 0.30
+Proanthocyanins = 2.01
+ColorIntensity = 2.60
+Hue = 0.73
+OD280_OD315 = 3.10
+Proline = 380
+class = 2
+dist = 0.00
+id = 10
+Alcohol = 13.86
+MalicAcid = 1.35
+Ash = 2.27
+AlcalinityOfAsh = 16
+Magnesium = 98
+TotalPhenols = 2.98
+Flavanoids = 3.15
+NonflavanoidPhenols = 0.22
+Proanthocyanins = 1.85
+ColorIntensity = 7.22
+Hue = 1.01
+OD280_OD315 = 3.55
+Proline = 1045
+class = 1
+dist = 0.00
+id = 120
+Alcohol = 12.00
+MalicAcid = 3.43
+Ash = 2.00
+AlcalinityOfAsh = 19
+Magnesium = 87
+TotalPhenols = 2.00
+Flavanoids = 1.64
+NonflavanoidPhenols = 0.37
+Proanthocyanins = 1.87
+ColorIntensity = 1.28
+Hue = 0.93
+OD280_OD315 = 3.05
+Proline = 564
+class = 2
+dist = 0.00
+id = 74
+Alcohol = 12.99
+MalicAcid = 1.67
+Ash = 2.60
+AlcalinityOfAsh = 30
+Magnesium = 139
+TotalPhenols = 3.30
+Flavanoids = 2.89
+NonflavanoidPhenols = 0.21
+Proanthocyanins = 1.96
+ColorIntensity = 3.35
+Hue = 1.31
+OD280_OD315 = 3.50
+Proline = 985
+class = 2
+dist = 0.00
+id = 95
+Alcohol = 11.62
+MalicAcid = 1.99
+Ash = 2.28
+AlcalinityOfAsh = 18
+Magnesium = 98
+TotalPhenols = 3.02
+Flavanoids = 2.26
+NonflavanoidPhenols = 0.17
+Proanthocyanins = 1.35
+ColorIntensity = 3.25
+Hue = 1.16
+OD280_OD315 = 2.96
+Proline = 345
+class = 2
+dist = 0.00
+id = 34
+Alcohol = 13.76
+MalicAcid = 1.53
+Ash = 2.70
+AlcalinityOfAsh = 1885
+Magnesium = 132
+TotalPhenols = 2.95
+Flavanoids = 2.74
+NonflavanoidPhenols = 0.50
+Proanthocyanins = 1.35
+ColorIntensity = 5.40
+Hue = 1.25
+OD280_OD315 = 3.00
+Proline = 1235
+class = 1
+dist = 0.00
+id = 152
+Alcohol = 12.79
+MalicAcid = 2.67
+Ash = 2.48
+AlcalinityOfAsh = 22
+Magnesium = 112
+TotalPhenols = 1.48
+Flavanoids = 1.36
+NonflavanoidPhenols = 0.24
+Proanthocyanins = 1.26
+ColorIntensity = 10.80
+Hue = 0.48
+OD280_OD315 = 1.47
+Proline = 480
+class = 3
+dist = 0.00
+id = 15
+Alcohol = 14.38
+MalicAcid = 1.87
+Ash = 2.38
+AlcalinityOfAsh = 12
+Magnesium = 102
+TotalPhenols = 3.30
+Flavanoids = 3.64
+NonflavanoidPhenols = 0.29
+Proanthocyanins = 2.96
+ColorIntensity = 7.50
+Hue = 1.20
+OD280_OD315 = 3.00
+Proline = 1547
+class = 1
+dist = 0.00
+id = 26
+Alcohol = 13.05
+MalicAcid = 2.05
+Ash = 3.22
+AlcalinityOfAsh = 25
+Magnesium = 124
+TotalPhenols = 2.63
+Flavanoids = 2.68
+NonflavanoidPhenols = 0.47
+Proanthocyanins = 1.92
+ColorIntensity = 3.58
+Hue = 1.13
+OD280_OD315 = 3.20
+Proline = 830
+class = 1
+dist = 0.00
+id = 166
+Alcohol = 13.73
+MalicAcid = 4.36
+Ash = 2.26
+AlcalinityOfAsh = 2185
+Magnesium = 88
+TotalPhenols = 1.28
+Flavanoids = 0.47
+NonflavanoidPhenols = 0.52
+Proanthocyanins = 1.15
+ColorIntensity = 6.62
+Hue = 0.78
+OD280_OD315 = 1.75
+Proline = 520
+class = 3
+dist = 0.00
+id = 77
+Alcohol = 13.03
+MalicAcid = 0.90
+Ash = 1.71
+AlcalinityOfAsh = 16
+Magnesium = 86
+TotalPhenols = 1.95
+Flavanoids = 2.03
+NonflavanoidPhenols = 0.24
+Proanthocyanins = 1.46
+ColorIntensity = 4.60
+Hue = 1.19
+OD280_OD315 = 2.48
+Proline = 392
+class = 2
+dist = 0.00
+id = 5
+Alcohol = 13.24
+MalicAcid = 2.59
+Ash = 2.87
+AlcalinityOfAsh = 21
+Magnesium = 118
+TotalPhenols = 2.80
+Flavanoids = 2.69
+NonflavanoidPhenols = 0.39
+Proanthocyanins = 1.82
+ColorIntensity = 4.32
+Hue = 1.04
+OD280_OD315 = 2.93
+Proline = 735
+class = 1
+dist = 0.00
+id = 30
+Alcohol = 14.02
+MalicAcid = 1.68
+Ash = 2.21
+AlcalinityOfAsh = 16
+Magnesium = 96
+TotalPhenols = 2.65
+Flavanoids = 2.33
+NonflavanoidPhenols = 0.26
+Proanthocyanins = 1.98
+ColorIntensity = 4.70
+Hue = 1.04
+OD280_OD315 = 3.59
+Proline = 1035
+class = 1
+dist = 0.00
+id = 9
+Alcohol = 14.83
+MalicAcid = 1.64
+Ash = 2.17
+AlcalinityOfAsh = 14
+Magnesium = 97
+TotalPhenols = 2.80
+Flavanoids = 2.98
+NonflavanoidPhenols = 0.29
+Proanthocyanins = 1.98
+ColorIntensity = 5.20
+Hue = 1.08
+OD280_OD315 = 2.85
+Proline = 1045
+class = 1
+dist = 0.00
+id = 111
+Alcohol = 11.46
+MalicAcid = 3.74
+Ash = 1.82
+AlcalinityOfAsh = 1885
+Magnesium = 107
+TotalPhenols = 3.18
+Flavanoids = 2.58
+NonflavanoidPhenols = 0.24
+Proanthocyanins = 3.58
+ColorIntensity = 2.90
+Hue = 0.75
+OD280_OD315 = 2.81
+Proline = 562
+class = 2
+dist = 0.00
+id = 45
+Alcohol = 13.05
+MalicAcid = 1.77
+Ash = 2.10
+AlcalinityOfAsh = 17
+Magnesium = 107
+TotalPhenols = 3.00
+Flavanoids = 3.00
+NonflavanoidPhenols = 0.28
+Proanthocyanins = 2.03
+ColorIntensity = 5.04
+Hue = 0.88
+OD280_OD315 = 3.35
+Proline = 885
+class = 1
+dist = 0.00
+id = 173
+Alcohol = 14.16
+MalicAcid = 2.51
+Ash = 2.48
+AlcalinityOfAsh = 20
+Magnesium = 91
+TotalPhenols = 1.68
+Flavanoids = 0.70
+NonflavanoidPhenols = 0.44
+Proanthocyanins = 1.24
+ColorIntensity = 9.70
+Hue = 0.62
+OD280_OD315 = 1.71
+Proline = 660
+class = 3
+dist = 0.00
+id = 82
+Alcohol = 12.72
+MalicAcid = 1.81
+Ash = 2.20
+AlcalinityOfAsh = 1788
+Magnesium = 86
+TotalPhenols = 2.20
+Flavanoids = 2.53
+NonflavanoidPhenols = 0.26
+Proanthocyanins = 1.77
+ColorIntensity = 3.90
+Hue = 1.16
+OD280_OD315 = 3.14
+Proline = 714
+class = 2
+dist = 0.00
+id = 57
+Alcohol = 14.22
+MalicAcid = 1.70
+Ash = 2.30
+AlcalinityOfAsh = 1583
+Magnesium = 118
+TotalPhenols = 3.20
+Flavanoids = 3.00
+NonflavanoidPhenols = 0.26
+Proanthocyanins = 2.03
+ColorIntensity = 6.38
+Hue = 0.94
+OD280_OD315 = 3.31
+Proline = 970
+class = 1
+dist = 0.00
+id = 157
+Alcohol = 13.84
+MalicAcid = 4.12
+Ash = 2.38
+AlcalinityOfAsh = 1885
+Magnesium = 89
+TotalPhenols = 1.80
+Flavanoids = 0.83
+NonflavanoidPhenols = 0.48
+Proanthocyanins = 1.56
+ColorIntensity = 9.01
+Hue = 0.57
+OD280_OD315 = 1.64
+Proline = 480
+class = 3
+dist = 0.00
+id = 81
+Alcohol = 12.00
+MalicAcid = 0.92
+Ash = 2.00
+AlcalinityOfAsh = 19
+Magnesium = 86
+TotalPhenols = 2.42
+Flavanoids = 2.26
+NonflavanoidPhenols = 0.30
+Proanthocyanins = 1.43
+ColorIntensity = 2.50
+Hue = 1.38
+OD280_OD315 = 3.12
+Proline = 278
+class = 2
+dist = 0.00
+id = 171
+Alcohol = 12.20
+MalicAcid = 3.03
+Ash = 2.32
+AlcalinityOfAsh = 19
+Magnesium = 96
+TotalPhenols = 1.25
+Flavanoids = 0.49
+NonflavanoidPhenols = 0.40
+Proanthocyanins = 0.73
+ColorIntensity = 5.50
+Hue = 0.66
+OD280_OD315 = 1.83
+Proline = 510
+class = 3
+dist = 0.00
+id = 23
+Alcohol = 13.71
+MalicAcid = 1.86
+Ash = 2.36
+AlcalinityOfAsh = 1586
+Magnesium = 101
+TotalPhenols = 2.61
+Flavanoids = 2.88
+NonflavanoidPhenols = 0.27
+Proanthocyanins = 1.69
+ColorIntensity = 3.80
+Hue = 1.11
+OD280_OD315 = 4.00
+Proline = 1035
+class = 1
+dist = 0.00
+id = 100
+Alcohol = 12.29
+MalicAcid = 3.17
+Ash = 2.21
+AlcalinityOfAsh = 18
+Magnesium = 88
+TotalPhenols = 2.85
+Flavanoids = 2.99
+NonflavanoidPhenols = 0.45
+Proanthocyanins = 2.81
+ColorIntensity = 2.30
+Hue = 1.42
+OD280_OD315 = 2.83
+Proline = 406
+class = 2
+dist = 0.00
+id = 14
+Alcohol = 14.75
+MalicAcid = 1.73
+Ash = 2.39
+AlcalinityOfAsh = 1084
+Magnesium = 91
+TotalPhenols = 3.10
+Flavanoids = 3.69
+NonflavanoidPhenols = 0.43
+Proanthocyanins = 2.81
+ColorIntensity = 5.40
+Hue = 1.25
+OD280_OD315 = 2.73
+Proline = 1150
+class = 1
+dist = 0.00
+id = 151
+Alcohol = 13.50
+MalicAcid = 3.12
+Ash = 2.62
+AlcalinityOfAsh = 24
+Magnesium = 123
+TotalPhenols = 1.40
+Flavanoids = 1.57
+NonflavanoidPhenols = 0.22
+Proanthocyanins = 1.25
+ColorIntensity = 8.60
+Hue = 0.59
+OD280_OD315 = 1.30
+Proline = 500
+class = 3
+dist = 0.00
+id = 68
+Alcohol = 12.37
+MalicAcid = 1.17
+Ash = 1.92
+AlcalinityOfAsh = 1886
+Magnesium = 78
+TotalPhenols = 2.11
+Flavanoids = 2.00
+NonflavanoidPhenols = 0.27
+Proanthocyanins = 1.04
+ColorIntensity = 4.68
+Hue = 1.12
+OD280_OD315 = 3.48
+Proline = 510
+class = 2
+dist = 0.00
+id = 115
+Alcohol = 12.08
+MalicAcid = 1.39
+Ash = 2.50
+AlcalinityOfAsh = 2185
+Magnesium = 84
+TotalPhenols = 2.56
+Flavanoids = 2.29
+NonflavanoidPhenols = 0.43
+Proanthocyanins = 1.04
+ColorIntensity = 2.90
+Hue = 0.93
+OD280_OD315 = 3.19
+Proline = 385
+class = 2
+dist = 0.00
+id = 83
+Alcohol = 12.08
+MalicAcid = 1.13
+Ash = 2.51
+AlcalinityOfAsh = 24
+Magnesium = 78
+TotalPhenols = 2.00
+Flavanoids = 1.58
+NonflavanoidPhenols = 0.40
+Proanthocyanins = 1.40
+ColorIntensity = 2.20
+Hue = 1.31
+OD280_OD315 = 2.72
+Proline = 630
+class = 2
+dist = 0.00
+id = 53
+Alcohol = 13.82
+MalicAcid = 1.75
+Ash = 2.42
+AlcalinityOfAsh = 14
+Magnesium = 111
+TotalPhenols = 3.88
+Flavanoids = 3.74
+NonflavanoidPhenols = 0.32
+Proanthocyanins = 1.87
+ColorIntensity = 7.05
+Hue = 1.01
+OD280_OD315 = 3.26
+Proline = 1190
+class = 1
+dist = 0.00
+id = 72
+Alcohol = 13.86
+MalicAcid = 1.51
+Ash = 2.67
+AlcalinityOfAsh = 25
+Magnesium = 86
+TotalPhenols = 2.95
+Flavanoids = 2.86
+NonflavanoidPhenols = 0.21
+Proanthocyanins = 1.87
+ColorIntensity = 3.38
+Hue = 1.36
+OD280_OD315 = 3.16
+Proline = 410
+class = 2
+dist = 0.00
+id = 24
+Alcohol = 12.85
+MalicAcid = 1.60
+Ash = 2.52
+AlcalinityOfAsh = 1688
+Magnesium = 95
+TotalPhenols = 2.48
+Flavanoids = 2.37
+NonflavanoidPhenols = 0.26
+Proanthocyanins = 1.46
+ColorIntensity = 3.93
+Hue = 1.09
+OD280_OD315 = 3.63
+Proline = 1015
+class = 1
+dist = 0.00
+id = 17
+Alcohol = 14.30
+MalicAcid = 1.92
+Ash = 2.72
+AlcalinityOfAsh = 20
+Magnesium = 120
+TotalPhenols = 2.80
+Flavanoids = 3.14
+NonflavanoidPhenols = 0.33
+Proanthocyanins = 1.97
+ColorIntensity = 6.20
+Hue = 1.07
+OD280_OD315 = 2.65
+Proline = 1280
+class = 1
+dist = 0.00
+id = 123
+Alcohol = 12.42
+MalicAcid = 4.43
+Ash = 2.73
+AlcalinityOfAsh = 2585
+Magnesium = 102
+TotalPhenols = 2.20
+Flavanoids = 2.13
+NonflavanoidPhenols = 0.43
+Proanthocyanins = 1.71
+ColorIntensity = 2.08
+Hue = 0.92
+OD280_OD315 = 3.12
+Proline = 365
+class = 2
+dist = 0.00
+id = 110
+Alcohol = 11.61
+MalicAcid = 1.35
+Ash = 2.70
+AlcalinityOfAsh = 20
+Magnesium = 94
+TotalPhenols = 2.74
+Flavanoids = 2.92
+NonflavanoidPhenols = 0.29
+Proanthocyanins = 2.49
+ColorIntensity = 2.65
+Hue = 0.96
+OD280_OD315 = 3.26
+Proline = 680
+class = 2
+dist = 0.00
+id = 167
+Alcohol = 13.45
+MalicAcid = 3.70
+Ash = 2.60
+AlcalinityOfAsh = 23
+Magnesium = 111
+TotalPhenols = 1.70
+Flavanoids = 0.92
+NonflavanoidPhenols = 0.43
+Proanthocyanins = 1.46
+ColorIntensity = 10.68
+Hue = 0.85
+OD280_OD315 = 1.56
+Proline = 695
+class = 3
+dist = 0.00
+id = 87
+Alcohol = 12.16
+MalicAcid = 1.61
+Ash = 2.31
+AlcalinityOfAsh = 2188
+Magnesium = 90
+TotalPhenols = 1.78
+Flavanoids = 1.69
+NonflavanoidPhenols = 0.43
+Proanthocyanins = 1.56
+ColorIntensity = 2.45
+Hue = 1.33
+OD280_OD315 = 2.26
+Proline = 495
+class = 2
+dist = 0.00
+id = 99
+Alcohol = 12.37
+MalicAcid = 1.07
+Ash = 2.10
+AlcalinityOfAsh = 1785
+Magnesium = 88
+TotalPhenols = 3.52
+Flavanoids = 3.75
+NonflavanoidPhenols = 0.24
+Proanthocyanins = 1.95
+ColorIntensity = 4.50
+Hue = 1.04
+OD280_OD315 = 2.77
+Proline = 660
+class = 2
+dist = 0.00
+id = 79
+Alcohol = 12.33
+MalicAcid = 0.99
+Ash = 1.95
+AlcalinityOfAsh = 1388
+Magnesium = 136
+TotalPhenols = 1.90
+Flavanoids = 1.85
+NonflavanoidPhenols = 0.35
+Proanthocyanins = 2.76
+ColorIntensity = 3.40
+Hue = 1.06
+OD280_OD315 = 2.31
+Proline = 750
+class = 2
+dist = 0.00
+id = 116
+Alcohol = 11.03
+MalicAcid = 1.51
+Ash = 2.20
+AlcalinityOfAsh = 2085
+Magnesium = 85
+TotalPhenols = 2.46
+Flavanoids = 2.17
+NonflavanoidPhenols = 0.52
+Proanthocyanins = 2.01
+ColorIntensity = 1.90
+Hue = 1.71
+OD280_OD315 = 2.87
+Proline = 407
+class = 2
+dist = 0.00
+id = 40
+Alcohol = 14.22
+MalicAcid = 3.99
+Ash = 2.51
+AlcalinityOfAsh = 1282
+Magnesium = 128
+TotalPhenols = 3.00
+Flavanoids = 3.04
+NonflavanoidPhenols = 0.20
+Proanthocyanins = 2.08
+ColorIntensity = 5.10
+Hue = 0.89
+OD280_OD315 = 3.53
+Proline = 760
+class = 1
+dist = 0.00
+id = 4
+Alcohol = 14.37
+MalicAcid = 1.95
+Ash = 2.50
+AlcalinityOfAsh = 1588
+Magnesium = 113
+TotalPhenols = 3.85
+Flavanoids = 3.49
+NonflavanoidPhenols = 0.24
+Proanthocyanins = 2.18
+ColorIntensity = 7.80
+Hue = 0.86
+OD280_OD315 = 3.45
+Proline = 1480
+class = 1
+dist = 0.00
+id = 144
+Alcohol = 13.62
+MalicAcid = 4.95
+Ash = 2.35
+AlcalinityOfAsh = 20
+Magnesium = 92
+TotalPhenols = 2.00
+Flavanoids = 0.80
+NonflavanoidPhenols = 0.47
+Proanthocyanins = 1.02
+ColorIntensity = 4.40
+Hue = 0.91
+OD280_OD315 = 2.05
+Proline = 550
+class = 3
+dist = 0.00
+id = 19
+Alcohol = 14.19
+MalicAcid = 1.59
+Ash = 2.48
+AlcalinityOfAsh = 1585
+Magnesium = 108
+TotalPhenols = 3.30
+Flavanoids = 3.93
+NonflavanoidPhenols = 0.32
+Proanthocyanins = 1.86
+ColorIntensity = 8.70
+Hue = 1.23
+OD280_OD315 = 2.82
+Proline = 1680
+class = 1
+dist = 0.00
+id = 169
+Alcohol = 13.58
+MalicAcid = 2.58
+Ash = 2.69
+AlcalinityOfAsh = 2385
+Magnesium = 105
+TotalPhenols = 1.55
+Flavanoids = 0.84
+NonflavanoidPhenols = 0.39
+Proanthocyanins = 1.54
+ColorIntensity = 8.66
+Hue = 0.74
+OD280_OD315 = 1.80
+Proline = 750
+class = 3
+dist = 0.00
+id = 66
+Alcohol = 12.37
+MalicAcid = 1.21
+Ash = 2.56
+AlcalinityOfAsh = 1781
+Magnesium = 98
+TotalPhenols = 2.42
+Flavanoids = 2.65
+NonflavanoidPhenols = 0.37
+Proanthocyanins = 2.08
+ColorIntensity = 4.60
+Hue = 1.19
+OD280_OD315 = 2.30
+Proline = 678
+class = 2
+dist = 0.00
+id = 41
+Alcohol = 13.56
+MalicAcid = 1.71
+Ash = 2.31
+AlcalinityOfAsh = 1582
+Magnesium = 117
+TotalPhenols = 3.15
+Flavanoids = 3.29
+NonflavanoidPhenols = 0.34
+Proanthocyanins = 2.34
+ColorIntensity = 6.13
+Hue = 0.95
+OD280_OD315 = 3.38
+Proline = 795
+class = 1
+dist = 0.00
+id = 11
+Alcohol = 14.10
+MalicAcid = 2.16
+Ash = 2.30
+AlcalinityOfAsh = 18
+Magnesium = 105
+TotalPhenols = 2.95
+Flavanoids = 3.32
+NonflavanoidPhenols = 0.22
+Proanthocyanins = 2.38
+ColorIntensity = 5.75
+Hue = 1.25
+OD280_OD315 = 3.17
+Proline = 1510
+class = 1
+dist = 0.00
+id = 158
+Alcohol = 12.45
+MalicAcid = 3.03
+Ash = 2.64
+AlcalinityOfAsh = 27
+Magnesium = 97
+TotalPhenols = 1.90
+Flavanoids = 0.58
+NonflavanoidPhenols = 0.63
+Proanthocyanins = 1.14
+ColorIntensity = 7.50
+Hue = 0.67
+OD280_OD315 = 1.73
+Proline = 880
+class = 3
+dist = 0.00
+id = 42
+Alcohol = 13.41
+MalicAcid = 3.84
+Ash = 2.12
+AlcalinityOfAsh = 1788
+Magnesium = 90
+TotalPhenols = 2.45
+Flavanoids = 2.68
+NonflavanoidPhenols = 0.27
+Proanthocyanins = 1.48
+ColorIntensity = 4.28
+Hue = 0.91
+OD280_OD315 = 3.00
+Proline = 1035
+class = 1
+dist = 0.00
+id = 76
+Alcohol = 11.66
+MalicAcid = 1.88
+Ash = 1.92
+AlcalinityOfAsh = 16
+Magnesium = 97
+TotalPhenols = 1.61
+Flavanoids = 1.57
+NonflavanoidPhenols = 0.34
+Proanthocyanins = 1.15
+ColorIntensity = 3.80
+Hue = 1.23
+OD280_OD315 = 2.14
+Proline = 428
+class = 2
+dist = 0.00
+id = 46
+Alcohol = 14.21
+MalicAcid = 4.04
+Ash = 2.44
+AlcalinityOfAsh = 1789
+Magnesium = 111
+TotalPhenols = 2.85
+Flavanoids = 2.65
+NonflavanoidPhenols = 0.30
+Proanthocyanins = 1.25
+ColorIntensity = 5.24
+Hue = 0.87
+OD280_OD315 = 3.33
+Proline = 1080
+class = 1
+dist = 0.00
+id = 92
+Alcohol = 12.00
+MalicAcid = 1.51
+Ash = 2.42
+AlcalinityOfAsh = 22
+Magnesium = 86
+TotalPhenols = 1.45
+Flavanoids = 1.25
+NonflavanoidPhenols = 0.50
+Proanthocyanins = 1.63
+ColorIntensity = 3.60
+Hue = 1.05
+OD280_OD315 = 2.65
+Proline = 450
+class = 2
+dist = 0.00
+id = 7
+Alcohol = 14.39
+MalicAcid = 1.87
+Ash = 2.45
+AlcalinityOfAsh = 1386
+Magnesium = 96
+TotalPhenols = 2.50
+Flavanoids = 2.52
+NonflavanoidPhenols = 0.30
+Proanthocyanins = 1.98
+ColorIntensity = 5.25
+Hue = 1.02
+OD280_OD315 = 3.58
+Proline = 1290
+class = 1
+dist = 0.00
+id = 3
+Alcohol = 13.16
+MalicAcid = 2.36
+Ash = 2.67
+AlcalinityOfAsh = 1786
+Magnesium = 101
+TotalPhenols = 2.80
+Flavanoids = 3.24
+NonflavanoidPhenols = 0.30
+Proanthocyanins = 2.81
+ColorIntensity = 5.68
+Hue = 1.03
+OD280_OD315 = 3.17
+Proline = 1185
+class = 1
+dist = 0.00
+id = 122
+Alcohol = 11.56
+MalicAcid = 2.05
+Ash = 3.23
+AlcalinityOfAsh = 2785
+Magnesium = 119
+TotalPhenols = 3.18
+Flavanoids = 5.08
+NonflavanoidPhenols = 0.47
+Proanthocyanins = 1.87
+ColorIntensity = 6.00
+Hue = 0.93
+OD280_OD315 = 3.69
+Proline = 465
+class = 2
+dist = 0.00
+id = 131
+Alcohol = 12.86
+MalicAcid = 1.35
+Ash = 2.32
+AlcalinityOfAsh = 18
+Magnesium = 122
+TotalPhenols = 1.51
+Flavanoids = 1.25
+NonflavanoidPhenols = 0.21
+Proanthocyanins = 0.94
+ColorIntensity = 4.10
+Hue = 0.76
+OD280_OD315 = 1.29
+Proline = 630
+class = 3
+dist = 0.00
+id = 59
+Alcohol = 13.72
+MalicAcid = 1.43
+Ash = 2.50
+AlcalinityOfAsh = 1587
+Magnesium = 108
+TotalPhenols = 3.40
+Flavanoids = 3.67
+NonflavanoidPhenols = 0.19
+Proanthocyanins = 2.04
+ColorIntensity = 6.80
+Hue = 0.89
+OD280_OD315 = 2.87
+Proline = 1285
+class = 1
+dist = 0.00
+id = 104
+Alcohol = 11.82
+MalicAcid = 1.72
+Ash = 1.88
+AlcalinityOfAsh = 1885
+Magnesium = 86
+TotalPhenols = 2.50
+Flavanoids = 1.64
+NonflavanoidPhenols = 0.37
+Proanthocyanins = 1.42
+ColorIntensity = 2.06
+Hue = 0.94
+OD280_OD315 = 2.44
+Proline = 415
+class = 2
+dist = 0.00
+id = 145
+Alcohol = 12.25
+MalicAcid = 3.88
+Ash = 2.20
+AlcalinityOfAsh = 1785
+Magnesium = 112
+TotalPhenols = 1.38
+Flavanoids = 0.78
+NonflavanoidPhenols = 0.29
+Proanthocyanins = 1.14
+ColorIntensity = 8.21
+Hue = 0.65
+OD280_OD315 = 2.00
+Proline = 855
+class = 3
+dist = 0.00
+id = 62
+Alcohol = 12.64
+MalicAcid = 1.36
+Ash = 2.02
+AlcalinityOfAsh = 1588
+Magnesium = 100
+TotalPhenols = 2.02
+Flavanoids = 1.41
+NonflavanoidPhenols = 0.53
+Proanthocyanins = 0.62
+ColorIntensity = 5.75
+Hue = 0.98
+OD280_OD315 = 1.59
+Proline = 450
+class = 2
+dist = 0.00
+id = 148
+Alcohol = 12.87
+MalicAcid = 4.61
+Ash = 2.48
+AlcalinityOfAsh = 2085
+Magnesium = 86
+TotalPhenols = 1.70
+Flavanoids = 0.65
+NonflavanoidPhenols = 0.47
+Proanthocyanins = 0.86
+ColorIntensity = 7.65
+Hue = 0.54
+OD280_OD315 = 1.86
+Proline = 625
+class = 3
+dist = 0.00
+id = 150
+Alcohol = 13.08
+MalicAcid = 3.90
+Ash = 2.36
+AlcalinityOfAsh = 2085
+Magnesium = 113
+TotalPhenols = 1.41
+Flavanoids = 1.39
+NonflavanoidPhenols = 0.34
+Proanthocyanins = 1.14
+ColorIntensity = 9.40
+Hue = 0.57
+OD280_OD315 = 1.33
+Proline = 550
+class = 3
+dist = 0.00
+id = 12
+Alcohol = 14.12
+MalicAcid = 1.48
+Ash = 2.32
+AlcalinityOfAsh = 1588
+Magnesium = 95
+TotalPhenols = 2.20
+Flavanoids = 2.43
+NonflavanoidPhenols = 0.26
+Proanthocyanins = 1.57
+ColorIntensity = 5.00
+Hue = 1.17
+OD280_OD315 = 2.82
+Proline = 1280
+class = 1
+dist = 0.00
+id = 129
+Alcohol = 12.37
+MalicAcid = 1.63
+Ash = 2.30
+AlcalinityOfAsh = 2385
+Magnesium = 88
+TotalPhenols = 2.22
+Flavanoids = 2.45
+NonflavanoidPhenols = 0.40
+Proanthocyanins = 1.90
+ColorIntensity = 2.12
+Hue = 0.89
+OD280_OD315 = 2.78
+Proline = 342
+class = 2
+dist = 0.00
+id = 61
+Alcohol = 12.33
+MalicAcid = 1.10
+Ash = 2.28
+AlcalinityOfAsh = 16
+Magnesium = 101
+TotalPhenols = 2.05
+Flavanoids = 1.09
+NonflavanoidPhenols = 0.63
+Proanthocyanins = 0.41
+ColorIntensity = 3.27
+Hue = 1.25
+OD280_OD315 = 1.67
+Proline = 680
+class = 2
+dist = 0.00
+id = 69
+Alcohol = 13.34
+MalicAcid = 0.94
+Ash = 2.36
+AlcalinityOfAsh = 17
+Magnesium = 110
+TotalPhenols = 2.53
+Flavanoids = 1.30
+NonflavanoidPhenols = 0.55
+Proanthocyanins = 0.42
+ColorIntensity = 3.17
+Hue = 1.02
+OD280_OD315 = 1.93
+Proline = 750
+class = 2
+dist = 0.00
+id = 142
+Alcohol = 13.36
+MalicAcid = 2.56
+Ash = 2.35
+AlcalinityOfAsh = 20
+Magnesium = 89
+TotalPhenols = 1.40
+Flavanoids = 0.50
+NonflavanoidPhenols = 0.37
+Proanthocyanins = 0.64
+ColorIntensity = 5.60
+Hue = 0.70
+OD280_OD315 = 2.47
+Proline = 780
+class = 3
+dist = 0.00
+id = 29
+Alcohol = 13.87
+MalicAcid = 1.90
+Ash = 2.80
+AlcalinityOfAsh = 1884
+Magnesium = 107
+TotalPhenols = 2.95
+Flavanoids = 2.97
+NonflavanoidPhenols = 0.37
+Proanthocyanins = 1.76
+ColorIntensity = 4.50
+Hue = 1.25
+OD280_OD315 = 3.40
+Proline = 915
+class = 1
+dist = 0.00
+id = 117
+Alcohol = 11.82
+MalicAcid = 1.47
+Ash = 1.99
+AlcalinityOfAsh = 1988
+Magnesium = 86
+TotalPhenols = 1.98
+Flavanoids = 1.60
+NonflavanoidPhenols = 0.30
+Proanthocyanins = 1.53
+ColorIntensity = 1.95
+Hue = 0.95
+OD280_OD315 = 3.33
+Proline = 495
+class = 2
+dist = 0.00
+id = 1
+Alcohol = 14.23
+MalicAcid = 1.71
+Ash = 2.43
+AlcalinityOfAsh = 1486
+Magnesium = 127
+TotalPhenols = 2.80
+Flavanoids = 3.06
+NonflavanoidPhenols = 0.28
+Proanthocyanins = 2.29
+ColorIntensity = 5.64
+Hue = 1.04
+OD280_OD315 = 3.92
+Proline = 1065
+class = 1
+dist = 0.00
+id = 48
+Alcohol = 13.90
+MalicAcid = 1.68
+Ash = 2.12
+AlcalinityOfAsh = 16
+Magnesium = 101
+TotalPhenols = 3.10
+Flavanoids = 3.39
+NonflavanoidPhenols = 0.21
+Proanthocyanins = 2.14
+ColorIntensity = 6.10
+Hue = 0.91
+OD280_OD315 = 3.33
+Proline = 985
+class = 1
+dist = 0.00
+id = 43
+Alcohol = 13.88
+MalicAcid = 1.89
+Ash = 2.59
+AlcalinityOfAsh = 15
+Magnesium = 101
+TotalPhenols = 3.25
+Flavanoids = 3.56
+NonflavanoidPhenols = 0.17
+Proanthocyanins = 1.70
+ColorIntensity = 5.43
+Hue = 0.88
+OD280_OD315 = 3.56
+Proline = 1095
+class = 1
+dist = 0.00
+id = 52
+Alcohol = 13.83
+MalicAcid = 1.65
+Ash = 2.60
+AlcalinityOfAsh = 1682
+Magnesium = 94
+TotalPhenols = 2.45
+Flavanoids = 2.99
+NonflavanoidPhenols = 0.22
+Proanthocyanins = 2.29
+ColorIntensity = 5.60
+Hue = 1.24
+OD280_OD315 = 3.37
+Proline = 1265
+class = 1
+dist = 0.00
+id = 73
+Alcohol = 13.49
+MalicAcid = 1.66
+Ash = 2.24
+AlcalinityOfAsh = 24
+Magnesium = 87
+TotalPhenols = 1.88
+Flavanoids = 1.84
+NonflavanoidPhenols = 0.27
+Proanthocyanins = 1.03
+ColorIntensity = 3.74
+Hue = 0.98
+OD280_OD315 = 2.78
+Proline = 472
+class = 2
+dist = 0.00
+id = 28
+Alcohol = 13.30
+MalicAcid = 1.72
+Ash = 2.14
+AlcalinityOfAsh = 17
+Magnesium = 94
+TotalPhenols = 2.40
+Flavanoids = 2.19
+NonflavanoidPhenols = 0.27
+Proanthocyanins = 1.35
+ColorIntensity = 3.95
+Hue = 1.02
+OD280_OD315 = 2.77
+Proline = 1285
+class = 1
+dist = 0.00
+id = 126
+Alcohol = 12.07
+MalicAcid = 2.16
+Ash = 2.17
+AlcalinityOfAsh = 21
+Magnesium = 85
+TotalPhenols = 2.60
+Flavanoids = 2.65
+NonflavanoidPhenols = 0.37
+Proanthocyanins = 1.35
+ColorIntensity = 2.76
+Hue = 0.86
+OD280_OD315 = 3.28
+Proline = 378
+class = 2
+dist = 0.00
+id = 22
+Alcohol = 12.93
+MalicAcid = 3.80
+Ash = 2.65
+AlcalinityOfAsh = 1786
+Magnesium = 102
+TotalPhenols = 2.41
+Flavanoids = 2.41
+NonflavanoidPhenols = 0.25
+Proanthocyanins = 1.98
+ColorIntensity = 4.50
+Hue = 1.03
+OD280_OD315 = 3.52
+Proline = 770
+class = 1
+dist = 0.00
+id = 54
+Alcohol = 13.77
+MalicAcid = 1.90
+Ash = 2.68
+AlcalinityOfAsh = 1681
+Magnesium = 115
+TotalPhenols = 3.00
+Flavanoids = 2.79
+NonflavanoidPhenols = 0.39
+Proanthocyanins = 1.68
+ColorIntensity = 6.30
+Hue = 1.13
+OD280_OD315 = 2.93
+Proline = 1375
+class = 1
+dist = 0.00
+id = 8
+Alcohol = 14.06
+MalicAcid = 2.15
+Ash = 2.61
+AlcalinityOfAsh = 1686
+Magnesium = 121
+TotalPhenols = 2.60
+Flavanoids = 2.51
+NonflavanoidPhenols = 0.31
+Proanthocyanins = 1.25
+ColorIntensity = 5.05
+Hue = 1.06
+OD280_OD315 = 3.58
+Proline = 1295
+class = 1
+dist = 0.00
+id = 176
+Alcohol = 13.27
+MalicAcid = 4.28
+Ash = 2.26
+AlcalinityOfAsh = 20
+Magnesium = 120
+TotalPhenols = 1.59
+Flavanoids = 0.69
+NonflavanoidPhenols = 0.43
+Proanthocyanins = 1.35
+ColorIntensity = 10.20
+Hue = 0.59
+OD280_OD315 = 1.56
+Proline = 835
+class = 3
+dist = 0.00
+id = 85
+Alcohol = 11.84
+MalicAcid = 0.89
+Ash = 2.58
+AlcalinityOfAsh = 18
+Magnesium = 94
+TotalPhenols = 2.20
+Flavanoids = 2.21
+NonflavanoidPhenols = 0.22
+Proanthocyanins = 2.35
+ColorIntensity = 3.05
+Hue = 0.79
+OD280_OD315 = 3.08
+Proline = 520
+class = 2
+dist = 0.00
+id = 16
+Alcohol = 13.63
+MalicAcid = 1.81
+Ash = 2.70
+AlcalinityOfAsh = 1682
+Magnesium = 112
+TotalPhenols = 2.85
+Flavanoids = 2.91
+NonflavanoidPhenols = 0.30
+Proanthocyanins = 1.46
+ColorIntensity = 7.30
+Hue = 1.28
+OD280_OD315 = 2.88
+Proline = 1310
+class = 1
+dist = 0.00
+id = 121
+Alcohol = 11.45
+MalicAcid = 2.40
+Ash = 2.42
+AlcalinityOfAsh = 20
+Magnesium = 96
+TotalPhenols = 2.90
+Flavanoids = 2.79
+NonflavanoidPhenols = 0.32
+Proanthocyanins = 1.83
+ColorIntensity = 3.25
+Hue = 0.80
+OD280_OD315 = 3.39
+Proline ==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5190B83: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402535: printEntry (knnNEW.c:712)
+==13203==    by 0x402E24: knn (knnNEW.c:932)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518D76B: _itoa_word (_itoa.c:179)
+==13203==    by 0x519112C: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402535: printEntry (knnNEW.c:712)
+==13203==    by 0x402E24: knn (knnNEW.c:932)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x518D775: _itoa_word (_itoa.c:179)
+==13203==    by 0x519112C: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402535: printEntry (knnNEW.c:712)
+==13203==    by 0x402E24: knn (knnNEW.c:932)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x51911AF: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402535: printEntry (knnNEW.c:712)
+==13203==    by 0x402E24: knn (knnNEW.c:932)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5190C59: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402535: printEntry (knnNEW.c:712)
+==13203==    by 0x402E24: knn (knnNEW.c:932)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x519141A: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402535: printEntry (knnNEW.c:712)
+==13203==    by 0x402E24: knn (knnNEW.c:932)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5190CAB: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402535: printEntry (knnNEW.c:712)
+==13203==    by 0x402E24: knn (knnNEW.c:932)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5190CE2: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402535: printEntry (knnNEW.c:712)
+==13203==    by 0x402E24: knn (knnNEW.c:932)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5190B83: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518D76B: _itoa_word (_itoa.c:179)
+==13203==    by 0x519112C: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x518D775: _itoa_word (_itoa.c:179)
+==13203==    by 0x519112C: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x51911AF: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5190C59: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x519141A: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5190CAB: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5190CE2: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4E4BBF7: __ieee754_pow_sse2 (e_pow.c:76)
+==13203==    by 0x4E5BE53: pow (w_pow.c:27)
+==13203==    by 0x402699: calculateEuclideanDistance (knnNEW.c:745)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4E4BBFD: __ieee754_pow_sse2 (e_pow.c:76)
+==13203==    by 0x4E5BE53: pow (w_pow.c:27)
+==13203==    by 0x402699: calculateEuclideanDistance (knnNEW.c:745)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4E5BE7B: pow (w_pow.c:28)
+==13203==    by 0x402699: calculateEuclideanDistance (knnNEW.c:745)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4E5BE85: pow (w_pow.c:58)
+==13203==    by 0x402699: calculateEuclideanDistance (knnNEW.c:745)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4E5BE87: pow (w_pow.c:58)
+==13203==    by 0x402699: calculateEuclideanDistance (knnNEW.c:745)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x51936C8: __printf_fp_l (printf_fp.c:381)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x51936E2: __printf_fp_l (printf_fp.c:395)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x518D060: __mpn_extract_double (dbl2mpn.c:56)
+==13203==    by 0x5193711: __printf_fp_l (printf_fp.c:411)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5193786: __printf_fp_l (printf_fp.c:464)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5194168: __printf_fp_l (printf_fp.c:473)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x5194F18: __printf_fp_l (printf_fp.c:481)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518B988: __mpn_lshift (lshift.S:59)
+==13203==    by 0x5194F1C: __printf_fp_l (printf_fp.c:481)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518B98B: __mpn_lshift (lshift.S:60)
+==13203==    by 0x5194F1C: __printf_fp_l (printf_fp.c:481)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5194F42: __printf_fp_l (printf_fp.c:486)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x5194F54: __printf_fp_l (printf_fp.c:487)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5194198: __printf_fp_l (printf_fp.c:489)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5194243: __printf_fp_l (printf_fp.c:498)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4C32B1D: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194203: __printf_fp_l (printf_fp.c:524)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4C32DDC: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194203: __printf_fp_l (printf_fp.c:524)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4C32B7E: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194203: __printf_fp_l (printf_fp.c:524)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4C32B8F: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194203: __printf_fp_l (printf_fp.c:524)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4C32BA5: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194203: __printf_fp_l (printf_fp.c:524)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x4C32D2B: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194203: __printf_fp_l (printf_fp.c:524)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x519420C: __printf_fp_l (printf_fp.c:540)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5194212: __printf_fp_l (printf_fp.c:540)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518B45A: __mpn_cmp (cmp.c:37)
+==13203==    by 0x519463D: __printf_fp_l (printf_fp.c:540)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518B45E: __mpn_cmp (cmp.c:38)
+==13203==    by 0x519463D: __printf_fp_l (printf_fp.c:540)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x518B465: __mpn_cmp (cmp.c:39)
+==13203==    by 0x519463D: __printf_fp_l (printf_fp.c:540)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5194644: __printf_fp_l (printf_fp.c:540)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4C32B1D: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4C32B23: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4C32B31: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4C32B7E: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x4C32D28: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x4C32D2B: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4C32D36: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==13203==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x519466D: __printf_fp_l (printf_fp.c:544)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518BFA4: __mpn_mul_1 (mul_1.S:36)
+==13203==    by 0x518BBE9: __mpn_mul (mul.c:81)
+==13203==    by 0x519426E: __printf_fp_l (printf_fp.c:530)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518C02F: __mpn_mul_1 (mul_1.S:85)
+==13203==    by 0x518BBE9: __mpn_mul (mul.c:81)
+==13203==    by 0x519426E: __printf_fp_l (printf_fp.c:530)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518C0A2: __mpn_mul_1 (mul_1.S:117)
+==13203==    by 0x518BBE9: __mpn_mul (mul.c:81)
+==13203==    by 0x519426E: __printf_fp_l (printf_fp.c:530)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518BBFA: __mpn_mul (mul.c:83)
+==13203==    by 0x519426E: __printf_fp_l (printf_fp.c:530)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x51946C3: __printf_fp_l (printf_fp.c:562)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x51946D3: __printf_fp_l (printf_fp.c:562)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x51946D7: __printf_fp_l (printf_fp.c:562)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x5194705: __printf_fp_l (printf_fp.c:562)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x519471B: __printf_fp_l (printf_fp.c:566)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x5194730: __printf_fp_l (printf_fp.c:585)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x519473E: __printf_fp_l (printf_fp.c:585)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x519547D: __printf_fp_l (printf_fp.c:607)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518BA98: __mpn_rshift (rshift.S:62)
+==13203==    by 0x51954A3: __printf_fp_l (printf_fp.c:625)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518BABD: __mpn_rshift (rshift.S:73)
+==13203==    by 0x51954A3: __printf_fp_l (printf_fp.c:625)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x518BA45: __mpn_rshift (rshift.S:31)
+==13203==    by 0x51947A4: __printf_fp_l (printf_fp.c:629)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x518BA6C: __mpn_rshift (rshift.S:45)
+==13203==    by 0x51947A4: __printf_fp_l (printf_fp.c:629)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x518BA96: __mpn_rshift (rshift.S:61)
+==13203==    by 0x51947A4: __printf_fp_l (printf_fp.c:629)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518BA98: __mpn_rshift (rshift.S:62)
+==13203==    by 0x51947A4: __printf_fp_l (printf_fp.c:629)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x518BAA9: __mpn_rshift (rshift.S:67)
+==13203==    by 0x51947A4: __printf_fp_l (printf_fp.c:629)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518BABD: __mpn_rshift (rshift.S:73)
+==13203==    by 0x51947A4: __printf_fp_l (printf_fp.c:629)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x51947B6: __printf_fp_l (printf_fp.c:633)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x51930AD: hack_digit (printf_fp.c:182)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518B82D: __mpn_divrem (divrem.c:62)
+==13203==    by 0x5193105: hack_digit (printf_fp.c:186)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518B830: __mpn_divrem (divrem.c:63)
+==13203==    by 0x5193105: hack_digit (printf_fp.c:186)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x518B83B: __mpn_divrem (divrem.c:65)
+==13203==    by 0x5193105: hack_digit (printf_fp.c:186)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x518B84C: __mpn_divrem (divrem.c:72)
+==13203==    by 0x5193105: hack_digit (printf_fp.c:186)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518B858: __mpn_divrem (divrem.c:73)
+==13203==    by 0x5193105: hack_digit (printf_fp.c:186)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518B867: __mpn_divrem (divrem.c:73)
+==13203==    by 0x5193105: hack_digit (printf_fp.c:186)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x518B86F: __mpn_divrem (divrem.c:72)
+==13203==    by 0x5193105: hack_digit (printf_fp.c:186)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518B89B: __mpn_divrem (divrem.c:79)
+==13203==    by 0x5193105: hack_digit (printf_fp.c:186)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x5193112: hack_digit (printf_fp.c:188)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x519311A: hack_digit (printf_fp.c:189)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x519312E: hack_digit (printf_fp.c:192)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5193134: hack_digit (printf_fp.c:192)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518BFA4: __mpn_mul_1 (mul_1.S:36)
+==13203==    by 0x51930C4: hack_digit (printf_fp.c:203)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518BFC8: __mpn_mul_1 (mul_1.S:52)
+==13203==    by 0x51930C4: hack_digit (printf_fp.c:203)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x51930C8: hack_digit (printf_fp.c:204)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x51930DA: hack_digit (printf_fp.c:205)
+==13203==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518B82D: __mpn_divrem (divrem.c:62)
+==13203==    by 0x51942DD: hack_digit (printf_fp.c:186)
+==13203==    by 0x51942DD: __printf_fp_l (printf_fp.c:947)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518B830: __mpn_divrem (divrem.c:63)
+==13203==    by 0x51942DD: hack_digit (printf_fp.c:186)
+==13203==    by 0x51942DD: __printf_fp_l (printf_fp.c:947)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x518B83B: __mpn_divrem (divrem.c:65)
+==13203==    by 0x51942DD: hack_digit (printf_fp.c:186)
+==13203==    by 0x51942DD: __printf_fp_l (printf_fp.c:947)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x518B89B: __mpn_divrem (divrem.c:79)
+==13203==    by 0x51942DD: hack_digit (printf_fp.c:186)
+==13203==    by 0x51942DD: __printf_fp_l (printf_fp.c:947)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x51942EA: hack_digit (printf_fp.c:188)
+==13203==    by 0x51942EA: __printf_fp_l (printf_fp.c:947)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x51942F2: hack_digit (printf_fp.c:189)
+==13203==    by 0x51942F2: __printf_fp_l (printf_fp.c:947)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== 
+==13203== More than 100 errors detected.  Subsequent errors
+==13203== will still be recorded, but in less detail than before.
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x5194306: hack_digit (printf_fp.c:192)
+==13203==    by 0x5194306: __printf_fp_l (printf_fp.c:947)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x519430C: hack_digit (printf_fp.c:192)
+==13203==    by 0x519430C: __printf_fp_l (printf_fp.c:947)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x5193112: hack_digit (printf_fp.c:188)
+==13203==    by 0x51943D0: __printf_fp_l (printf_fp.c:960)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x519311A: hack_digit (printf_fp.c:189)
+==13203==    by 0x51943D0: __printf_fp_l (printf_fp.c:960)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x519312E: hack_digit (printf_fp.c:192)
+==13203==    by 0x51943D0: __printf_fp_l (printf_fp.c:960)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5193134: hack_digit (printf_fp.c:192)
+==13203==    by 0x51943D0: __printf_fp_l (printf_fp.c:960)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Use of uninitialised value of size 8
+==13203==    at 0x51952D8: __printf_fp_l (printf_fp.c:964)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x519455F: __printf_fp_l (printf_fp.c:1147)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x5194836: __printf_fp_l (printf_fp.c:1154)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x51949F1: __printf_fp_l (printf_fp.c:1210)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x51949D3: __printf_fp_l (printf_fp.c:1212)
+==13203==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==13203==    by 0x5198898: printf (printf.c:33)
+==13203==    by 0x402654: calculateEuclideanDistance (knnNEW.c:744)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x4E5C258: sqrt (w_sqrt.c:27)
+==13203==    by 0x402735: calculateEuclideanDistance (knnNEW.c:751)
+==13203==    by 0x402E7F: knn (knnNEW.c:934)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+= 625
+class = 2
+dist = 0.00
+id = 89
+Alcohol = 11.64
+MalicAcid = 2.06
+Ash = 2.46
+AlcalinityOfAsh = 2086
+Magnesium = 84
+TotalPhenols = 1.95
+Flavanoids = 1.69
+NonflavanoidPhenols = 0.48
+Proanthocyanins = 1.35
+ColorIntensity = 2.80
+Hue = 1.00
+OD280_OD315 = 2.75
+Proline = 680
+class = 2
+dist = 0.00
+id = 2
+Alcohol = 13.20
+MalicAcid = 1.78
+Ash = 2.14
+AlcalinityOfAsh = 1082
+Magnesium = 100
+TotalPhenols = 2.65
+Flavanoids = 2.76
+NonflavanoidPhenols = 0.26
+Proanthocyanins = 1.28
+ColorIntensity = 4.38
+Hue = 1.05
+OD280_OD315 = 3.40
+Proline = 1050
+class = 1
+dist = 0.00
+id = 130
+Alcohol = 12.04
+MalicAcid = 4.30
+Ash = 2.38
+AlcalinityOfAsh = 22
+Magnesium = 80
+TotalPhenols = 2.10
+Flavanoids = 1.75
+NonflavanoidPhenols = 0.42
+Proanthocyanins = 1.35
+ColorIntensity = 2.60
+Hue = 0.79
+OD280_OD315 = 2.57
+Proline = 580
+class = 2
+dist = 0.00
+id = 134
+Alcohol = 12.70
+MalicAcid = 3.55
+Ash = 2.36
+AlcalinityOfAsh = 2085
+Magnesium = 106
+TotalPhenols = 1.70
+Flavanoids = 1.20
+NonflavanoidPhenols = 0.17
+Proanthocyanins = 0.84
+ColorIntensity = 5.00
+Hue = 0.78
+OD280_OD315 = 1.29
+Proline = 600
+class = 3
+dist = 0.00
+id = 56
+Alcohol = 13.56
+MalicAcid = 1.73
+Ash = 2.46
+AlcalinityOfAsh = 1985
+Magnesium = 116
+TotalPhenols = 2.96
+Flavanoids = 2.78
+NonflavanoidPhenols = 0.20
+Proanthocyanins = 2.45
+ColorIntensity = 6.25
+Hue = 0.98
+OD280_OD315 = 3.03
+Proline = 1120
+class = 1
+dist = 0.00
+id = 35
+Alcohol = 13.51
+MalicAcid = 1.80
+Ash = 2.65
+AlcalinityOfAsh = 19
+Magnesium = 110
+TotalPhenols = 2.35
+Flavanoids = 2.53
+NonflavanoidPhenols = 0.29
+Proanthocyanins = 1.54
+ColorIntensity = 4.20
+Hue = 1.10
+OD280_OD315 = 2.87
+Proline = 1095
+class = 1
+dist = 0.00
+id: 88
+number of int entries: 3
+int attribute 0: 562
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.65
+double attribute 1: 1.67
+double attribute 2: 2.62
+double attribute 3: 1.92
+double attribute 4: 1.61
+double attribute 5: 0.40
+double attribute 6: 1.34
+double attribute 7: 2.60
+double attribute 8: 1.36
+double attribute 9: 3.21
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 562	attrInt[i]: 20
+i: 1	distance: 293764.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 308164.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 135
+number of int entries: 3
+int attribute 0: 650
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.51
+double attribute 1: 1.24
+double attribute 2: 2.25
+double attribute 3: 2.00
+double attribute 4: 0.58
+double attribute 5: 0.60
+double attribute 6: 1.25
+double attribute 7: 5.45
+double attribute 8: 0.75
+double attribute 9: 1.51
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 650	attrInt[i]: 20
+i: 1	distance: 396900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 411300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 98
+number of int entries: 3
+int attribute 0: 428
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.29
+double attribute 1: 1.41
+double attribute 2: 1.98
+double attribute 3: 2.55
+double attribute 4: 2.50
+double attribute 5: 0.29
+double attribute 6: 1.77
+double attribute 7: 2.90
+double attribute 8: 1.23
+double attribute 9: 2.74
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 428	attrInt[i]: 20
+i: 1	distance: 166464.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 180864.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 138
+number of int entries: 3
+int attribute 0: 515
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.53
+double attribute 1: 5.51
+double attribute 2: 2.64
+double attribute 3: 1.79
+double attribute 4: 0.60
+double attribute 5: 0.63
+double attribute 6: 1.10
+double attribute 7: 5.00
+double attribute 8: 0.82
+double attribute 9: 1.69
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 515	attrInt[i]: 20
+i: 1	distance: 245025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 259425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 153
+number of int entries: 3
+int attribute 0: 425
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.11
+double attribute 1: 1.90
+double attribute 2: 2.75
+double attribute 3: 2.20
+double attribute 4: 1.28
+double attribute 5: 0.26
+double attribute 6: 1.56
+double attribute 7: 7.10
+double attribute 8: 0.61
+double attribute 9: 1.33
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 425	attrInt[i]: 20
+i: 1	distance: 164025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 178425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 49
+number of int entries: 3
+int attribute 0: 1060
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.10
+double attribute 1: 2.02
+double attribute 2: 2.40
+double attribute 3: 2.75
+double attribute 4: 2.92
+double attribute 5: 0.32
+double attribute 6: 2.38
+double attribute 7: 6.20
+double attribute 8: 1.07
+double attribute 9: 2.75
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1060	attrInt[i]: 20
+i: 1	distance: 1081600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1096000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 108
+number of int entries: 3
+int attribute 0: 488
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.72
+double attribute 1: 1.75
+double attribute 2: 2.28
+double attribute 3: 1.38
+double attribute 4: 1.76
+double attribute 5: 0.48
+double attribute 6: 1.63
+double attribute 7: 3.30
+double attribute 8: 0.88
+double attribute 9: 2.42
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 488	attrInt[i]: 20
+i: 1	distance: 219024.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 233424.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 164
+number of int entries: 3
+int attribute 0: 675
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.96
+double attribute 1: 3.45
+double attribute 2: 2.35
+double attribute 3: 1.39
+double attribute 4: 0.70
+double attribute 5: 0.40
+double attribute 6: 0.94
+double attribute 7: 5.28
+double attribute 8: 0.68
+double attribute 9: 1.75
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 675	attrInt[i]: 20
+i: 1	distance: 429025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 443425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 71
+number of int entries: 3
+int attribute 0: 870
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.29
+double attribute 1: 1.61
+double attribute 2: 2.21
+double attribute 3: 1.10
+double attribute 4: 1.02
+double attribute 5: 0.37
+double attribute 6: 1.46
+double attribute 7: 3.05
+double attribute 8: 0.91
+double attribute 9: 1.82
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 870	attrInt[i]: 20
+i: 1	distance: 722500.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 736900.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 163
+number of int entries: 3
+int attribute 0: 570
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.85
+double attribute 1: 3.27
+double attribute 2: 2.58
+double attribute 3: 1.65
+double attribute 4: 0.60
+double attribute 5: 0.60
+double attribute 6: 0.96
+double attribute 7: 5.58
+double attribute 8: 0.87
+double attribute 9: 2.11
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 570	attrInt[i]: 20
+i: 1	distance: 302500.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 316900.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 112
+number of int entries: 3
+int attribute 0: 325
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.52
+double attribute 1: 2.43
+double attribute 2: 2.17
+double attribute 3: 2.55
+double attribute 4: 2.27
+double attribute 5: 0.26
+double attribute 6: 1.22
+double attribute 7: 2.00
+double attribute 8: 0.90
+double attribute 9: 2.78
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 325	attrInt[i]: 20
+i: 1	distance: 93025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 107425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 102
+number of int entries: 3
+int attribute 0: 562
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.60
+double attribute 1: 1.34
+double attribute 2: 1.90
+double attribute 3: 1.45
+double attribute 4: 1.36
+double attribute 5: 0.29
+double attribute 6: 1.35
+double attribute 7: 2.45
+double attribute 8: 1.04
+double attribute 9: 2.77
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 562	attrInt[i]: 20
+i: 1	distance: 293764.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 308164.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 137
+number of int entries: 3
+int attribute 0: 720
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.25
+double attribute 1: 4.72
+double attribute 2: 2.54
+double attribute 3: 1.38
+double attribute 4: 0.47
+double attribute 5: 0.53
+double attribute 6: 0.80
+double attribute 7: 3.85
+double attribute 8: 0.75
+double attribute 9: 1.27
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 720	attrInt[i]: 20
+i: 1	distance: 490000.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 504400.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 133
+number of int entries: 3
+int attribute 0: 560
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.81
+double attribute 1: 2.31
+double attribute 2: 2.40
+double attribute 3: 1.15
+double attribute 4: 1.09
+double attribute 5: 0.27
+double attribute 6: 0.83
+double attribute 7: 5.70
+double attribute 8: 0.66
+double attribute 9: 1.36
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 560	attrInt[i]: 20
+i: 1	distance: 291600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 306000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 63
+number of int entries: 3
+int attribute 0: 630
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.67
+double attribute 1: 1.25
+double attribute 2: 1.92
+double attribute 3: 2.10
+double attribute 4: 1.79
+double attribute 5: 0.32
+double attribute 6: 0.73
+double attribute 7: 3.80
+double attribute 8: 1.23
+double attribute 9: 2.46
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 630	attrInt[i]: 20
+i: 1	distance: 372100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 386500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 128
+number of int entries: 3
+int attribute 0: 466
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.79
+double attribute 1: 2.13
+double attribute 2: 2.78
+double attribute 3: 2.13
+double attribute 4: 2.24
+double attribute 5: 0.58
+double attribute 6: 1.76
+double attribute 7: 3.00
+double attribute 8: 0.97
+double attribute 9: 2.44
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 466	attrInt[i]: 20
+i: 1	distance: 198916.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 213316.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 156
+number of int entries: 3
+int attribute 0: 725
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.17
+double attribute 1: 5.19
+double attribute 2: 2.32
+double attribute 3: 1.74
+double attribute 4: 0.63
+double attribute 5: 0.61
+double attribute 6: 1.55
+double attribute 7: 7.90
+double attribute 8: 0.60
+double attribute 9: 1.48
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 725	attrInt[i]: 20
+i: 1	distance: 497025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 511425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 38
+number of int entries: 3
+int attribute 0: 1105
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.05
+double attribute 1: 1.65
+double attribute 2: 2.55
+double attribute 3: 2.45
+double attribute 4: 2.43
+double attribute 5: 0.29
+double attribute 6: 1.44
+double attribute 7: 4.25
+double attribute 8: 1.12
+double attribute 9: 2.51
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1105	attrInt[i]: 20
+i: 1	distance: 1177225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1191625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 159
+number of int entries: 3
+int attribute 0: 660
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.34
+double attribute 1: 1.68
+double attribute 2: 2.70
+double attribute 3: 2.80
+double attribute 4: 1.31
+double attribute 5: 0.53
+double attribute 6: 2.70
+double attribute 7: 13.00
+double attribute 8: 0.57
+double attribute 9: 1.96
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 660	attrInt[i]: 20
+i: 1	distance: 409600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 424000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 147
+number of int entries: 3
+int attribute 0: 415
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.88
+double attribute 1: 5.04
+double attribute 2: 2.23
+double attribute 3: 0.98
+double attribute 4: 0.34
+double attribute 5: 0.40
+double attribute 6: 0.68
+double attribute 7: 4.90
+double attribute 8: 0.58
+double attribute 9: 1.33
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 415	attrInt[i]: 20
+i: 1	distance: 156025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 170425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 58
+number of int entries: 3
+int attribute 0: 1270
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.29
+double attribute 1: 1.97
+double attribute 2: 2.68
+double attribute 3: 3.00
+double attribute 4: 3.23
+double attribute 5: 0.31
+double attribute 6: 1.66
+double attribute 7: 6.00
+double attribute 8: 1.07
+double attribute 9: 2.84
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1270	attrInt[i]: 20
+i: 1	distance: 1562500.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1576900.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 154
+number of int entries: 3
+int attribute 0: 675
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.23
+double attribute 1: 3.30
+double attribute 2: 2.28
+double attribute 3: 1.80
+double attribute 4: 0.83
+double attribute 5: 0.61
+double attribute 6: 1.87
+double attribute 7: 10.52
+double attribute 8: 0.56
+double attribute 9: 1.51
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 675	attrInt[i]: 20
+i: 1	distance: 429025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 443425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 136
+number of int entries: 3
+int attribute 0: 695
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.60
+double attribute 1: 2.46
+double attribute 2: 2.20
+double attribute 3: 1.62
+double attribute 4: 0.66
+double attribute 5: 0.63
+double attribute 6: 0.94
+double attribute 7: 7.10
+double attribute 8: 0.73
+double attribute 9: 1.58
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 695	attrInt[i]: 20
+i: 1	distance: 455625.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 470025.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 178
+number of int entries: 3
+int attribute 0: 560
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.13
+double attribute 1: 4.10
+double attribute 2: 2.74
+double attribute 3: 2.05
+double attribute 4: 0.76
+double attribute 5: 0.56
+double attribute 6: 1.35
+double attribute 7: 9.20
+double attribute 8: 0.61
+double attribute 9: 1.60
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 560	attrInt[i]: 20
+i: 1	distance: 291600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 306000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 31
+number of int entries: 3
+int attribute 0: 1285
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.73
+double attribute 1: 1.50
+double attribute 2: 2.70
+double attribute 3: 3.00
+double attribute 4: 3.25
+double attribute 5: 0.29
+double attribute 6: 2.38
+double attribute 7: 5.70
+double attribute 8: 1.19
+double attribute 9: 2.71
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1285	attrInt[i]: 20
+i: 1	distance: 1600225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1614625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 80
+number of int entries: 3
+int attribute 0: 463
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.70
+double attribute 1: 3.87
+double attribute 2: 2.40
+double attribute 3: 2.83
+double attribute 4: 2.55
+double attribute 5: 0.43
+double attribute 6: 1.95
+double attribute 7: 2.57
+double attribute 8: 1.19
+double attribute 9: 3.13
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 463	attrInt[i]: 20
+i: 1	distance: 196249.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 210649.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 32
+number of int entries: 3
+int attribute 0: 1515
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.58
+double attribute 1: 1.66
+double attribute 2: 2.36
+double attribute 3: 2.86
+double attribute 4: 3.19
+double attribute 5: 0.22
+double attribute 6: 1.95
+double attribute 7: 6.90
+double attribute 8: 1.09
+double attribute 9: 2.88
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1515	attrInt[i]: 20
+i: 1	distance: 2235025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 2249425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 97
+number of int entries: 3
+int attribute 0: 625
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.81
+double attribute 1: 2.12
+double attribute 2: 2.74
+double attribute 3: 1.60
+double attribute 4: 0.99
+double attribute 5: 0.14
+double attribute 6: 1.56
+double attribute 7: 2.50
+double attribute 8: 0.95
+double attribute 9: 2.26
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 625	attrInt[i]: 20
+i: 1	distance: 366025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 380425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 6
+number of int entries: 3
+int attribute 0: 1450
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.20
+double attribute 1: 1.76
+double attribute 2: 2.45
+double attribute 3: 3.27
+double attribute 4: 3.39
+double attribute 5: 0.34
+double attribute 6: 1.97
+double attribute 7: 6.75
+double attribute 8: 1.05
+double attribute 9: 2.85
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1450	attrInt[i]: 20
+i: 1	distance: 2044900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 2059300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 143
+number of int entries: 3
+int attribute 0: 520
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.52
+double attribute 1: 3.17
+double attribute 2: 2.72
+double attribute 3: 1.55
+double attribute 4: 0.52
+double attribute 5: 0.50
+double attribute 6: 0.55
+double attribute 7: 4.35
+double attribute 8: 0.89
+double attribute 9: 2.06
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 520	attrInt[i]: 20
+i: 1	distance: 250000.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 264400.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 44
+number of int entries: 3
+int attribute 0: 680
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.24
+double attribute 1: 3.98
+double attribute 2: 2.29
+double attribute 3: 2.64
+double attribute 4: 2.63
+double attribute 5: 0.32
+double attribute 6: 1.66
+double attribute 7: 4.36
+double attribute 8: 0.82
+double attribute 9: 3.00
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 680	attrInt[i]: 20
+i: 1	distance: 435600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 450000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 155
+number of int entries: 3
+int attribute 0: 640
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.58
+double attribute 1: 1.29
+double attribute 2: 2.10
+double attribute 3: 1.48
+double attribute 4: 0.58
+double attribute 5: 0.53
+double attribute 6: 1.40
+double attribute 7: 7.60
+double attribute 8: 0.58
+double attribute 9: 1.55
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 640	attrInt[i]: 20
+i: 1	distance: 384400.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 398800.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 105
+number of int entries: 3
+int attribute 0: 672
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.51
+double attribute 1: 1.73
+double attribute 2: 1.98
+double attribute 3: 2.20
+double attribute 4: 1.92
+double attribute 5: 0.32
+double attribute 6: 1.48
+double attribute 7: 2.94
+double attribute 8: 1.04
+double attribute 9: 3.57
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 672	attrInt[i]: 20
+i: 1	distance: 425104.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 439504.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 78
+number of int entries: 3
+int attribute 0: 500
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.84
+double attribute 1: 2.89
+double attribute 2: 2.23
+double attribute 3: 1.72
+double attribute 4: 1.32
+double attribute 5: 0.43
+double attribute 6: 0.95
+double attribute 7: 2.65
+double attribute 8: 0.96
+double attribute 9: 2.52
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 500	attrInt[i]: 20
+i: 1	distance: 230400.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 244800.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 125
+number of int entries: 3
+int attribute 0: 380
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.87
+double attribute 1: 4.31
+double attribute 2: 2.39
+double attribute 3: 2.86
+double attribute 4: 3.03
+double attribute 5: 0.21
+double attribute 6: 2.91
+double attribute 7: 2.80
+double attribute 8: 0.75
+double attribute 9: 3.64
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 380	attrInt[i]: 20
+i: 1	distance: 129600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 144000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 39
+number of int entries: 3
+int attribute 0: 1020
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.07
+double attribute 1: 1.50
+double attribute 2: 2.10
+double attribute 3: 2.40
+double attribute 4: 2.64
+double attribute 5: 0.28
+double attribute 6: 1.37
+double attribute 7: 3.70
+double attribute 8: 1.18
+double attribute 9: 2.69
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1020	attrInt[i]: 20
+i: 1	distance: 1000000.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1014400.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 84
+number of int entries: 3
+int attribute 0: 515
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.05
+double attribute 1: 3.86
+double attribute 2: 2.32
+double attribute 3: 1.65
+double attribute 4: 1.59
+double attribute 5: 0.61
+double attribute 6: 1.62
+double attribute 7: 4.80
+double attribute 8: 0.84
+double attribute 9: 2.01
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 515	attrInt[i]: 20
+i: 1	distance: 245025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 259425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 33
+number of int entries: 3
+int attribute 0: 990
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.68
+double attribute 1: 1.83
+double attribute 2: 2.36
+double attribute 3: 2.42
+double attribute 4: 2.69
+double attribute 5: 0.42
+double attribute 6: 1.97
+double attribute 7: 3.84
+double attribute 8: 1.23
+double attribute 9: 2.87
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 990	attrInt[i]: 20
+i: 1	distance: 940900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 955300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 109
+number of int entries: 3
+int attribute 0: 312
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.22
+double attribute 1: 1.29
+double attribute 2: 1.94
+double attribute 3: 2.36
+double attribute 4: 2.04
+double attribute 5: 0.39
+double attribute 6: 2.08
+double attribute 7: 2.70
+double attribute 8: 0.86
+double attribute 9: 3.02
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 312	attrInt[i]: 20
+i: 1	distance: 85264.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 99664.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 21
+number of int entries: 3
+int attribute 0: 780
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.06
+double attribute 1: 1.63
+double attribute 2: 2.28
+double attribute 3: 3.00
+double attribute 4: 3.17
+double attribute 5: 0.24
+double attribute 6: 2.10
+double attribute 7: 5.65
+double attribute 8: 1.09
+double attribute 9: 3.71
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 780	attrInt[i]: 20
+i: 1	distance: 577600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 592000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 70
+number of int entries: 3
+int attribute 0: 718
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.21
+double attribute 1: 1.19
+double attribute 2: 1.75
+double attribute 3: 1.85
+double attribute 4: 1.28
+double attribute 5: 0.14
+double attribute 6: 2.50
+double attribute 7: 2.85
+double attribute 8: 1.28
+double attribute 9: 3.07
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 718	attrInt[i]: 20
+i: 1	distance: 487204.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 501604.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 60
+number of int entries: 3
+int attribute 0: 520
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.37
+double attribute 1: 0.94
+double attribute 2: 1.36
+double attribute 3: 1.98
+double attribute 4: 0.57
+double attribute 5: 0.28
+double attribute 6: 0.42
+double attribute 7: 1.95
+double attribute 8: 1.05
+double attribute 9: 1.82
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 520	attrInt[i]: 20
+i: 1	distance: 250000.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 264400.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 13
+number of int entries: 3
+int attribute 0: 1320
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.75
+double attribute 1: 1.73
+double attribute 2: 2.41
+double attribute 3: 2.60
+double attribute 4: 2.76
+double attribute 5: 0.29
+double attribute 6: 1.81
+double attribute 7: 5.60
+double attribute 8: 1.15
+double attribute 9: 2.90
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1320	attrInt[i]: 20
+i: 1	distance: 1690000.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1704400.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 170
+number of int entries: 3
+int attribute 0: 630
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.40
+double attribute 1: 4.60
+double attribute 2: 2.86
+double attribute 3: 1.98
+double attribute 4: 0.96
+double attribute 5: 0.27
+double attribute 6: 1.11
+double attribute 7: 8.50
+double attribute 8: 0.67
+double attribute 9: 1.92
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 630	attrInt[i]: 20
+i: 1	distance: 372100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 386500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 67
+number of int entries: 3
+int attribute 0: 502
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.11
+double attribute 1: 1.01
+double attribute 2: 1.70
+double attribute 3: 2.98
+double attribute 4: 3.18
+double attribute 5: 0.26
+double attribute 6: 2.28
+double attribute 7: 5.30
+double attribute 8: 1.12
+double attribute 9: 3.18
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 502	attrInt[i]: 20
+i: 1	distance: 232324.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 246724.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 101
+number of int entries: 3
+int attribute 0: 710
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.08
+double attribute 1: 2.08
+double attribute 2: 1.70
+double attribute 3: 2.23
+double attribute 4: 2.17
+double attribute 5: 0.26
+double attribute 6: 1.40
+double attribute 7: 3.30
+double attribute 8: 1.27
+double attribute 9: 2.96
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 710	attrInt[i]: 20
+i: 1	distance: 476100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 490500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 119
+number of int entries: 3
+int attribute 0: 372
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.77
+double attribute 1: 3.43
+double attribute 2: 1.98
+double attribute 3: 1.63
+double attribute 4: 1.25
+double attribute 5: 0.43
+double attribute 6: 0.83
+double attribute 7: 3.40
+double attribute 8: 0.70
+double attribute 9: 2.12
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 372	attrInt[i]: 20
+i: 1	distance: 123904.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 138304.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 36
+number of int entries: 3
+int attribute 0: 920
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.48
+double attribute 1: 1.81
+double attribute 2: 2.41
+double attribute 3: 2.70
+double attribute 4: 2.98
+double attribute 5: 0.26
+double attribute 6: 1.86
+double attribute 7: 5.10
+double attribute 8: 1.04
+double attribute 9: 3.47
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 920	attrInt[i]: 20
+i: 1	distance: 810000.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 824400.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 146
+number of int entries: 3
+int attribute 0: 830
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.16
+double attribute 1: 3.57
+double attribute 2: 2.15
+double attribute 3: 1.50
+double attribute 4: 0.55
+double attribute 5: 0.43
+double attribute 6: 1.30
+double attribute 7: 4.00
+double attribute 8: 0.60
+double attribute 9: 1.68
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 830	attrInt[i]: 20
+i: 1	distance: 656100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 670500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 174
+number of int entries: 3
+int attribute 0: 740
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.71
+double attribute 1: 5.65
+double attribute 2: 2.45
+double attribute 3: 1.68
+double attribute 4: 0.61
+double attribute 5: 0.52
+double attribute 6: 1.06
+double attribute 7: 7.70
+double attribute 8: 0.64
+double attribute 9: 1.74
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 740	attrInt[i]: 20
+i: 1	distance: 518400.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 532800.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 139
+number of int entries: 3
+int attribute 0: 580
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.49
+double attribute 1: 3.59
+double attribute 2: 2.19
+double attribute 3: 1.62
+double attribute 4: 0.48
+double attribute 5: 0.58
+double attribute 6: 0.88
+double attribute 7: 5.70
+double attribute 8: 0.81
+double attribute 9: 1.82
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 580	attrInt[i]: 20
+i: 1	distance: 313600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 328000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 175
+number of int entries: 3
+int attribute 0: 750
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.40
+double attribute 1: 3.91
+double attribute 2: 2.48
+double attribute 3: 1.80
+double attribute 4: 0.75
+double attribute 5: 0.43
+double attribute 6: 1.41
+double attribute 7: 7.30
+double attribute 8: 0.70
+double attribute 9: 1.56
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 750	attrInt[i]: 20
+i: 1	distance: 532900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 547300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 161
+number of int entries: 3
+int attribute 0: 520
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.36
+double attribute 1: 3.83
+double attribute 2: 2.38
+double attribute 3: 2.30
+double attribute 4: 0.92
+double attribute 5: 0.50
+double attribute 6: 1.04
+double attribute 7: 7.65
+double attribute 8: 0.56
+double attribute 9: 1.58
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 520	attrInt[i]: 20
+i: 1	distance: 250000.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 264400.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 168
+number of int entries: 3
+int attribute 0: 685
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.82
+double attribute 1: 3.37
+double attribute 2: 2.30
+double attribute 3: 1.48
+double attribute 4: 0.66
+double attribute 5: 0.40
+double attribute 6: 0.97
+double attribute 7: 10.26
+double attribute 8: 0.72
+double attribute 9: 1.75
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 685	attrInt[i]: 20
+i: 1	distance: 442225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 456625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 50
+number of int entries: 3
+int attribute 0: 1260
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.94
+double attribute 1: 1.73
+double attribute 2: 2.27
+double attribute 3: 2.88
+double attribute 4: 3.54
+double attribute 5: 0.32
+double attribute 6: 2.08
+double attribute 7: 8.90
+double attribute 8: 1.12
+double attribute 9: 3.10
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1260	attrInt[i]: 20
+i: 1	distance: 1537600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1552000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 55
+number of int entries: 3
+int attribute 0: 1060
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.74
+double attribute 1: 1.67
+double attribute 2: 2.25
+double attribute 3: 2.60
+double attribute 4: 2.90
+double attribute 5: 0.21
+double attribute 6: 1.62
+double attribute 7: 5.85
+double attribute 8: 0.92
+double attribute 9: 3.20
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1060	attrInt[i]: 20
+i: 1	distance: 1081600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1096000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 65
+number of int entries: 3
+int attribute 0: 355
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.17
+double attribute 1: 1.45
+double attribute 2: 2.53
+double attribute 3: 1.89
+double attribute 4: 1.75
+double attribute 5: 0.45
+double attribute 6: 1.03
+double attribute 7: 2.95
+double attribute 8: 1.45
+double attribute 9: 2.23
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 355	attrInt[i]: 20
+i: 1	distance: 112225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 126625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 107
+number of int entries: 3
+int attribute 0: 510
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.25
+double attribute 1: 1.73
+double attribute 2: 2.12
+double attribute 3: 1.65
+double attribute 4: 2.03
+double attribute 5: 0.37
+double attribute 6: 1.63
+double attribute 7: 3.40
+double attribute 8: 1.00
+double attribute 9: 3.17
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 510	attrInt[i]: 20
+i: 1	distance: 240100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 254500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 18
+number of int entries: 3
+int attribute 0: 1130
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.83
+double attribute 1: 1.57
+double attribute 2: 2.62
+double attribute 3: 2.95
+double attribute 4: 3.40
+double attribute 5: 0.40
+double attribute 6: 1.72
+double attribute 7: 6.60
+double attribute 8: 1.13
+double attribute 9: 2.57
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1130	attrInt[i]: 20
+i: 1	distance: 1232100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1246500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 86
+number of int entries: 3
+int attribute 0: 450
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.67
+double attribute 1: 0.98
+double attribute 2: 2.24
+double attribute 3: 2.20
+double attribute 4: 1.94
+double attribute 5: 0.30
+double attribute 6: 1.46
+double attribute 7: 2.62
+double attribute 8: 1.23
+double attribute 9: 3.16
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 450	attrInt[i]: 20
+i: 1	distance: 184900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 199300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 165
+number of int entries: 3
+int attribute 0: 615
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.78
+double attribute 1: 2.76
+double attribute 2: 2.30
+double attribute 3: 1.35
+double attribute 4: 0.68
+double attribute 5: 0.41
+double attribute 6: 1.03
+double attribute 7: 9.58
+double attribute 8: 0.70
+double attribute 9: 1.68
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 615	attrInt[i]: 20
+i: 1	distance: 354025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 368425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 47
+number of int entries: 3
+int attribute 0: 1065
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.38
+double attribute 1: 3.59
+double attribute 2: 2.28
+double attribute 3: 3.25
+double attribute 4: 3.17
+double attribute 5: 0.27
+double attribute 6: 2.19
+double attribute 7: 4.90
+double attribute 8: 1.04
+double attribute 9: 3.44
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1065	attrInt[i]: 20
+i: 1	distance: 1092025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1106425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 94
+number of int entries: 3
+int attribute 0: 290
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.29
+double attribute 1: 2.83
+double attribute 2: 2.22
+double attribute 3: 2.45
+double attribute 4: 2.25
+double attribute 5: 0.25
+double attribute 6: 1.99
+double attribute 7: 2.15
+double attribute 8: 1.15
+double attribute 9: 3.30
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 290	attrInt[i]: 20
+i: 1	distance: 72900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 87300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 172
+number of int entries: 3
+int attribute 0: 470
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.77
+double attribute 1: 2.39
+double attribute 2: 2.28
+double attribute 3: 1.39
+double attribute 4: 0.51
+double attribute 5: 0.48
+double attribute 6: 0.64
+double attribute 7: 9.90
+double attribute 8: 0.57
+double attribute 9: 1.63
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 470	attrInt[i]: 20
+i: 1	distance: 202500.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 216900.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 118
+number of int entries: 3
+int attribute 0: 345
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.42
+double attribute 1: 1.61
+double attribute 2: 2.19
+double attribute 3: 2.00
+double attribute 4: 2.09
+double attribute 5: 0.34
+double attribute 6: 1.61
+double attribute 7: 2.06
+double attribute 8: 1.06
+double attribute 9: 2.96
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 345	attrInt[i]: 20
+i: 1	distance: 105625.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 120025.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 141
+number of int entries: 3
+int attribute 0: 600
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.93
+double attribute 1: 2.81
+double attribute 2: 2.70
+double attribute 3: 1.54
+double attribute 4: 0.50
+double attribute 5: 0.53
+double attribute 6: 0.75
+double attribute 7: 4.60
+double attribute 8: 0.77
+double attribute 9: 2.31
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 600	attrInt[i]: 20
+i: 1	distance: 336400.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 350800.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 149
+number of int entries: 3
+int attribute 0: 650
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.32
+double attribute 1: 3.24
+double attribute 2: 2.38
+double attribute 3: 1.93
+double attribute 4: 0.76
+double attribute 5: 0.45
+double attribute 6: 1.25
+double attribute 7: 8.42
+double attribute 8: 0.55
+double attribute 9: 1.62
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 650	attrInt[i]: 20
+i: 1	distance: 396900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 411300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 51
+number of int entries: 3
+int attribute 0: 1150
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.05
+double attribute 1: 1.73
+double attribute 2: 2.04
+double attribute 3: 2.72
+double attribute 4: 3.27
+double attribute 5: 0.17
+double attribute 6: 2.91
+double attribute 7: 7.20
+double attribute 8: 1.12
+double attribute 9: 2.91
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1150	attrInt[i]: 20
+i: 1	distance: 1276900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1291300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 113
+number of int entries: 3
+int attribute 0: 607
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.76
+double attribute 1: 2.68
+double attribute 2: 2.92
+double attribute 3: 1.75
+double attribute 4: 2.03
+double attribute 5: 0.60
+double attribute 6: 1.05
+double attribute 7: 3.80
+double attribute 8: 1.23
+double attribute 9: 2.50
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 607	attrInt[i]: 20
+i: 1	distance: 344569.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 358969.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 106
+number of int entries: 3
+int attribute 0: 315
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.42
+double attribute 1: 2.55
+double attribute 2: 2.27
+double attribute 3: 1.68
+double attribute 4: 1.84
+double attribute 5: 0.66
+double attribute 6: 1.42
+double attribute 7: 2.70
+double attribute 8: 0.86
+double attribute 9: 3.30
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 315	attrInt[i]: 20
+i: 1	distance: 87025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 101425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 124
+number of int entries: 3
+int attribute 0: 380
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.05
+double attribute 1: 5.80
+double attribute 2: 2.13
+double attribute 3: 2.62
+double attribute 4: 2.65
+double attribute 5: 0.30
+double attribute 6: 2.01
+double attribute 7: 2.60
+double attribute 8: 0.73
+double attribute 9: 3.10
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 380	attrInt[i]: 20
+i: 1	distance: 129600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 144000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 10
+number of int entries: 3
+int attribute 0: 1045
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.86
+double attribute 1: 1.35
+double attribute 2: 2.27
+double attribute 3: 2.98
+double attribute 4: 3.15
+double attribute 5: 0.22
+double attribute 6: 1.85
+double attribute 7: 7.22
+double attribute 8: 1.01
+double attribute 9: 3.55
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1045	attrInt[i]: 20
+i: 1	distance: 1050625.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1065025.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 120
+number of int entries: 3
+int attribute 0: 564
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.00
+double attribute 1: 3.43
+double attribute 2: 2.00
+double attribute 3: 2.00
+double attribute 4: 1.64
+double attribute 5: 0.37
+double attribute 6: 1.87
+double attribute 7: 1.28
+double attribute 8: 0.93
+double attribute 9: 3.05
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 564	attrInt[i]: 20
+i: 1	distance: 295936.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 310336.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 74
+number of int entries: 3
+int attribute 0: 985
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.99
+double attribute 1: 1.67
+double attribute 2: 2.60
+double attribute 3: 3.30
+double attribute 4: 2.89
+double attribute 5: 0.21
+double attribute 6: 1.96
+double attribute 7: 3.35
+double attribute 8: 1.31
+double attribute 9: 3.50
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 985	attrInt[i]: 20
+i: 1	distance: 931225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 945625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 95
+number of int entries: 3
+int attribute 0: 345
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.62
+double attribute 1: 1.99
+double attribute 2: 2.28
+double attribute 3: 3.02
+double attribute 4: 2.26
+double attribute 5: 0.17
+double attribute 6: 1.35
+double attribute 7: 3.25
+double attribute 8: 1.16
+double attribute 9: 2.96
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 345	attrInt[i]: 20
+i: 1	distance: 105625.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 120025.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 34
+number of int entries: 3
+int attribute 0: 1235
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.76
+double attribute 1: 1.53
+double attribute 2: 2.70
+double attribute 3: 2.95
+double attribute 4: 2.74
+double attribute 5: 0.50
+double attribute 6: 1.35
+double attribute 7: 5.40
+double attribute 8: 1.25
+double attribute 9: 3.00
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1235	attrInt[i]: 20
+i: 1	distance: 1476225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1490625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 152
+number of int entries: 3
+int attribute 0: 480
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.79
+double attribute 1: 2.67
+double attribute 2: 2.48
+double attribute 3: 1.48
+double attribute 4: 1.36
+double attribute 5: 0.24
+double attribute 6: 1.26
+double attribute 7: 10.80
+double attribute 8: 0.48
+double attribute 9: 1.47
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 480	attrInt[i]: 20
+i: 1	distance: 211600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 226000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 15
+number of int entries: 3
+int attribute 0: 1547
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.38
+double attribute 1: 1.87
+double attribute 2: 2.38
+double attribute 3: 3.30
+double attribute 4: 3.64
+double attribute 5: 0.29
+double attribute 6: 2.96
+double attribute 7: 7.50
+double attribute 8: 1.20
+double attribute 9: 3.00
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1547	attrInt[i]: 20
+i: 1	distance: 2331729.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 2346129.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 26
+number of int entries: 3
+int attribute 0: 830
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.05
+double attribute 1: 2.05
+double attribute 2: 3.22
+double attribute 3: 2.63
+double attribute 4: 2.68
+double attribute 5: 0.47
+double attribute 6: 1.92
+double attribute 7: 3.58
+double attribute 8: 1.13
+double attribute 9: 3.20
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 830	attrInt[i]: 20
+i: 1	distance: 656100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 670500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 166
+number of int entries: 3
+int attribute 0: 520
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.73
+double attribute 1: 4.36
+double attribute 2: 2.26
+double attribute 3: 1.28
+double attribute 4: 0.47
+double attribute 5: 0.52
+double attribute 6: 1.15
+double attribute 7: 6.62
+double attribute 8: 0.78
+double attribute 9: 1.75
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 520	attrInt[i]: 20
+i: 1	distance: 250000.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 264400.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 77
+number of int entries: 3
+int attribute 0: 392
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.03
+double attribute 1: 0.90
+double attribute 2: 1.71
+double attribute 3: 1.95
+double attribute 4: 2.03
+double attribute 5: 0.24
+double attribute 6: 1.46
+double attribute 7: 4.60
+double attribute 8: 1.19
+double attribute 9: 2.48
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 392	attrInt[i]: 20
+i: 1	distance: 138384.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 152784.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 5
+number of int entries: 3
+int attribute 0: 735
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.24
+double attribute 1: 2.59
+double attribute 2: 2.87
+double attribute 3: 2.80
+double attribute 4: 2.69
+double attribute 5: 0.39
+double attribute 6: 1.82
+double attribute 7: 4.32
+double attribute 8: 1.04
+double attribute 9: 2.93
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 735	attrInt[i]: 20
+i: 1	distance: 511225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 525625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 30
+number of int entries: 3
+int attribute 0: 1035
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.02
+double attribute 1: 1.68
+double attribute 2: 2.21
+double attribute 3: 2.65
+double attribute 4: 2.33
+double attribute 5: 0.26
+double attribute 6: 1.98
+double attribute 7: 4.70
+double attribute 8: 1.04
+double attribute 9: 3.59
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1035	attrInt[i]: 20
+i: 1	distance: 1030225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1044625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 9
+number of int entries: 3
+int attribute 0: 1045
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.83
+double attribute 1: 1.64
+double attribute 2: 2.17
+double attribute 3: 2.80
+double attribute 4: 2.98
+double attribute 5: 0.29
+double attribute 6: 1.98
+double attribute 7: 5.20
+double attribute 8: 1.08
+double attribute 9: 2.85
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1045	attrInt[i]: 20
+i: 1	distance: 1050625.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1065025.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 111
+number of int entries: 3
+int attribute 0: 562
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.46
+double attribute 1: 3.74
+double attribute 2: 1.82
+double attribute 3: 3.18
+double attribute 4: 2.58
+double attribute 5: 0.24
+double attribute 6: 3.58
+double attribute 7: 2.90
+double attribute 8: 0.75
+double attribute 9: 2.81
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 562	attrInt[i]: 20
+i: 1	distance: 293764.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 308164.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 45
+number of int entries: 3
+int attribute 0: 885
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.05
+double attribute 1: 1.77
+double attribute 2: 2.10
+double attribute 3: 3.00
+double attribute 4: 3.00
+double attribute 5: 0.28
+double attribute 6: 2.03
+double attribute 7: 5.04
+double attribute 8: 0.88
+double attribute 9: 3.35
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 885	attrInt[i]: 20
+i: 1	distance: 748225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 762625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 173
+number of int entries: 3
+int attribute 0: 660
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.16
+double attribute 1: 2.51
+double attribute 2: 2.48
+double attribute 3: 1.68
+double attribute 4: 0.70
+double attribute 5: 0.44
+double attribute 6: 1.24
+double attribute 7: 9.70
+double attribute 8: 0.62
+double attribute 9: 1.71
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 660	attrInt[i]: 20
+i: 1	distance: 409600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 424000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 82
+number of int entries: 3
+int attribute 0: 714
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.72
+double attribute 1: 1.81
+double attribute 2: 2.20
+double attribute 3: 2.20
+double attribute 4: 2.53
+double attribute 5: 0.26
+double attribute 6: 1.77
+double attribute 7: 3.90
+double attribute 8: 1.16
+double attribute 9: 3.14
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 714	attrInt[i]: 20
+i: 1	distance: 481636.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 496036.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 57
+number of int entries: 3
+int attribute 0: 970
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.22
+double attribute 1: 1.70
+double attribute 2: 2.30
+double attribute 3: 3.20
+double attribute 4: 3.00
+double attribute 5: 0.26
+double attribute 6: 2.03
+double attribute 7: 6.38
+double attribute 8: 0.94
+double attribute 9: 3.31
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 970	attrInt[i]: 20
+i: 1	distance: 902500.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 916900.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 157
+number of int entries: 3
+int attribute 0: 480
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.84
+double attribute 1: 4.12
+double attribute 2: 2.38
+double attribute 3: 1.80
+double attribute 4: 0.83
+double attribute 5: 0.48
+double attribute 6: 1.56
+double attribute 7: 9.01
+double attribute 8: 0.57
+double attribute 9: 1.64
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 480	attrInt[i]: 20
+i: 1	distance: 211600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 226000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 81
+number of int entries: 3
+int attribute 0: 278
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.00
+double attribute 1: 0.92
+double attribute 2: 2.00
+double attribute 3: 2.42
+double attribute 4: 2.26
+double attribute 5: 0.30
+double attribute 6: 1.43
+double attribute 7: 2.50
+double attribute 8: 1.38
+double attribute 9: 3.12
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 278	attrInt[i]: 20
+i: 1	distance: 66564.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 80964.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 171
+number of int entries: 3
+int attribute 0: 510
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.20
+double attribute 1: 3.03
+double attribute 2: 2.32
+double attribute 3: 1.25
+double attribute 4: 0.49
+double attribute 5: 0.40
+double attribute 6: 0.73
+double attribute 7: 5.50
+double attribute 8: 0.66
+double attribute 9: 1.83
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 510	attrInt[i]: 20
+i: 1	distance: 240100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 254500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 23
+number of int entries: 3
+int attribute 0: 1035
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.71
+double attribute 1: 1.86
+double attribute 2: 2.36
+double attribute 3: 2.61
+double attribute 4: 2.88
+double attribute 5: 0.27
+double attribute 6: 1.69
+double attribute 7: 3.80
+double attribute 8: 1.11
+double attribute 9: 4.00
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1035	attrInt[i]: 20
+i: 1	distance: 1030225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1044625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 100
+number of int entries: 3
+int attribute 0: 406
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.29
+double attribute 1: 3.17
+double attribute 2: 2.21
+double attribute 3: 2.85
+double attribute 4: 2.99
+double attribute 5: 0.45
+double attribute 6: 2.81
+double attribute 7: 2.30
+double attribute 8: 1.42
+double attribute 9: 2.83
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 406	attrInt[i]: 20
+i: 1	distance: 148996.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 163396.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 14
+number of int entries: 3
+int attribute 0: 1150
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.75
+double attribute 1: 1.73
+double attribute 2: 2.39
+double attribute 3: 3.10
+double attribute 4: 3.69
+double attribute 5: 0.43
+double attribute 6: 2.81
+double attribute 7: 5.40
+double attribute 8: 1.25
+double attribute 9: 2.73
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1150	attrInt[i]: 20
+i: 1	distance: 1276900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1291300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 151
+number of int entries: 3
+int attribute 0: 500
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.50
+double attribute 1: 3.12
+double attribute 2: 2.62
+double attribute 3: 1.40
+double attribute 4: 1.57
+double attribute 5: 0.22
+double attribute 6: 1.25
+double attribute 7: 8.60
+double attribute 8: 0.59
+double attribute 9: 1.30
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 500	attrInt[i]: 20
+i: 1	distance: 230400.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 244800.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 68
+number of int entries: 3
+int attribute 0: 510
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.37
+double attribute 1: 1.17
+double attribute 2: 1.92
+double attribute 3: 2.11
+double attribute 4: 2.00
+double attribute 5: 0.27
+double attribute 6: 1.04
+double attribute 7: 4.68
+double attribute 8: 1.12
+double attribute 9: 3.48
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 510	attrInt[i]: 20
+i: 1	distance: 240100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 254500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 115
+number of int entries: 3
+int attribute 0: 385
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.08
+double attribute 1: 1.39
+double attribute 2: 2.50
+double attribute 3: 2.56
+double attribute 4: 2.29
+double attribute 5: 0.43
+double attribute 6: 1.04
+double attribute 7: 2.90
+double attribute 8: 0.93
+double attribute 9: 3.19
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 385	attrInt[i]: 20
+i: 1	distance: 133225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 147625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 83
+number of int entries: 3
+int attribute 0: 630
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.08
+double attribute 1: 1.13
+double attribute 2: 2.51
+double attribute 3: 2.00
+double attribute 4: 1.58
+double attribute 5: 0.40
+double attribute 6: 1.40
+double attribute 7: 2.20
+double attribute 8: 1.31
+double attribute 9: 2.72
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 630	attrInt[i]: 20
+i: 1	distance: 372100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 386500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 53
+number of int entries: 3
+int attribute 0: 1190
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.82
+double attribute 1: 1.75
+double attribute 2: 2.42
+double attribute 3: 3.88
+double attribute 4: 3.74
+double attribute 5: 0.32
+double attribute 6: 1.87
+double attribute 7: 7.05
+double attribute 8: 1.01
+double attribute 9: 3.26
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1190	attrInt[i]: 20
+i: 1	distance: 1368900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1383300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 72
+number of int entries: 3
+int attribute 0: 410
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.86
+double attribute 1: 1.51
+double attribute 2: 2.67
+double attribute 3: 2.95
+double attribute 4: 2.86
+double attribute 5: 0.21
+double attribute 6: 1.87
+double attribute 7: 3.38
+double attribute 8: 1.36
+double attribute 9: 3.16
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 410	attrInt[i]: 20
+i: 1	distance: 152100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 166500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 24
+number of int entries: 3
+int attribute 0: 1015
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.85
+double attribute 1: 1.60
+double attribute 2: 2.52
+double attribute 3: 2.48
+double attribute 4: 2.37
+double attribute 5: 0.26
+double attribute 6: 1.46
+double attribute 7: 3.93
+double attribute 8: 1.09
+double attribute 9: 3.63
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1015	attrInt[i]: 20
+i: 1	distance: 990025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1004425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 17
+number of int entries: 3
+int attribute 0: 1280
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.30
+double attribute 1: 1.92
+double attribute 2: 2.72
+double attribute 3: 2.80
+double attribute 4: 3.14
+double attribute 5: 0.33
+double attribute 6: 1.97
+double attribute 7: 6.20
+double attribute 8: 1.07
+double attribute 9: 2.65
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1280	attrInt[i]: 20
+i: 1	distance: 1587600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1602000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 123
+number of int entries: 3
+int attribute 0: 365
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.42
+double attribute 1: 4.43
+double attribute 2: 2.73
+double attribute 3: 2.20
+double attribute 4: 2.13
+double attribute 5: 0.43
+double attribute 6: 1.71
+double attribute 7: 2.08
+double attribute 8: 0.92
+double attribute 9: 3.12
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 365	attrInt[i]: 20
+i: 1	distance: 119025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 133425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 110
+number of int entries: 3
+int attribute 0: 680
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.61
+double attribute 1: 1.35
+double attribute 2: 2.70
+double attribute 3: 2.74
+double attribute 4: 2.92
+double attribute 5: 0.29
+double attribute 6: 2.49
+double attribute 7: 2.65
+double attribute 8: 0.96
+double attribute 9: 3.26
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 680	attrInt[i]: 20
+i: 1	distance: 435600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 450000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 167
+number of int entries: 3
+int attribute 0: 695
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.45
+double attribute 1: 3.70
+double attribute 2: 2.60
+double attribute 3: 1.70
+double attribute 4: 0.92
+double attribute 5: 0.43
+double attribute 6: 1.46
+double attribute 7: 10.68
+double attribute 8: 0.85
+double attribute 9: 1.56
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 695	attrInt[i]: 20
+i: 1	distance: 455625.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 470025.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 87
+number of int entries: 3
+int attribute 0: 495
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.16
+double attribute 1: 1.61
+double attribute 2: 2.31
+double attribute 3: 1.78
+double attribute 4: 1.69
+double attribute 5: 0.43
+double attribute 6: 1.56
+double attribute 7: 2.45
+double attribute 8: 1.33
+double attribute 9: 2.26
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 495	attrInt[i]: 20
+i: 1	distance: 225625.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 240025.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 99
+number of int entries: 3
+int attribute 0: 660
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.37
+double attribute 1: 1.07
+double attribute 2: 2.10
+double attribute 3: 3.52
+double attribute 4: 3.75
+double attribute 5: 0.24
+double attribute 6: 1.95
+double attribute 7: 4.50
+double attribute 8: 1.04
+double attribute 9: 2.77
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 660	attrInt[i]: 20
+i: 1	distance: 409600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 424000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 79
+number of int entries: 3
+int attribute 0: 750
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.33
+double attribute 1: 0.99
+double attribute 2: 1.95
+double attribute 3: 1.90
+double attribute 4: 1.85
+double attribute 5: 0.35
+double attribute 6: 2.76
+double attribute 7: 3.40
+double attribute 8: 1.06
+double attribute 9: 2.31
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 750	attrInt[i]: 20
+i: 1	distance: 532900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 547300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 116
+number of int entries: 3
+int attribute 0: 407
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.03
+double attribute 1: 1.51
+double attribute 2: 2.20
+double attribute 3: 2.46
+double attribute 4: 2.17
+double attribute 5: 0.52
+double attribute 6: 2.01
+double attribute 7: 1.90
+double attribute 8: 1.71
+double attribute 9: 2.87
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 407	attrInt[i]: 20
+i: 1	distance: 149769.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 164169.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 40
+number of int entries: 3
+int attribute 0: 760
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.22
+double attribute 1: 3.99
+double attribute 2: 2.51
+double attribute 3: 3.00
+double attribute 4: 3.04
+double attribute 5: 0.20
+double attribute 6: 2.08
+double attribute 7: 5.10
+double attribute 8: 0.89
+double attribute 9: 3.53
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 760	attrInt[i]: 20
+i: 1	distance: 547600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 562000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 4
+number of int entries: 3
+int attribute 0: 1480
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.37
+double attribute 1: 1.95
+double attribute 2: 2.50
+double attribute 3: 3.85
+double attribute 4: 3.49
+double attribute 5: 0.24
+double attribute 6: 2.18
+double attribute 7: 7.80
+double attribute 8: 0.86
+double attribute 9: 3.45
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1480	attrInt[i]: 20
+i: 1	distance: 2131600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 2146000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 144
+number of int entries: 3
+int attribute 0: 550
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.62
+double attribute 1: 4.95
+double attribute 2: 2.35
+double attribute 3: 2.00
+double attribute 4: 0.80
+double attribute 5: 0.47
+double attribute 6: 1.02
+double attribute 7: 4.40
+double attribute 8: 0.91
+double attribute 9: 2.05
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 550	attrInt[i]: 20
+i: 1	distance: 280900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 295300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 19
+number of int entries: 3
+int attribute 0: 1680
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.19
+double attribute 1: 1.59
+double attribute 2: 2.48
+double attribute 3: 3.30
+double attribute 4: 3.93
+double attribute 5: 0.32
+double attribute 6: 1.86
+double attribute 7: 8.70
+double attribute 8: 1.23
+double attribute 9: 2.82
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1680	attrInt[i]: 20
+i: 1	distance: 2755600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 2770000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 169
+number of int entries: 3
+int attribute 0: 750
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.58
+double attribute 1: 2.58
+double attribute 2: 2.69
+double attribute 3: 1.55
+double attribute 4: 0.84
+double attribute 5: 0.39
+double attribute 6: 1.54
+double attribute 7: 8.66
+double attribute 8: 0.74
+double attribute 9: 1.80
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 750	attrInt[i]: 20
+i: 1	distance: 532900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 547300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 66
+number of int entries: 3
+int attribute 0: 678
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.37
+double attribute 1: 1.21
+double attribute 2: 2.56
+double attribute 3: 2.42
+double attribute 4: 2.65
+double attribute 5: 0.37
+double attribute 6: 2.08
+double attribute 7: 4.60
+double attribute 8: 1.19
+double attribute 9: 2.30
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 678	attrInt[i]: 20
+i: 1	distance: 432964.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 447364.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 41
+number of int entries: 3
+int attribute 0: 795
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.56
+double attribute 1: 1.71
+double attribute 2: 2.31
+double attribute 3: 3.15
+double attribute 4: 3.29
+double attribute 5: 0.34
+double attribute 6: 2.34
+double attribute 7: 6.13
+double attribute 8: 0.95
+double attribute 9: 3.38
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 795	attrInt[i]: 20
+i: 1	distance: 600625.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 615025.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 11
+number of int entries: 3
+int attribute 0: 1510
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.10
+double attribute 1: 2.16
+double attribute 2: 2.30
+double attribute 3: 2.95
+double attribute 4: 3.32
+double attribute 5: 0.22
+double attribute 6: 2.38
+double attribute 7: 5.75
+double attribute 8: 1.25
+double attribute 9: 3.17
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1510	attrInt[i]: 20
+i: 1	distance: 2220100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 2234500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 158
+number of int entries: 3
+int attribute 0: 880
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.45
+double attribute 1: 3.03
+double attribute 2: 2.64
+double attribute 3: 1.90
+double attribute 4: 0.58
+double attribute 5: 0.63
+double attribute 6: 1.14
+double attribute 7: 7.50
+double attribute 8: 0.67
+double attribute 9: 1.73
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 880	attrInt[i]: 20
+i: 1	distance: 739600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 754000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 42
+number of int entries: 3
+int attribute 0: 1035
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.41
+double attribute 1: 3.84
+double attribute 2: 2.12
+double attribute 3: 2.45
+double attribute 4: 2.68
+double attribute 5: 0.27
+double attribute 6: 1.48
+double attribute 7: 4.28
+double attribute 8: 0.91
+double attribute 9: 3.00
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1035	attrInt[i]: 20
+i: 1	distance: 1030225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1044625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 76
+number of int entries: 3
+int attribute 0: 428
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.66
+double attribute 1: 1.88
+double attribute 2: 1.92
+double attribute 3: 1.61
+double attribute 4: 1.57
+double attribute 5: 0.34
+double attribute 6: 1.15
+double attribute 7: 3.80
+double attribute 8: 1.23
+double attribute 9: 2.14
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 428	attrInt[i]: 20
+i: 1	distance: 166464.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 180864.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 46
+number of int entries: 3
+int attribute 0: 1080
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.21
+double attribute 1: 4.04
+double attribute 2: 2.44
+double attribute 3: 2.85
+double attribute 4: 2.65
+double attribute 5: 0.30
+double attribute 6: 1.25
+double attribute 7: 5.24
+double attribute 8: 0.87
+double attribute 9: 3.33
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1080	attrInt[i]: 20
+i: 1	distance: 1123600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1138000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 92
+number of int entries: 3
+int attribute 0: 450
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.00
+double attribute 1: 1.51
+double attribute 2: 2.42
+double attribute 3: 1.45
+double attribute 4: 1.25
+double attribute 5: 0.50
+double attribute 6: 1.63
+double attribute 7: 3.60
+double attribute 8: 1.05
+double attribute 9: 2.65
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 450	attrInt[i]: 20
+i: 1	distance: 184900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 199300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 7
+number of int entries: 3
+int attribute 0: 1290
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.39
+double attribute 1: 1.87
+double attribute 2: 2.45
+double attribute 3: 2.50
+double attribute 4: 2.52
+double attribute 5: 0.30
+double attribute 6: 1.98
+double attribute 7: 5.25
+double attribute 8: 1.02
+double attribute 9: 3.58
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1290	attrInt[i]: 20
+i: 1	distance: 1612900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1627300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 3
+number of int entries: 3
+int attribute 0: 1185
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.16
+double attribute 1: 2.36
+double attribute 2: 2.67
+double attribute 3: 2.80
+double attribute 4: 3.24
+double attribute 5: 0.30
+double attribute 6: 2.81
+double attribute 7: 5.68
+double attribute 8: 1.03
+double attribute 9: 3.17
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1185	attrInt[i]: 20
+i: 1	distance: 1357225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1371625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 122
+number of int entries: 3
+int attribute 0: 465
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.56
+double attribute 1: 2.05
+double attribute 2: 3.23
+double attribute 3: 3.18
+double attribute 4: 5.08
+double attribute 5: 0.47
+double attribute 6: 1.87
+double attribute 7: 6.00
+double attribute 8: 0.93
+double attribute 9: 3.69
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 465	attrInt[i]: 20
+i: 1	distance: 198025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 212425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 131
+number of int entries: 3
+int attribute 0: 630
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.86
+double attribute 1: 1.35
+double attribute 2: 2.32
+double attribute 3: 1.51
+double attribute 4: 1.25
+double attribute 5: 0.21
+double attribute 6: 0.94
+double attribute 7: 4.10
+double attribute 8: 0.76
+double attribute 9: 1.29
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 630	attrInt[i]: 20
+i: 1	distance: 372100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 386500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 59
+number of int entries: 3
+int attribute 0: 1285
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.72
+double attribute 1: 1.43
+double attribute 2: 2.50
+double attribute 3: 3.40
+double attribute 4: 3.67
+double attribute 5: 0.19
+double attribute 6: 2.04
+double attribute 7: 6.80
+double attribute 8: 0.89
+double attribute 9: 2.87
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1285	attrInt[i]: 20
+i: 1	distance: 1600225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1614625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 104
+number of int entries: 3
+int attribute 0: 415
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.82
+double attribute 1: 1.72
+double attribute 2: 1.88
+double attribute 3: 2.50
+double attribute 4: 1.64
+double attribute 5: 0.37
+double attribute 6: 1.42
+double attribute 7: 2.06
+double attribute 8: 0.94
+double attribute 9: 2.44
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 415	attrInt[i]: 20
+i: 1	distance: 156025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 170425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 145
+number of int entries: 3
+int attribute 0: 855
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.25
+double attribute 1: 3.88
+double attribute 2: 2.20
+double attribute 3: 1.38
+double attribute 4: 0.78
+double attribute 5: 0.29
+double attribute 6: 1.14
+double attribute 7: 8.21
+double attribute 8: 0.65
+double attribute 9: 2.00
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 855	attrInt[i]: 20
+i: 1	distance: 697225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 711625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 62
+number of int entries: 3
+int attribute 0: 450
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.64
+double attribute 1: 1.36
+double attribute 2: 2.02
+double attribute 3: 2.02
+double attribute 4: 1.41
+double attribute 5: 0.53
+double attribute 6: 0.62
+double attribute 7: 5.75
+double attribute 8: 0.98
+double attribute 9: 1.59
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 450	attrInt[i]: 20
+i: 1	distance: 184900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 199300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 148
+number of int entries: 3
+int attribute 0: 625
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.87
+double attribute 1: 4.61
+double attribute 2: 2.48
+double attribute 3: 1.70
+double attribute 4: 0.65
+double attribute 5: 0.47
+double attribute 6: 0.86
+double attribute 7: 7.65
+double attribute 8: 0.54
+double attribute 9: 1.86
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 625	attrInt[i]: 20
+i: 1	distance: 366025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 380425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 150
+number of int entries: 3
+int attribute 0: 550
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.08
+double attribute 1: 3.90
+double attribute 2: 2.36
+double attribute 3: 1.41
+double attribute 4: 1.39
+double attribute 5: 0.34
+double attribute 6: 1.14
+double attribute 7: 9.40
+double attribute 8: 0.57
+double attribute 9: 1.33
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 550	attrInt[i]: 20
+i: 1	distance: 280900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 295300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 12
+number of int entries: 3
+int attribute 0: 1280
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.12
+double attribute 1: 1.48
+double attribute 2: 2.32
+double attribute 3: 2.20
+double attribute 4: 2.43
+double attribute 5: 0.26
+double attribute 6: 1.57
+double attribute 7: 5.00
+double attribute 8: 1.17
+double attribute 9: 2.82
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1280	attrInt[i]: 20
+i: 1	distance: 1587600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1602000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 129
+number of int entries: 3
+int attribute 0: 342
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.37
+double attribute 1: 1.63
+double attribute 2: 2.30
+double attribute 3: 2.22
+double attribute 4: 2.45
+double attribute 5: 0.40
+double attribute 6: 1.90
+double attribute 7: 2.12
+double attribute 8: 0.89
+double attribute 9: 2.78
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 342	attrInt[i]: 20
+i: 1	distance: 103684.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 118084.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 61
+number of int entries: 3
+int attribute 0: 680
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.33
+double attribute 1: 1.10
+double attribute 2: 2.28
+double attribute 3: 2.05
+double attribute 4: 1.09
+double attribute 5: 0.63
+double attribute 6: 0.41
+double attribute 7: 3.27
+double attribute 8: 1.25
+double attribute 9: 1.67
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 680	attrInt[i]: 20
+i: 1	distance: 435600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 450000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 69
+number of int entries: 3
+int attribute 0: 750
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.34
+double attribute 1: 0.94
+double attribute 2: 2.36
+double attribute 3: 2.53
+double attribute 4: 1.30
+double attribute 5: 0.55
+double attribute 6: 0.42
+double attribute 7: 3.17
+double attribute 8: 1.02
+double attribute 9: 1.93
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 750	attrInt[i]: 20
+i: 1	distance: 532900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 547300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 142
+number of int entries: 3
+int attribute 0: 780
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.36
+double attribute 1: 2.56
+double attribute 2: 2.35
+double attribute 3: 1.40
+double attribute 4: 0.50
+double attribute 5: 0.37
+double attribute 6: 0.64
+double attribute 7: 5.60
+double attribute 8: 0.70
+double attribute 9: 2.47
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 780	attrInt[i]: 20
+i: 1	distance: 577600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 592000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 29
+number of int entries: 3
+int attribute 0: 915
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.87
+double attribute 1: 1.90
+double attribute 2: 2.80
+double attribute 3: 2.95
+double attribute 4: 2.97
+double attribute 5: 0.37
+double attribute 6: 1.76
+double attribute 7: 4.50
+double attribute 8: 1.25
+double attribute 9: 3.40
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 915	attrInt[i]: 20
+i: 1	distance: 801025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 815425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 117
+number of int entries: 3
+int attribute 0: 495
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.82
+double attribute 1: 1.47
+double attribute 2: 1.99
+double attribute 3: 1.98
+double attribute 4: 1.60
+double attribute 5: 0.30
+double attribute 6: 1.53
+double attribute 7: 1.95
+double attribute 8: 0.95
+double attribute 9: 3.33
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 495	attrInt[i]: 20
+i: 1	distance: 225625.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 240025.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 1
+number of int entries: 3
+int attribute 0: 1065
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.23
+double attribute 1: 1.71
+double attribute 2: 2.43
+double attribute 3: 2.80
+double attribute 4: 3.06
+double attribute 5: 0.28
+double attribute 6: 2.29
+double attribute 7: 5.64
+double attribute 8: 1.04
+double attribute 9: 3.92
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1065	attrInt[i]: 20
+i: 1	distance: 1092025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1106425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 48
+number of int entries: 3
+int attribute 0: 985
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.90
+double attribute 1: 1.68
+double attribute 2: 2.12
+double attribute 3: 3.10
+double attribute 4: 3.39
+double attribute 5: 0.21
+double attribute 6: 2.14
+double attribute 7: 6.10
+double attribute 8: 0.91
+double attribute 9: 3.33
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 985	attrInt[i]: 20
+i: 1	distance: 931225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 945625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 43
+number of int entries: 3
+int attribute 0: 1095
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.88
+double attribute 1: 1.89
+double attribute 2: 2.59
+double attribute 3: 3.25
+double attribute 4: 3.56
+double attribute 5: 0.17
+double attribute 6: 1.70
+double attribute 7: 5.43
+double attribute 8: 0.88
+double attribute 9: 3.56
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1095	attrInt[i]: 20
+i: 1	distance: 1155625.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1170025.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 52
+number of int entries: 3
+int attribute 0: 1265
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.83
+double attribute 1: 1.65
+double attribute 2: 2.60
+double attribute 3: 2.45
+double attribute 4: 2.99
+double attribute 5: 0.22
+double attribute 6: 2.29
+double attribute 7: 5.60
+double attribute 8: 1.24
+double attribute 9: 3.37
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1265	attrInt[i]: 20
+i: 1	distance: 1550025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1564425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 73
+number of int entries: 3
+int attribute 0: 472
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.49
+double attribute 1: 1.66
+double attribute 2: 2.24
+double attribute 3: 1.88
+double attribute 4: 1.84
+double attribute 5: 0.27
+double attribute 6: 1.03
+double attribute 7: 3.74
+double attribute 8: 0.98
+double attribute 9: 2.78
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 472	attrInt[i]: 20
+i: 1	distance: 204304.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 218704.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 28
+number of int entries: 3
+int attribute 0: 1285
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.30
+double attribute 1: 1.72
+double attribute 2: 2.14
+double attribute 3: 2.40
+double attribute 4: 2.19
+double attribute 5: 0.27
+double attribute 6: 1.35
+double attribute 7: 3.95
+double attribute 8: 1.02
+double attribute 9: 2.77
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1285	attrInt[i]: 20
+i: 1	distance: 1600225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1614625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 126
+number of int entries: 3
+int attribute 0: 378
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.07
+double attribute 1: 2.16
+double attribute 2: 2.17
+double attribute 3: 2.60
+double attribute 4: 2.65
+double attribute 5: 0.37
+double attribute 6: 1.35
+double attribute 7: 2.76
+double attribute 8: 0.86
+double attribute 9: 3.28
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 378	attrInt[i]: 20
+i: 1	distance: 128164.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 142564.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 22
+number of int entries: 3
+int attribute 0: 770
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.93
+double attribute 1: 3.80
+double attribute 2: 2.65
+double attribute 3: 2.41
+double attribute 4: 2.41
+double attribute 5: 0.25
+double attribute 6: 1.98
+double attribute 7: 4.50
+double attribute 8: 1.03
+double attribute 9: 3.52
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 770	attrInt[i]: 20
+i: 1	distance: 562500.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 576900.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 54
+number of int entries: 3
+int attribute 0: 1375
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.77
+double attribute 1: 1.90
+double attribute 2: 2.68
+double attribute 3: 3.00
+double attribute 4: 2.79
+double attribute 5: 0.39
+double attribute 6: 1.68
+double attribute 7: 6.30
+double attribute 8: 1.13
+double attribute 9: 2.93
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1375	attrInt[i]: 20
+i: 1	distance: 1836025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1850425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 8
+number of int entries: 3
+int attribute 0: 1295
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 14.06
+double attribute 1: 2.15
+double attribute 2: 2.61
+double attribute 3: 2.60
+double attribute 4: 2.51
+double attribute 5: 0.31
+double attribute 6: 1.25
+double attribute 7: 5.05
+double attribute 8: 1.06
+double attribute 9: 3.58
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1295	attrInt[i]: 20
+i: 1	distance: 1625625.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1640025.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 176
+number of int entries: 3
+int attribute 0: 835
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.27
+double attribute 1: 4.28
+double attribute 2: 2.26
+double attribute 3: 1.59
+double attribute 4: 0.69
+double attribute 5: 0.43
+double attribute 6: 1.35
+double attribute 7: 10.20
+double attribute 8: 0.59
+double attribute 9: 1.56
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 835	attrInt[i]: 20
+i: 1	distance: 664225.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 678625.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 85
+number of int entries: 3
+int attribute 0: 520
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.84
+double attribute 1: 0.89
+double attribute 2: 2.58
+double attribute 3: 2.20
+double attribute 4: 2.21
+double attribute 5: 0.22
+double attribute 6: 2.35
+double attribute 7: 3.05
+double attribute 8: 0.79
+double attribute 9: 3.08
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 520	attrInt[i]: 20
+i: 1	distance: 250000.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 264400.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 16
+number of int entries: 3
+int attribute 0: 1310
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.63
+double attribute 1: 1.81
+double attribute 2: 2.70
+double attribute 3: 2.85
+double attribute 4: 2.91
+double attribute 5: 0.30
+double attribute 6: 1.46
+double attribute 7: 7.30
+double attribute 8: 1.28
+double attribute 9: 2.88
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1310	attrInt[i]: 20
+i: 1	distance: 1664100.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1678500.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 121
+number of int entries: 3
+int attribute 0: 625
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.45
+double attribute 1: 2.40
+double attribute 2: 2.42
+double attribute 3: 2.90
+double attribute 4: 2.79
+double attribute 5: 0.32
+double attribute 6: 1.83
+double attribute 7: 3.25
+double attribute 8: 0.80
+double attribute 9: 3.39
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 625	attrInt[i]: 20
+i: 1	distance: 366025.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 380425.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 89
+number of int entries: 3
+int attribute 0: 680
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 11.64
+double attribute 1: 2.06
+double attribute 2: 2.46
+double attribute 3: 1.95
+double attribute 4: 1.69
+double attribute 5: 0.48
+double attribute 6: 1.35
+double attribute 7: 2.80
+double attribute 8: 1.00
+double attribute 9: 2.75
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 680	attrInt[i]: 20
+i: 1	distance: 435600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 450000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 2
+number of int entries: 3
+int attribute 0: 1050
+int attribute 1: 0
+int==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x400E2C: cmp (knnNEW.c:33)
+==13203==    by 0x517BFF0: msort_with_tmp.part.0 (msort.c:105)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517C69E: msort_with_tmp (msort.c:45)
+==13203==    by 0x517C69E: qsort_r (msort.c:297)
+==13203==    by 0x402853: kNearestNeighbors (knnNEW.c:806)
+==13203==    by 0x402F5C: knn (knnNEW.c:944)
+==13203==    by 0x403641: main (knnNEW.c:1086)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x400E4B: cmp (knnNEW.c:37)
+==13203==    by 0x517BFF0: msort_with_tmp.part.0 (msort.c:105)
+==13203==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==13203==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517C69E: msort_with_tmp (msort.c:45)
+==13203==    by 0x517C69E: qsort_r (msort.c:297)
+==13203==    by 0x402853: kNearestNeighbors (knnNEW.c:806)
+==13203==    by 0x402F5C: knn (knnNEW.c:944)
+==13203== 
+==13203== Conditional jump or move depends on uninitialised value(s)
+==13203==    at 0x400E51: cmp (knnNEW.c:37)
+==13203==    by 0x517BFF0: msort_with_tmp.part.0 (msort.c:105)
+==13203==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==13203==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==13203==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==13203==    by 0x517C69E: msort_with_tmp (msort.c:45)
+==13203==    by 0x517C69E: qsort_r (msort.c:297)
+==13203==    by 0x402853: kNearestNeighbors (knnNEW.c:806)
+==13203==    by 0x402F5C: knn (knnNEW.c:944)
+==13203== 
+ attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.20
+double attribute 1: 1.78
+double attribute 2: 2.14
+double attribute 3: 2.65
+double attribute 4: 2.76
+double attribute 5: 0.26
+double attribute 6: 1.28
+double attribute 7: 4.38
+double attribute 8: 1.05
+double attribute 9: 3.40
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1050	attrInt[i]: 20
+i: 1	distance: 1060900.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1075300.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 130
+number of int entries: 3
+int attribute 0: 580
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.04
+double attribute 1: 4.30
+double attribute 2: 2.38
+double attribute 3: 2.10
+double attribute 4: 1.75
+double attribute 5: 0.42
+double attribute 6: 1.35
+double attribute 7: 2.60
+double attribute 8: 0.79
+double attribute 9: 2.57
+char * attribute: 2
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 580	attrInt[i]: 20
+i: 1	distance: 313600.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 328000.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 134
+number of int entries: 3
+int attribute 0: 600
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 12.70
+double attribute 1: 3.55
+double attribute 2: 2.36
+double attribute 3: 1.70
+double attribute 4: 1.20
+double attribute 5: 0.17
+double attribute 6: 0.84
+double attribute 7: 5.00
+double attribute 8: 0.78
+double attribute 9: 1.29
+char * attribute: 3
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 600	attrInt[i]: 20
+i: 1	distance: 336400.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 350800.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 56
+number of int entries: 3
+int attribute 0: 1120
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.56
+double attribute 1: 1.73
+double attribute 2: 2.46
+double attribute 3: 2.96
+double attribute 4: 2.78
+double attribute 5: 0.20
+double attribute 6: 2.45
+double attribute 7: 6.25
+double attribute 8: 0.98
+double attribute 9: 3.03
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1120	attrInt[i]: 20
+i: 1	distance: 1210000.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1224400.00	binaryInt[i]: 0	attrInt[i]: 840
+id: 35
+number of int entries: 3
+int attribute 0: 1095
+int attribute 1: 0
+int attribute 2: 0
+number of double entries: 10
+double attribute 0: 13.51
+double attribute 1: 1.80
+double attribute 2: 2.65
+double attribute 3: 2.35
+double attribute 4: 2.53
+double attribute 5: 0.29
+double attribute 6: 1.54
+double attribute 7: 4.20
+double attribute 8: 1.10
+double attribute 9: 2.87
+char * attribute: 1
+dist: 0.00
+i: 0	distance: 0.00	binaryInt[i]: 1095	attrInt[i]: 20
+i: 1	distance: 1155625.00	binaryInt[i]: 0	attrInt[i]: 120
+i: 2	distance: 1170025.00	binaryInt[i]: 0	attrInt[i]: 840
+2
+==13203== 
+==13203== HEAP SUMMARY:
+==13203==     in use at exit: 2,836 bytes in 16 blocks
+==13203==   total heap usage: 19,596 allocs, 19,580 frees, 196,919 bytes allocated
+==13203== 
+==13203== LEAK SUMMARY:
+==13203==    definitely lost: 2,822 bytes in 9 blocks
+==13203==    indirectly lost: 14 bytes in 7 blocks
+==13203==      possibly lost: 0 bytes in 0 blocks
+==13203==    still reachable: 0 bytes in 0 blocks
+==13203==         suppressed: 0 bytes in 0 blocks
+==13203== Rerun with --leak-check=full to see details of leaked memory
+==13203== 
+==13203== For counts of detected and suppressed errors, rerun with: -v
+==13203== Use --track-origins=yes to see where uninitialised values come from
+==13203== ERROR SUMMARY: 42160 errors from 115 contexts (suppressed: 0 from 0)

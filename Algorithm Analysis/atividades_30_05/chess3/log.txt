@@ -1,0 +1,103 @@
+==9135== Memcheck, a memory error detector
+==9135== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==9135== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9135== Command: ./chess3
+==9135== 
+rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+move1: e2	move2: e4
+Movimento valido. Testando...
+move1: d2	move2: d4
+Movimento valido. Testando...
+move1: c2	move2: c3
+Movimento valido. Testando...
+move1: b2	move2: c3
+Movimento invalido. Tente novamente
+move1: e4	move2: d5
+Movimento invalido. Tente novamente
+move1: d1	move2: g4
+Movimento invalido. Tente novamente
+move1: d4	move2: e5
+Movimento invalido. Tente novamente
+move1: g4	move2: f5
+Movimento invalido. Tente novamente
+move1: c3	move2: c4
+Movimento invalido. Tente novamente
+move1: c1	move2: a3
+Movimento invalido. Tente novamente
+move1: a3	move2: c5
+Movimento invalido. Tente novamente
+move1: b1	move2: d2
+Movimento invalido. Tente novamente
+move1: e1	move2: d2
+Movimento invalido. Tente novamente
+move1: c5	move2: d6
+Movimento invalido. Tente novamente
+move1: e5	move2: d6
+Movimento invalido. Tente novamente
+move1: d6	move2: d7
+Movimento invalido. Tente novamente
+move1: f1	move2: e2
+Movimento invalido. Tente novamente
+move1: d2	move2: e2
+Movimento invalido. Tente novamente
+move1: a1	move2: d1
+Movimento invalido. Tente novamente
+move1: e2	move2: f2
+Movimento invalido. Tente novamente
+move1: g1	move2: f3
+Movimento valido. Testando...
+move1: g2	move2: f3
+Movimento invalido. Tente novamente
+move1: d5	move2: d6
+Movimento invalido. Tente novamente
+move1: f3	move2: e4
+Movimento invalido. Tente novamente
+move1: d6	move2: d7
+Movimento invalido. Tente novamente
+move1: d7	move2: d8Q
+Movimento invalido. Tente novamente
+move1: h2	move2: h4
+Movimento valido. Testando...
+move1: h4	move2: h5
+Movimento invalido. Tente novamente
+move1: h1	move2: h4
+Movimento invalido. Tente novamente
+move1: f2	move2: g3
+Movimento invalido. Tente novamente
+move1: e4	move2: e5
+Movimento invalido. Tente novamente
+move1: c4	move2: c5
+Movimento invalido. Tente novamente
+move1: c5	move2: b6
+Movimento invalido. Tente novamente
+move1: b6	move2: b7
+Movimento invalido. Tente novamente
+move1: b7	move2: b8Q
+Movimento invalido. Tente novamente
+move1: d1	move2: d6
+Movimento invalido. Tente novamente
+move1: h4	move2: g4
+Movimento invalido. Tente novamente
+move1: g4	move2: g6
+Movimento invalido. Tente novamente
+move1: g6	move2: h6
+Movimento invalido. Tente novamente
+move1: h6	move2: f6
+Movimento invalido. Tente novamente
+move1: d8	move2: e8
+Movimento invalido. Tente novamente
+==9135== 
+==9135== HEAP SUMMARY:
+==9135==     in use at exit: 540 bytes in 124 blocks
+==9135==   total heap usage: 712 allocs, 588 frees, 17,168 bytes allocated
+==9135== 
+==9135== LEAK SUMMARY:
+==9135==    definitely lost: 462 bytes in 98 blocks
+==9135==    indirectly lost: 78 bytes in 26 blocks
+==9135==      possibly lost: 0 bytes in 0 blocks
+==9135==    still reachable: 0 bytes in 0 blocks
+==9135==         suppressed: 0 bytes in 0 blocks
+==9135== Rerun with --leak-check=full to see details of leaked memory
+==9135== 
+==9135== For counts of detected and suppressed errors, rerun with: -v
+==9135== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

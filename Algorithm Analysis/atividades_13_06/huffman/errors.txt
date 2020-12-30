@@ -1,0 +1,1952 @@
+==6412== Memcheck, a memory error detector
+==6412== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==6412== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==6412== Command: ./huffman
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F74: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4015C9: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208981 is 0 bytes after a block of size 1 alloc'd
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid write of size 1
+==6412==    at 0x4015D1: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208982 is 1 bytes after a block of size 1 alloc'd
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F74: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400EB7: insertBinaryTree (huffman.c:123)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208981 is 0 bytes after a block of size 1 alloc'd
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C31063: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400EE1: insertBinaryTree (huffman.c:124)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208981 is 0 bytes after a block of size 1 alloc'd
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x401594: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208880 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x40159C: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208880 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F62: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4015A7: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208980 is 0 bytes inside a block of size 1 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F74: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4015A7: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208981 is 0 bytes after a block of size 1 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid write of size 1
+==6412==    at 0x4015B0: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208981 is 0 bytes after a block of size 1 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x4015B6: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208880 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x4015BE: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208880 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F62: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4015C9: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208980 is 0 bytes inside a block of size 1 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x4015D8: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208880 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x400F0F: insertBinaryTree (huffman.c:128)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208980 is 0 bytes inside a block of size 1 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x400F0F: insertBinaryTree (huffman.c:128)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208981 is 0 bytes after a block of size 1 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F62: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400EB7: insertBinaryTree (huffman.c:123)
+==6412==    by 0x400F63: insertBinaryTree (huffman.c:134)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208980 is 0 bytes inside a block of size 1 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F74: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400EB7: insertBinaryTree (huffman.c:123)
+==6412==    by 0x400F63: insertBinaryTree (huffman.c:134)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208981 is 0 bytes after a block of size 1 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C31047: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400EE1: insertBinaryTree (huffman.c:124)
+==6412==    by 0x400F63: insertBinaryTree (huffman.c:134)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208980 is 0 bytes inside a block of size 1 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C31063: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400EE1: insertBinaryTree (huffman.c:124)
+==6412==    by 0x400F63: insertBinaryTree (huffman.c:134)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208981 is 0 bytes after a block of size 1 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D3D: freeNode (huffman.c:90)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208878 is 8 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D4A: freeNode (huffman.c:90)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208878 is 8 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid free() / delete / delete[] / realloc()
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D55: freeNode (huffman.c:90)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x52088e0 is 0 bytes inside a block of size 8 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D55: freeNode (huffman.c:90)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FB55: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400C76: initNode (huffman.c:72)
+==6412==    by 0x401516: huffman (huffman.c:303)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D61: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208880 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D6E: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208880 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid free() / delete / delete[] / realloc()
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208980 is 0 bytes inside a block of size 1 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D85: freeNode (huffman.c:92)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208888 is 24 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400DA9: freeNode (huffman.c:93)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208890 is 32 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid free() / delete / delete[] / realloc()
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208870 is 0 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F74: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400EB7: insertBinaryTree (huffman.c:123)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208d02 is 0 bytes after a block of size 2 alloc'd
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C31063: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400EE1: insertBinaryTree (huffman.c:124)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208d02 is 0 bytes after a block of size 2 alloc'd
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x400F0F: insertBinaryTree (huffman.c:128)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5208d02 is 0 bytes after a block of size 2 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x400F0F: insertBinaryTree (huffman.c:128)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209083 is 0 bytes after a block of size 3 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid write of size 1
+==6412==    at 0x4015D1: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209405 is 1 bytes after a block of size 4 alloc'd
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x401594: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209300 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x40159C: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209300 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid write of size 1
+==6412==    at 0x4015B0: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209404 is 0 bytes after a block of size 4 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x4015B6: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209300 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x4015BE: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209300 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x4015D8: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209300 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F74: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4015C9: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209785 is 0 bytes after a block of size 5 alloc'd
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid write of size 1
+==6412==    at 0x4015D1: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209786 is 1 bytes after a block of size 5 alloc'd
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x401594: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209680 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x40159C: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209680 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F62: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4015A7: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209780 is 0 bytes inside a block of size 5 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F74: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4015A7: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209781 is 1 bytes inside a block of size 5 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid write of size 1
+==6412==    at 0x4015B0: huffman (huffman.c:311)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209785 is 0 bytes after a block of size 5 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x4015B6: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209680 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x4015BE: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209680 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F62: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4015C9: huffman (huffman.c:312)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209780 is 0 bytes inside a block of size 5 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x4015D8: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209680 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x400F0F: insertBinaryTree (huffman.c:128)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209780 is 0 bytes inside a block of size 5 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D3D: freeNode (huffman.c:90)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209678 is 8 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D4A: freeNode (huffman.c:90)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209678 is 8 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D61: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209680 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D6E: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209680 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D85: freeNode (huffman.c:92)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209688 is 24 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400DA9: freeNode (huffman.c:93)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209690 is 32 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x4014E9: huffman (huffman.c:301)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F74: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4015C9: huffman (huffman.c:312)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209b06 is 0 bytes after a block of size 6 alloc'd
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid write of size 1
+==6412==    at 0x4015D1: huffman (huffman.c:312)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209b07 is 1 bytes after a block of size 6 alloc'd
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x401594: huffman (huffman.c:311)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209a00 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x40159C: huffman (huffman.c:311)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209a00 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F62: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4015A7: huffman (huffman.c:311)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209b00 is 0 bytes inside a block of size 6 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F74: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4015A7: huffman (huffman.c:311)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209b01 is 1 bytes inside a block of size 6 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid write of size 1
+==6412==    at 0x4015B0: huffman (huffman.c:311)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209b06 is 0 bytes after a block of size 6 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x4015B6: huffman (huffman.c:312)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209a00 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x4015BE: huffman (huffman.c:312)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209a00 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x4C30F62: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4015C9: huffman (huffman.c:312)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209b00 is 0 bytes inside a block of size 6 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x4015D8: huffman (huffman.c:313)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209a00 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x400F0F: insertBinaryTree (huffman.c:128)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209b00 is 0 bytes inside a block of size 6 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 1
+==6412==    at 0x400F0F: insertBinaryTree (huffman.c:128)
+==6412==    by 0x400F3B: insertBinaryTree (huffman.c:130)
+==6412==    by 0x401619: huffman (huffman.c:313)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209b01 is 1 bytes inside a block of size 6 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D3D: freeNode (huffman.c:90)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x52099f8 is 8 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D4A: freeNode (huffman.c:90)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x52099f8 is 8 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid free() / delete / delete[] / realloc()
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D55: freeNode (huffman.c:90)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209a60 is 0 bytes inside a block of size 2 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D55: freeNode (huffman.c:90)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FB55: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400C76: initNode (huffman.c:72)
+==6412==    by 0x401516: huffman (huffman.c:303)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D61: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209a00 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D6E: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209a00 is 16 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid free() / delete / delete[] / realloc()
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209b00 is 0 bytes inside a block of size 6 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400D79: freeNode (huffman.c:91)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x40155B: huffman (huffman.c:305)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400D85: freeNode (huffman.c:92)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209a08 is 24 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid read of size 8
+==6412==    at 0x400DA9: freeNode (huffman.c:93)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x5209a10 is 32 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+==6412== Invalid free() / delete / delete[] / realloc()
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Address 0x52099f0 is 0 bytes inside a block of size 40 free'd
+==6412==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x400DCD: freeNode (huffman.c:94)
+==6412==    by 0x401648: huffman (huffman.c:317)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412==  Block was alloc'd at
+==6412==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6412==    by 0x4014F3: huffman (huffman.c:302)
+==6412==    by 0x401961: huffmanCompression (huffman.c:368)
+==6412==    by 0x401AA4: main (huffman.c:409)
+==6412== 
+begin inOrder
+16 - obgdhr 
+end inOrder
+begin inOrder
+7 - o
+16 - obgdhr 
+end inOrder
+begin inOrder
+7 - o
+9 - bgdhr 
+16 - obgdhr 
+end inOrder
+begin inOrder
+4 - bgd
+7 - o
+9 - bgdhr 
+16 - obgdhr 
+end inOrder
+begin inOrder
+4 - bgd
+5 - hr 
+7 - o
+9 - bgdhr 
+16 - obgdhr 
+end inOrder
+begin inOrder
+2 - hr
+4 - bgd
+5 - hr 
+7 - o
+9 - bgdhr 
+16 - obgdhr 
+end inOrder
+begin inOrder
+2 - hr
+3 -  
+4 - bgd
+5 - hr 
+7 - o
+9 - bgdhr 
+16 - obgdhr 
+end inOrder
+begin inOrder
+2 - bg
+2 - hr
+3 -  
+4 - bgd
+5 - hr 
+7 - o
+9 - bgdhr 
+16 - obgdhr 
+end inOrder
+begin inOrder
+2 - bg
+2 - d
+2 - hr
+3 -  
+4 - bgd
+5 - hr 
+7 - o
+9 - bgdhr 
+16 - obgdhr 
+end inOrder
+begin inOrder
+1 - h
+2 - bg
+2 - d
+2 - hr
+3 -  
+4 - bgd
+5 - hr 
+7 - o
+9 - bgdhr 
+16 - obgdhr 
+end inOrder
+begin inOrder
+1 - h
+1 - r
+2 - bg
+2 - d
+2 - hr
+3 -  
+4 - bgd
+5 - hr 
+7 - o
+9 - bgdhr 
+16 - obgdhr 
+end inOrder
+begin inOrder
+1 - b
+1 - h
+1 - r
+2 - bg
+2 - d
+2 - hr
+3 -  
+4 - bgd
+5 - hr 
+7 - o
+9 - bgdhr 
+16 - obgdhr 
+end inOrder
+begin inOrder
+1 - b
+1 - g
+1 - h
+1 - r
+2 - bg
+2 - d
+2 - hr
+3 -  
+4 - bgd
+5 - hr 
+7 - o
+9 - bgdhr 
+16 - obgdhr 
+end inOrder
+==6412== 
+==6412== HEAP SUMMARY:
+==6412==     in use at exit: 242 bytes in 15 blocks
+==6412==   total heap usage: 127 allocs, 130 frees, 18,508 bytes allocated
+==6412== 
+==6412== LEAK SUMMARY:
+==6412==    definitely lost: 200 bytes in 5 blocks
+==6412==    indirectly lost: 42 bytes in 10 blocks
+==6412==      possibly lost: 0 bytes in 0 blocks
+==6412==    still reachable: 0 bytes in 0 blocks
+==6412==         suppressed: 0 bytes in 0 blocks
+==6412== Rerun with --leak-check=full to see details of leaked memory
+==6412== 
+==6412== For counts of detected and suppressed errors, rerun with: -v
+==6412== ERROR SUMMARY: 273 errors from 79 contexts (suppressed: 0 from 0)

@@ -1,0 +1,13 @@
+metadados4.dat
+insert 2, "Marcus Fenix", "soldado", 16, 20180.4
+insert 7, "Master Chief", "soldado", 18, 12790.53
+insert 9, "Commander Shepard", "comandante", 12, 105987.98
+insert 5, "Ada Wong", "espiã", 10, 225896.27
+insert 4, "Lara Croft", "historiadora", 8, 3074.87
+insert 1, "Leon Kennedy", "agente", 15, 550876.43
+index
+search 1
+search 4
+search 5
+search 7
+exit

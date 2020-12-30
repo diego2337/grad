@@ -1,0 +1,5 @@
+table ocr1
+nrows int
+ncols int
+bits byte[2]
+class char[2]

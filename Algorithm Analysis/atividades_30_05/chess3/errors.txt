@@ -1,0 +1,41 @@
+==3440== Memcheck, a memory error detector
+==3440== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==3440== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==3440== Command: ./chess3
+==3440== 
+6k1/5n2/8/8/4N3/4K3/8/8 w - - 25 73
+6k1/5n2/3N4/8/8/4K3/8/8 b - - 26 73
+6k1/8/3N3n/8/8/4K3/8/8 w - - 27 74
+6k1/8/3N3n/8/4K3/8/8/8 b - - 28 74
+Empate -- Afogamento
+6k1/5n2/3N4/8/4K3/8/8/8 w - - 29 75
+Empate -- Afogamento
+6k1/5n2/3N4/3K4/8/8/8/8 b - - 30 75
+6k1/8/3N3n/3K4/8/8/8/8 w - - 31 76
+4N1k1/8/7n/3K4/8/8/8/8 b - - 32 76
+4N3/5k2/7n/3K4/8/8/8/8 w - - 33 77
+4N3/5k2/3K3n/8/8/8/8/8 b - - 34 77
+4N3/5k2/3K4/5n2/8/8/8/8 w - - 35 78
+4N3/5k2/8/4Kn2/8/8/8/8 b - - 36 78
+4N3/5k2/7n/4K3/8/8/8/8 w - - 37 79
+4N3/5k2/3K3n/8/8/8/8/8 b - - 38 79
+4N3/5k2/3K4/5n2/8/8/8/8 w - - 39 80
+4N3/5k2/8/4Kn2/8/8/8/8 b - - 40 80
+4N3/5k2/7n/4K3/8/8/8/8 w - - 41 81
+4N3/5k2/3K3n/8/8/8/8/8 b - - 42 81
+4N3/5k2/3K4/5n2/8/8/8/8 w - - 43 82
+==3440== 
+==3440== HEAP SUMMARY:
+==3440==     in use at exit: 428,040 bytes in 12,612 blocks
+==3440==   total heap usage: 59,040 allocs, 46,428 frees, 1,573,176 bytes allocated
+==3440== 
+==3440== LEAK SUMMARY:
+==3440==    definitely lost: 114,194 bytes in 2,669 blocks
+==3440==    indirectly lost: 313,846 bytes in 9,943 blocks
+==3440==      possibly lost: 0 bytes in 0 blocks
+==3440==    still reachable: 0 bytes in 0 blocks
+==3440==         suppressed: 0 bytes in 0 blocks
+==3440== Rerun with --leak-check=full to see details of leaked memory
+==3440== 
+==3440== For counts of detected and suppressed errors, rerun with: -v
+==3440== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

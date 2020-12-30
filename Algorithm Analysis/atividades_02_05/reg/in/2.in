@@ -1,0 +1,12 @@
+metadados8.dat
+insert 8, "Marcus", "Fenix", 45, 110, 1.68
+insert 2, "Master", "Chief", 46, 95, 1.9
+insert 5, "Commander", "Shepard", 43, 80, 1.8
+insert 3, "Ada", "Wong", 33, 60, 1.65
+insert 1, "Lara", "Croft", 35, 62, 1.7
+insert 9, "Leon", "Kennedy", 38, 75, 1.83
+search 9
+search 3
+search 9
+search 1
+exit

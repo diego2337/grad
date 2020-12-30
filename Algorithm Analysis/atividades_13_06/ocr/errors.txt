@@ -1,0 +1,1210 @@
+==24027== Memcheck, a memory error detector
+==24027== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==24027== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==24027== Command: ./ocr
+==24027== 
+==24027== Invalid read of size 1
+==24027==    at 0x4C35086: __GI_mempcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x51BC241: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1319)
+==24027==    by 0x51B17BA: fwrite (iofwrite.c:39)
+==24027==    by 0x402833: readTrainingTest (ocr.c:810)
+==24027==    by 0x403B0A: main (ocr.c:1288)
+==24027==  Address 0x551296a is 0 bytes after a block of size 10 alloc'd
+==24027==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x4027E8: readTrainingTest (ocr.c:807)
+==24027==    by 0x403B0A: main (ocr.c:1288)
+==24027== 
+==24027== Invalid read of size 1
+==24027==    at 0x4C35078: __GI_mempcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x51BC241: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1319)
+==24027==    by 0x51B17BA: fwrite (iofwrite.c:39)
+==24027==    by 0x402833: readTrainingTest (ocr.c:810)
+==24027==    by 0x403B0A: main (ocr.c:1288)
+==24027==  Address 0x551296b is 1 bytes after a block of size 10 alloc'd
+==24027==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x4027E8: readTrainingTest (ocr.c:807)
+==24027==    by 0x403B0A: main (ocr.c:1288)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x51936C8: __printf_fp_l (printf_fp.c:381)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x51936E2: __printf_fp_l (printf_fp.c:395)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518D060: __mpn_extract_double (dbl2mpn.c:56)
+==24027==    by 0x5193711: __printf_fp_l (printf_fp.c:411)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5193786: __printf_fp_l (printf_fp.c:464)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5194168: __printf_fp_l (printf_fp.c:473)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x5194F18: __printf_fp_l (printf_fp.c:481)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B988: __mpn_lshift (lshift.S:59)
+==24027==    by 0x5194F1C: __printf_fp_l (printf_fp.c:481)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B98B: __mpn_lshift (lshift.S:60)
+==24027==    by 0x5194F1C: __printf_fp_l (printf_fp.c:481)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5194F42: __printf_fp_l (printf_fp.c:486)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x5194F54: __printf_fp_l (printf_fp.c:487)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5194198: __printf_fp_l (printf_fp.c:489)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5194243: __printf_fp_l (printf_fp.c:498)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x4C32B1D: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194203: __printf_fp_l (printf_fp.c:524)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x4C32DDC: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194203: __printf_fp_l (printf_fp.c:524)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x4C32B7E: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194203: __printf_fp_l (printf_fp.c:524)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x4C32B8F: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194203: __printf_fp_l (printf_fp.c:524)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x4C32BA5: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194203: __printf_fp_l (printf_fp.c:524)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x4C32D2B: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194203: __printf_fp_l (printf_fp.c:524)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x519420C: __printf_fp_l (printf_fp.c:540)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5194212: __printf_fp_l (printf_fp.c:540)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B45A: __mpn_cmp (cmp.c:37)
+==24027==    by 0x519463D: __printf_fp_l (printf_fp.c:540)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B45E: __mpn_cmp (cmp.c:38)
+==24027==    by 0x519463D: __printf_fp_l (printf_fp.c:540)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518B465: __mpn_cmp (cmp.c:39)
+==24027==    by 0x519463D: __printf_fp_l (printf_fp.c:540)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5194644: __printf_fp_l (printf_fp.c:540)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x4C32B1D: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x4C32B23: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x4C32B31: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x4C32B7E: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x4C32D28: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x4C32D2B: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x4C32D36: __GI_memcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x5194664: __printf_fp_l (printf_fp.c:543)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x519466D: __printf_fp_l (printf_fp.c:544)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x51946C3: __printf_fp_l (printf_fp.c:562)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x51946D3: __printf_fp_l (printf_fp.c:562)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x51946D7: __printf_fp_l (printf_fp.c:562)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x5194705: __printf_fp_l (printf_fp.c:562)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x519471B: __printf_fp_l (printf_fp.c:566)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x5194730: __printf_fp_l (printf_fp.c:585)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x519473E: __printf_fp_l (printf_fp.c:585)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x519547D: __printf_fp_l (printf_fp.c:607)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518BA98: __mpn_rshift (rshift.S:62)
+==24027==    by 0x51954A3: __printf_fp_l (printf_fp.c:625)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518BABD: __mpn_rshift (rshift.S:73)
+==24027==    by 0x51954A3: __printf_fp_l (printf_fp.c:625)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518BA45: __mpn_rshift (rshift.S:31)
+==24027==    by 0x51947A4: __printf_fp_l (printf_fp.c:629)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518BA6C: __mpn_rshift (rshift.S:45)
+==24027==    by 0x51947A4: __printf_fp_l (printf_fp.c:629)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518BA96: __mpn_rshift (rshift.S:61)
+==24027==    by 0x51947A4: __printf_fp_l (printf_fp.c:629)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518BA98: __mpn_rshift (rshift.S:62)
+==24027==    by 0x51947A4: __printf_fp_l (printf_fp.c:629)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518BAA9: __mpn_rshift (rshift.S:67)
+==24027==    by 0x51947A4: __printf_fp_l (printf_fp.c:629)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518BABD: __mpn_rshift (rshift.S:73)
+==24027==    by 0x51947A4: __printf_fp_l (printf_fp.c:629)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x51947B6: __printf_fp_l (printf_fp.c:633)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x51930AD: hack_digit (printf_fp.c:182)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B82D: __mpn_divrem (divrem.c:62)
+==24027==    by 0x5193105: hack_digit (printf_fp.c:186)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B830: __mpn_divrem (divrem.c:63)
+==24027==    by 0x5193105: hack_digit (printf_fp.c:186)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518B83B: __mpn_divrem (divrem.c:65)
+==24027==    by 0x5193105: hack_digit (printf_fp.c:186)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518B84C: __mpn_divrem (divrem.c:72)
+==24027==    by 0x5193105: hack_digit (printf_fp.c:186)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B858: __mpn_divrem (divrem.c:73)
+==24027==    by 0x5193105: hack_digit (printf_fp.c:186)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B867: __mpn_divrem (divrem.c:73)
+==24027==    by 0x5193105: hack_digit (printf_fp.c:186)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518B86F: __mpn_divrem (divrem.c:72)
+==24027==    by 0x5193105: hack_digit (printf_fp.c:186)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B89B: __mpn_divrem (divrem.c:79)
+==24027==    by 0x5193105: hack_digit (printf_fp.c:186)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x5193112: hack_digit (printf_fp.c:188)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x519311A: hack_digit (printf_fp.c:189)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x519312E: hack_digit (printf_fp.c:192)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5193134: hack_digit (printf_fp.c:192)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518BFA4: __mpn_mul_1 (mul_1.S:36)
+==24027==    by 0x51930C4: hack_digit (printf_fp.c:203)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518BFC8: __mpn_mul_1 (mul_1.S:52)
+==24027==    by 0x51930C4: hack_digit (printf_fp.c:203)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x51930C8: hack_digit (printf_fp.c:204)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x51930DA: hack_digit (printf_fp.c:205)
+==24027==    by 0x519397B: __printf_fp_l (printf_fp.c:923)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B82D: __mpn_divrem (divrem.c:62)
+==24027==    by 0x51942DD: hack_digit (printf_fp.c:186)
+==24027==    by 0x51942DD: __printf_fp_l (printf_fp.c:947)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B830: __mpn_divrem (divrem.c:63)
+==24027==    by 0x51942DD: hack_digit (printf_fp.c:186)
+==24027==    by 0x51942DD: __printf_fp_l (printf_fp.c:947)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518B83B: __mpn_divrem (divrem.c:65)
+==24027==    by 0x51942DD: hack_digit (printf_fp.c:186)
+==24027==    by 0x51942DD: __printf_fp_l (printf_fp.c:947)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B89B: __mpn_divrem (divrem.c:79)
+==24027==    by 0x51942DD: hack_digit (printf_fp.c:186)
+==24027==    by 0x51942DD: __printf_fp_l (printf_fp.c:947)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x51942EA: hack_digit (printf_fp.c:188)
+==24027==    by 0x51942EA: __printf_fp_l (printf_fp.c:947)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x51942F2: hack_digit (printf_fp.c:189)
+==24027==    by 0x51942F2: __printf_fp_l (printf_fp.c:947)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x5194306: hack_digit (printf_fp.c:192)
+==24027==    by 0x5194306: __printf_fp_l (printf_fp.c:947)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x519430C: hack_digit (printf_fp.c:192)
+==24027==    by 0x519430C: __printf_fp_l (printf_fp.c:947)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B82D: __mpn_divrem (divrem.c:62)
+==24027==    by 0x5193105: hack_digit (printf_fp.c:186)
+==24027==    by 0x51943D0: __printf_fp_l (printf_fp.c:960)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B830: __mpn_divrem (divrem.c:63)
+==24027==    by 0x5193105: hack_digit (printf_fp.c:186)
+==24027==    by 0x51943D0: __printf_fp_l (printf_fp.c:960)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518B83B: __mpn_divrem (divrem.c:65)
+==24027==    by 0x5193105: hack_digit (printf_fp.c:186)
+==24027==    by 0x51943D0: __printf_fp_l (printf_fp.c:960)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518B89B: __mpn_divrem (divrem.c:79)
+==24027==    by 0x5193105: hack_digit (printf_fp.c:186)
+==24027==    by 0x51943D0: __printf_fp_l (printf_fp.c:960)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x5193112: hack_digit (printf_fp.c:188)
+==24027==    by 0x51943D0: __printf_fp_l (printf_fp.c:960)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x519311A: hack_digit (printf_fp.c:189)
+==24027==    by 0x51943D0: __printf_fp_l (printf_fp.c:960)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x519312E: hack_digit (printf_fp.c:192)
+==24027==    by 0x51943D0: __printf_fp_l (printf_fp.c:960)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5193134: hack_digit (printf_fp.c:192)
+==24027==    by 0x51943D0: __printf_fp_l (printf_fp.c:960)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x51952D8: __printf_fp_l (printf_fp.c:964)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x519455F: __printf_fp_l (printf_fp.c:1147)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5194836: __printf_fp_l (printf_fp.c:1154)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x51949F1: __printf_fp_l (printf_fp.c:1210)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x51949D3: __printf_fp_l (printf_fp.c:1212)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518BFA4: __mpn_mul_1 (mul_1.S:36)
+==24027==    by 0x518BBE9: __mpn_mul (mul.c:81)
+==24027==    by 0x519426E: __printf_fp_l (printf_fp.c:530)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518C02F: __mpn_mul_1 (mul_1.S:85)
+==24027==    by 0x518BBE9: __mpn_mul (mul.c:81)
+==24027==    by 0x519426E: __printf_fp_l (printf_fp.c:530)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518C0A2: __mpn_mul_1 (mul_1.S:117)
+==24027==    by 0x518BBE9: __mpn_mul (mul.c:81)
+==24027==    by 0x519426E: __printf_fp_l (printf_fp.c:530)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518BBFA: __mpn_mul (mul.c:83)
+==24027==    by 0x519426E: __printf_fp_l (printf_fp.c:530)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x4037D5: ocrKnn (ocr.c:1206)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Syscall param write(buf) points to uninitialised byte(s)
+==24027==    at 0x52396E0: __write_nocancel (syscall-template.S:84)
+==24027==    by 0x51BBBFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==24027==    by 0x51BD408: new_do_write (fileops.c:518)
+==24027==    by 0x51BD408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==24027==    by 0x51BE33E: _IO_switch_to_get_mode (genops.c:177)
+==24027==    by 0x51BE33E: __underflow (genops.c:325)
+==24027==    by 0x51BC057: _IO_file_xsgetn (fileops.c:1414)
+==24027==    by 0x51B1235: fread (iofread.c:38)
+==24027==    by 0x402CD7: readBinaryEntry (ocr.c:974)
+==24027==    by 0x4036F6: ocrKnn (ocr.c:1200)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027==  Address 0x5515c20 is 0 bytes inside a block of size 4,096 alloc'd
+==24027==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x51B01D4: _IO_file_doallocate (filedoalloc.c:127)
+==24027==    by 0x51BE593: _IO_doallocbuf (genops.c:398)
+==24027==    by 0x51BD69B: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+==24027==    by 0x51BE60D: _IO_default_uflow (genops.c:413)
+==24027==    by 0x519F25F: _IO_vfscanf (vfscanf.c:634)
+==24027==    by 0x51AE8E8: __isoc99_fscanf (isoc99_fscanf.c:34)
+==24027==    by 0x403664: ocrKnn (ocr.c:1191)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x400D9C: cmp (ocr.c:46)
+==24027==    by 0x517BFF0: msort_with_tmp.part.0 (msort.c:105)
+==24027==    by 0x517BEC6: msort_with_tmp (msort.c:45)
+==24027==    by 0x517BEC6: msort_with_tmp.part.0 (msort.c:53)
+==24027==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==24027==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==24027==    by 0x517C69E: msort_with_tmp (msort.c:45)
+==24027==    by 0x517C69E: qsort_r (msort.c:297)
+==24027==    by 0x402FC2: kNearestNeighbors (ocr.c:1023)
+==24027==    by 0x4038B4: ocrKnn (ocr.c:1223)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x400D9C: cmp (ocr.c:46)
+==24027==    by 0x517BFF0: msort_with_tmp.part.0 (msort.c:105)
+==24027==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==24027==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==24027==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==24027==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==24027==    by 0x517C69E: msort_with_tmp (msort.c:45)
+==24027==    by 0x517C69E: qsort_r (msort.c:297)
+==24027==    by 0x402FC2: kNearestNeighbors (ocr.c:1023)
+==24027==    by 0x4038B4: ocrKnn (ocr.c:1223)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x400DBB: cmp (ocr.c:50)
+==24027==    by 0x517BFF0: msort_with_tmp.part.0 (msort.c:105)
+==24027==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==24027==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==24027==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==24027==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==24027==    by 0x517C69E: msort_with_tmp (msort.c:45)
+==24027==    by 0x517C69E: qsort_r (msort.c:297)
+==24027==    by 0x402FC2: kNearestNeighbors (ocr.c:1023)
+==24027==    by 0x4038B4: ocrKnn (ocr.c:1223)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x400DC1: cmp (ocr.c:50)
+==24027==    by 0x517BFF0: msort_with_tmp.part.0 (msort.c:105)
+==24027==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==24027==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==24027==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==24027==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==24027==    by 0x517C69E: msort_with_tmp (msort.c:45)
+==24027==    by 0x517C69E: qsort_r (msort.c:297)
+==24027==    by 0x402FC2: kNearestNeighbors (ocr.c:1023)
+==24027==    by 0x4038B4: ocrKnn (ocr.c:1223)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x400D9C: cmp (ocr.c:46)
+==24027==    by 0x517BFF0: msort_with_tmp.part.0 (msort.c:105)
+==24027==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==24027==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==24027==    by 0x517C69E: msort_with_tmp (msort.c:45)
+==24027==    by 0x517C69E: qsort_r (msort.c:297)
+==24027==    by 0x402FC2: kNearestNeighbors (ocr.c:1023)
+==24027==    by 0x4038B4: ocrKnn (ocr.c:1223)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x400DBB: cmp (ocr.c:50)
+==24027==    by 0x517BFF0: msort_with_tmp.part.0 (msort.c:105)
+==24027==    by 0x517BEDC: msort_with_tmp (msort.c:45)
+==24027==    by 0x517BEDC: msort_with_tmp.part.0 (msort.c:54)
+==24027==    by 0x517C69E: msort_with_tmp (msort.c:45)
+==24027==    by 0x517C69E: qsort_r (msort.c:297)
+==24027==    by 0x402FC2: kNearestNeighbors (ocr.c:1023)
+==24027==    by 0x4038B4: ocrKnn (ocr.c:1223)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== 
+==24027== More than 100 errors detected.  Subsequent errors
+==24027== will still be recorded, but in less detail than before.
+==24027== Invalid read of size 4
+==24027==    at 0x4033FA: classify (ocr.c:1108)
+==24027==    by 0x4038ED: ocrKnn (ocr.c:1225)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027==  Address 0x55198a0 is 0 bytes after a block of size 0 alloc'd
+==24027==    at 0x4C2FB55: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x403258: classify (ocr.c:1076)
+==24027==    by 0x4038ED: ocrKnn (ocr.c:1225)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Invalid read of size 8
+==24027==    at 0x40340D: classify (ocr.c:1108)
+==24027==    by 0x4038ED: ocrKnn (ocr.c:1225)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027==  Address 0x5519820 is 0 bytes after a block of size 0 alloc'd
+==24027==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==24027==    by 0x403072: retrieveClasses (ocr.c:1047)
+==24027==    by 0x40322C: classify (ocr.c:1073)
+==24027==    by 0x4038ED: ocrKnn (ocr.c:1225)
+==24027==    by 0x403961: ocrDumpNn (ocr.c:1243)
+==24027==    by 0x403C79: main (ocr.c:1320)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5190B83: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402408: dumpData (ocr.c:726)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Use of uninitialised value of size 8
+==24027==    at 0x518D76B: _itoa_word (_itoa.c:179)
+==24027==    by 0x519112C: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402408: dumpData (ocr.c:726)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518D775: _itoa_word (_itoa.c:179)
+==24027==    by 0x519112C: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402408: dumpData (ocr.c:726)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x51911AF: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402408: dumpData (ocr.c:726)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5190C59: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402408: dumpData (ocr.c:726)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x519141A: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402408: dumpData (ocr.c:726)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5190CAB: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402408: dumpData (ocr.c:726)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5190CE2: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402408: dumpData (ocr.c:726)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5191CC0: vfprintf (vfprintf.c:1632)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x40261E: dumpData (ocr.c:759)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x518D065: __mpn_extract_double (dbl2mpn.c:60)
+==24027==    by 0x5193711: __printf_fp_l (printf_fp.c:411)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402475: dumpData (ocr.c:734)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x51943B8: __printf_fp_l (printf_fp.c:959)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402475: dumpData (ocr.c:734)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x51943DB: __printf_fp_l (printf_fp.c:962)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402475: dumpData (ocr.c:734)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x519480A: __printf_fp_l (printf_fp.c:972)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402475: dumpData (ocr.c:734)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x519481E: __printf_fp_l (printf_fp.c:972)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402475: dumpData (ocr.c:734)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+==24027== Conditional jump or move depends on uninitialised value(s)
+==24027==    at 0x5194A8B: round_away (rounding-mode.h:52)
+==24027==    by 0x5194A8B: __printf_fp_l (printf_fp.c:979)
+==24027==    by 0x51920B8: vfprintf (vfprintf.c:1631)
+==24027==    by 0x5198898: printf (printf.c:33)
+==24027==    by 0x402475: dumpData (ocr.c:734)
+==24027==    by 0x403C07: main (ocr.c:1313)
+==24027== 
+dataSize: 8
+distances[i].distance: 0.000000
+distances[i].distance: 1.000000
+distances[i].distance: 1.000000
+distances[i].distance: 2.000000
+distances[i].distance: 3.000000
+distances[i].distance: 4.000000
+distances[i].distance: 4.000000
+distances[i].distance: 5.000000
+distances[i].distance: 5.000000
+distances[i].distance: 0.000000
+distances[i].distance: 0.000000
+distances[i].distance: 0.000000
+distances[i].distance: 0.000000
+distances[i].distance: 0.000000
+distances[i].distance: 0.000000
+distances[i].distance: 0.000000
+distances[i].distance: 0.000000
+distances[i].distance: 0.000000
+distances[i].distance: 1.000000
+distances[i].distance: 1.000000
+distances[i].distance: 2.000000
+distances[i].distance: 3.000000
+distances[i].distance: 4.000000
+distances[i].distance: 5.000000
+distances[i].distance: 6.000000
+distances[i].distance: 7.000000
+distances[i].distance: 8.000000
+distances[i].distance: 1.000000
+distances[i].distance: 2.000000
+distances[i].distance: 3.000000
+distances[i].distance: 4.000000
+distances[i].distance: 4.000000
+distances[i].distance: 5.000000
+distances[i].distance: 6.000000
+distances[i].distance: 7.000000
+distances[i].distance: 8.000000
+distances[i].distance: 1.000000
+distances[i].distance: 2.000000
+distances[i].distance: 3.000000
+distances[i].distance: 4.000000
+distances[i].distance: 5.000000
+distances[i].distance: 6.000000
+distances[i].distance: 7.000000
+distances[i].distance: 8.000000
+distances[i].distance: 9.000000
+distances[i].distance: 48.000000
+distances[i].distance: 96.000000
+distances[i].distance: 144.000000
+distances[i].distance: 192.000000
+distances[i].distance: 240.000000
+distances[i].distance: 288.000000
+distances[i].distance: 336.000000
+distances[i].distance: 384.000000
+distances[i].distance: 432.000000
+distances[i].distance: 48.000000
+distances[i].distance: 96.000000
+distances[i].distance: 144.000000
+distances[i].distance: 192.000000
+distances[i].distance: 240.000000
+distances[i].distance: 288.000000
+distances[i].distance: 336.000000
+distances[i].distance: 384.000000
+distances[i].distance: 432.000000
+distances[i].distance: 48.000000
+distances[i].distance: 96.000000
+distances[i].distance: 144.000000
+distances[i].distance: 192.000000
+distances[i].distance: 240.000000
+distances[i].distance: 288.000000
+distances[i].distance: 336.000000
+distances[i].distance: 384.000000
+distances[i].distance: 432.000000
+id = 1
+nrows = 3
+ncols = 3
+bits = 010111010
+class = c
+dist = 5.00
+id = 2
+nrows = 3
+ncols = 3
+bits = 000000000
+class = z
+dist = 0.00
+id = 3
+nrows = 3
+ncols = 3
+bits = 101111111
+class = u
+dist = 8.00
+id = 4
+nrows = 3
+ncols = 3
+bits = 111101111
+class = o
+dist = 8.00
+id = 5
+nrows = 3
+ncols = 3
+bits = 111111111
+class = n
+dist = 432.00
+id = 0
+nrows = 0
+ncols = 0
+bits = 
+class = 
+dist = 0.00
+id = 0
+nrows = 0
+ncols = 0
+bits = 
+class = 
+dist = 0.00
+id = 0
+nrows = 0
+ncols = 0
+bits = 
+class = 
+dist = 0.00
+==24027== 
+==24027== HEAP SUMMARY:
+==24027==     in use at exit: 1,130 bytes in 52 blocks
+==24027==   total heap usage: 519 allocs, 467 frees, 29,625 bytes allocated
+==24027== 
+==24027== LEAK SUMMARY:
+==24027==    definitely lost: 425 bytes in 29 blocks
+==24027==    indirectly lost: 153 bytes in 22 blocks
+==24027==      possibly lost: 0 bytes in 0 blocks
+==24027==    still reachable: 552 bytes in 1 blocks
+==24027==         suppressed: 0 bytes in 0 blocks
+==24027== Rerun with --leak-check=full to see details of leaked memory
+==24027== 
+==24027== For counts of detected and suppressed errors, rerun with: -v
+==24027== Use --track-origins=yes to see where uninitialised values come from
+==24027== ERROR SUMMARY: 4886 errors from 117 contexts (suppressed: 0 from 0)

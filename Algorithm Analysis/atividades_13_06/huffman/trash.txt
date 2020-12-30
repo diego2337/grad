@@ -1,0 +1,195 @@
+/*
+	Compare function for qsort
+	params:
+	   - a: a element to be compared
+	   - b: b element to be compared
+	returns:
+	   - result of comparison between a and b
+*/
+int cmp(const void *a, const void *b)
+{
+	if((*(freqSymbol*)a).frequency < (*(freqSymbol*)b).frequency) 
+	{
+		return -1;
+	}
+	else if((*(freqSymbol*)a).frequency == (*(freqSymbol*)b).frequency) 
+	{
+		if((*(freqSymbol*)a).symbol && (*(freqSymbol*)b).symbol && strcmp( (*(freqSymbol*)a).symbol, (*(freqSymbol*)b).symbol ) < 0)
+		{
+			return -1;
+		}
+		else if((*(freqSymbol*)a).symbol && (*(freqSymbol*)b).symbol && strcmp( (*(freqSymbol*)a).symbol, (*(freqSymbol*)b).symbol ) == 0)
+		{
+			return 0;
+		}
+		else if((*(freqSymbol*)a).symbol && (*(freqSymbol*)b).symbol && strcmp( (*(freqSymbol*)a).symbol, (*(freqSymbol*)b).symbol ) > 0)
+		{
+			return 1;
+		}
+	}
+	return 1;
+}
+
+/*
+	Recursively use huffman compression
+	params:
+	   - fq: freqSymbol struct;
+	   - size: fq size;
+	   - tree: tree to be inserted;
+*/
+void huffman(freqSymbol *fq, int size, binaryTree *tree, char **bits)
+{
+	int i;
+	char c;
+	freqSymbol *fq2;
+	node *n, *n2;
+	/* If size == 0, no more elements to merge - start binaryTree insertion */
+	if(size == 1)
+	{
+		insertBinaryTree(&tree->root, fq[0].frequency, fq[0].symbol, " ", 0);
+		printf("begin inOrder\n");
+		inOrder(tree->root);
+		printf("end inOrder\n");
+		return;
+	}
+	/* Merge both lowest rank elements */
+	fq2 = (freqSymbol*)malloc(sizeof(freqSymbol)*(size-1));
+	fq2[0].frequency = fq[0].frequency + fq[1].frequency;
+	fq2[0].symbol = (char*)malloc(sizeof(char)*(strlen(fq[0].symbol)+strlen(fq[1].symbol)+1));
+	strcpy(fq2[0].symbol, fq[0].symbol);
+	strcat(fq2[0].symbol, fq[1].symbol);
+
+	/* Copy remaining content */
+	for(i = 1; i < size-1; i++)
+	{
+		fq2[i].frequency = fq[i+1].frequency;
+		fq2[i].symbol = (char*)malloc(sizeof(char)*(strlen(fq[i+1].symbol)+1));
+		strcpy(fq2[i].symbol, fq[i+1].symbol);
+	}
+
+	/* Sort new array */
+	qsort(fq2, (size-1), sizeof(freqSymbol), cmp);
+
+	/* Recursively call huffman */
+	huffman(fq2, (size-1), tree, bits);
+
+	n = (node*)malloc(sizeof(node));
+	initNode(&n, fq2[0].frequency, fq2[0].symbol, NULL);
+	n2 = findNode(tree->root, n);
+	if(!n2)
+	{
+		printf("nao pode\n");
+	}
+	n->bits = (char*)realloc(n->bits, sizeof(char)*(strlen(n2->bits)+2));
+	/* Insert both left and right nodes */
+	for(i = 0; i < 2; i++)
+	{
+		c = i + 48;
+		strcpy(n->bits, n2->bits);
+		n->bits[strlen(n->bits)-1] = c;
+		n->bits[strlen(n->bits)] = '\0';
+		printf("n->bits: %s\n", n->bits);
+		insertBinaryTree(&tree->root, fq[i].frequency, fq[i].symbol, n->bits, 0);
+		printf("begin inOrder\n");
+		inOrder(tree->root);
+		printf("end inOrder\n");
+	}
+	freeNode(n);
+	for(i = 0; i < (size-1); i++)
+	{
+		free(fq2[i].symbol);
+	}
+	free(fq2);
+}
+
+/*
+	Performs a huffman compression
+	param:
+	   - file: file to be read
+*/
+void huffmanCompression(FILE *file)
+{
+	int i, j, freqSymbolSize;
+	freqSymbol *fq, *fq2;
+	char c, *bits = NULL;
+	binaryTree *tree = NULL;
+	createBinaryTree(&tree);
+	fq = (freqSymbol*)calloc(128, sizeof(freqSymbol));
+	for(i = 0; i < 128; i++) initFQ(&fq[i]);
+	while(fscanf(file, "%c", &c) != EOF)
+	{
+		if(fq[(int)c].frequency == 0)
+		{
+			fq[(int)c].symbol = (char*)malloc(sizeof(char)*2);
+			fq[(int)c].symbol[0] = c;
+			fq[(int)c].symbol[1] = '\0';
+			/*printf("fq[(int)c].symbol: %s\n", fq[(int)c].symbol);
+			strcpy(fq[(int)c].symbol, &c);*/
+			fq[(int)c].frequency = 1;
+		}
+		else
+		{
+			fq[(int)c].frequency = fq[(int)c].frequency + 1;
+		}
+	}
+	qsort(fq, 128, sizeof(freqSymbol), cmp);
+	for(i = 0; fq[i].frequency == 0; i++){}
+	fq2 = (freqSymbol*)malloc(sizeof(freqSymbol)*(128-i));
+	freqSymbolSize = (128-i);
+	for(j = 0; j < freqSymbolSize; j++, i++)
+	{
+		fq2[j].frequency = fq[i].frequency;
+		fq2[j].symbol = (char*)malloc(sizeof(char)*2);
+		strcpy(fq2[j].symbol, fq[i].symbol);
+	}
+	/* Recursively call huffman */
+	bits = (char*)calloc(2, sizeof(char));
+	huffman(fq2, freqSymbolSize, tree, &bits);
+	free(bits);
+	for(i = 0; i < 128; i++)
+	{
+		free(fq[i].symbol);
+	}
+	free(fq);
+	for(i = 0; i < freqSymbolSize; i++)
+	{
+		free(fq2[i].symbol);
+	}
+	free(fq2);
+	freeBinaryTree(tree->root);
+	free(tree);
+}
+
+// while(fread(&c, sizeof(char), 1, file) > 0)
+	// {
+	// 	/* Decode byte */
+	// 	for(i = 0/*, value = 0*/, c2 = 0, c3 = 0; i < 8; i++)
+	// 	{
+	// 		c2 = c << i;
+	// 		c3 = c2 >> 7;
+	// 		if(c3 == 0)
+	// 		{
+	// 			bit = (char*)realloc(bit, sizeof(char)*(strlen(bit)+2));
+	// 			strcat(bit, "0");
+	// 		}
+	// 		else
+	// 		{
+	// 			bit = (char*)realloc(bit, sizeof(char)*(strlen(bit)+2));
+	// 			strcat(bit, "1");
+	// 		}
+	// 		c4 = match(bits, bit);
+	// 		if(c4 != -1)
+	// 		{
+	// 			printf("bit: %s\n", bit);
+	// 			message = (char*)realloc(message, sizeof(char)*(count+1));
+	// 			message[count] = c4;
+	// 			count = count + 1;
+	// 			printf("%c\n", c4);
+	// 			free(bit);
+	// 			bit = NULL;
+	// 			bit = (char*)calloc(2, sizeof(char));
+	// 			strcpy(bit, "");
+	// 		}
+	// 		/*value = value + (c3 << 7);*/
+	// 	}
+	// }
